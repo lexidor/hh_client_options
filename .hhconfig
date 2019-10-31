@@ -19,6 +19,7 @@ disallow_invalid_arraykey_constraint = true
 disable_legacy_soft_typehints = true
 const_default_func_args = true
 disable_unset_class_const = true
+check_attribute_locations = true
 
 ;------------------;
 ; Failing settings ;
