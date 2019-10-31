@@ -354,16 +354,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/xhp-lib.git",
-                "reference": "bb524d7abbf0c9a569c0f33ce7d2b96bb0de208a"
+                "reference": "41cb2eb73d4523a10628bc95e8550ecb880e7214"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/xhp-lib/zipball/bb524d7abbf0c9a569c0f33ce7d2b96bb0de208a",
-                "reference": "bb524d7abbf0c9a569c0f33ce7d2b96bb0de208a",
+                "url": "https://api.github.com/repos/hhvm/xhp-lib/zipball/41cb2eb73d4523a10628bc95e8550ecb880e7214",
+                "reference": "41cb2eb73d4523a10628bc95e8550ecb880e7214",
                 "shasum": ""
             },
             "require": {
-                "hhvm": "^4.13.0",
+                "hhvm": "^4.25",
                 "hhvm/type-assert": "^3.0"
             },
             "require-dev": {
@@ -389,7 +389,7 @@
                 "hhvm",
                 "xhp"
             ],
-            "time": "2019-10-24T18:07:11+00:00"
+            "time": "2019-10-31T20:23:31+00:00"
         },
         {
             "name": "hhvm/hacktest",

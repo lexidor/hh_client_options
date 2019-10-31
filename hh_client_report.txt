@@ -99,41 +99,6 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
     |                  ^^
 
 Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/xhp-lib/src/core/ComposableElement.php
-796 |     $desc = array();
-    |             ^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/xhp-lib/src/core/ComposableElement.php
-818 |     $c = str_replace(array(':', '-'), array('__', '_'), $c);
-    |                      ^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/xhp-lib/src/core/ComposableElement.php
-818 |     $c = str_replace(array(':', '-'), array('__', '_'), $c);
-    |                                       ^^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/xhp-lib/src/core/XHP.php
-107 |     return 'xhp_'.str_replace(array(':', '-'), array('__', '_'), $element);
-    |                               ^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/xhp-lib/src/core/XHP.php
-107 |     return 'xhp_'.str_replace(array(':', '-'), array('__', '_'), $element);
-    |                                                ^^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/xhp-lib/src/core/XHP.php
-112 |       array('__', '_'),
-    |       ^^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/xhp-lib/src/core/XHP.php
-113 |       array(':', '-'),
-    |       ^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
    --> vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack
  27 |     $out = [];
     |            ^^
@@ -143,4 +108,4 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
  42 |     $out = [];
     |            ^^
 
-29 errors found.
+22 errors found.
