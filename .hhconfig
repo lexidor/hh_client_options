@@ -38,12 +38,13 @@ disallow_func_ptrs_in_constants = true
 ; 31/10/2019
 ; new_inference_lambda = true
 
+; 31/10/2019
+; disallow_array_literal = true
+
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
 
-; 31/10/2019
-disallow_array_literal = true
 
 ;------------------;
 ; Failing settings ;
