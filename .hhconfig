@@ -20,6 +20,7 @@ disable_legacy_soft_typehints = true
 const_default_func_args = true
 disable_unset_class_const = true
 check_attribute_locations = true
+disallow_func_ptrs_in_constants = true
 
 ;------------------;
 ; Failing settings ;
