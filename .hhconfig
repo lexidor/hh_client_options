@@ -56,7 +56,7 @@ disallow_func_ptrs_in_constants = true
 ;-------------------------------------------;
 
 ; allow_goto = false
-; disallow_execution_operator = false
+; disallow_execution_operator = true
 ; disable_nontoplevel_declarations = true
 ; disallow_ambiguous_lambda = true
 ; disallow_unresolved_type_variables = true
