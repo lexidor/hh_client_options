@@ -35,13 +35,12 @@ disallow_func_ptrs_in_constants = true
 ; 31/10/2019
 ; disable_lval_as_an_expression = true
 
+; 31/10/2019
+; new_inference_lambda = true
 
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
-
-; 31/10/2019
-new_inference_lambda = true
 
 ;------------------;
 ; Failing settings ;
