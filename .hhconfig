@@ -35,10 +35,13 @@ disallow_func_ptrs_in_constants = true
 ; 31/10/2019
 ; disable_lval_as_an_expression = true
 
+
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
 
+; 31/10/2019
+new_inference_lambda = true
 
 ;------------------;
 ; Failing settings ;
@@ -47,7 +50,6 @@ disallow_func_ptrs_in_constants = true
 ; deregister_php_stdlib = true
 ; disallow_array_typehint = true
 ; disallow_array_literal = true
-; new_inference_lambda = true
 ; disable_legacy_attribute_syntax = true
 
 ;-------------------------------------------;
