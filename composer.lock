@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/definition-finder.git",
-                "reference": "a89600fe9b14c964355e96107a2a7e220a05258c"
+                "reference": "ba2048eb5e84da80b79b707a1d4f5af87540e61a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/definition-finder/zipball/a89600fe9b14c964355e96107a2a7e220a05258c",
-                "reference": "a89600fe9b14c964355e96107a2a7e220a05258c",
+                "url": "https://api.github.com/repos/hhvm/definition-finder/zipball/ba2048eb5e84da80b79b707a1d4f5af87540e61a",
+                "reference": "ba2048eb5e84da80b79b707a1d4f5af87540e61a",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "hack",
                 "hhvm"
             ],
-            "time": "2019-10-31T20:26:14+00:00"
+            "time": "2019-10-31T21:17:38+00:00"
         },
         {
             "name": "facebook/difflib",
