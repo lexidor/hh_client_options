@@ -9,6 +9,7 @@ disable_static_closures = true
 disable_halt_compiler = true
 unsafe_rx = false
 disallow_invalid_arraykey = true
+disallow_byref_dynamic_calls = true
 
 ;------------------;
 ; Failing settings ;
