@@ -18,6 +18,7 @@ check_xhp_attribute = true
 disallow_invalid_arraykey_constraint = true
 disable_legacy_soft_typehints = true
 const_default_func_args = true
+disable_unset_class_const = true
 
 ;------------------;
 ; Failing settings ;
@@ -30,6 +31,7 @@ const_default_func_args = true
 ; new_inference_lambda = true
 ; disable_lval_as_an_expression = true
 ; disable_legacy_attribute_syntax = true
+; disallow_silence = true
 
 ;-------------------------------------------;
 ; Settings that don't appear to do anything ;
@@ -51,3 +53,4 @@ const_default_func_args = true
 ; infer_missing = ??
 ; const_static_props = ??
 ; const_attribute = ??
+; abstract_static_props = ??
