@@ -15,6 +15,7 @@ typecheck_xhp_cvars = true
 union_intersection_type_hints = true
 disable_partially_abstract_typeconsts = true
 check_xhp_attribute = true
+disallow_invalid_arraykey_constraint = true
 
 ;------------------;
 ; Failing settings ;
@@ -35,6 +36,7 @@ check_xhp_attribute = true
 ; disallow_execution_operator = false
 ; disable_nontoplevel_declarations = true
 ; disallow_ambiguous_lambda = true
+; disallow_unresolved_type_variables = true
 
 ;------------------------------------------------;
 ; Settings which I don't know what they might do ;
