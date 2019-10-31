@@ -5,16 +5,18 @@ ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+"]
 ;---------------------;
 
 disallow_toplevel_requires = true
+disable_static_closures = true
 
 ;------------------;
 ; Failing settings ;
 ;------------------;
 
-;deregister_php_stdlib = true
+; deregister_php_stdlib = true
 
 ;-------------------------------------------;
 ; Settings that don't appear to do anything ;
 ;-------------------------------------------;
 
-;allow_goto = false
-;disallow_execution_operator = false
+; allow_goto = false
+; disallow_execution_operator = false
+; disable_nontoplevel_declarations = true
