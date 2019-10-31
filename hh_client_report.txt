@@ -98,16 +98,6 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
  36 |       $matches = [];
     |                  ^^
 
-Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
-   --> vendor/facebook/hh-clilib/src/CLIBase.hack
-116 |       ($_ = $this) is CLIWithArguments,
-    |        ^
-
-Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
-   --> vendor/facebook/hh-clilib/src/CLIBase.hack
-280 |     if (($_ = $this) is CLIWithArguments) {
-    |          ^
-
 Naming[2083] Array literals are no longer legal; use varray or darray instead
    --> vendor/facebook/xhp-lib/src/core/ComposableElement.php
 796 |     $desc = array();
@@ -143,52 +133,6 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
 113 |       array(':', '-'),
     |       ^^^^^^^^^^^^^^^
 
-Typing[4297] Was expecting an array or collection but type is unknown
-   --> vendor/hhvm/hhast/src/Linters/GroupUseStatementsLinter.hack
-272 |           Dict\filter($result[$kind][$namespace][1], ($n) ==> {
-    |                                                       ^^ It is unknown because the type of the lambda parameter could not be determined. Please add a type hint to the parameter
-273 |             return $n[0] === $name && $n[1] === $alias;
-    |                    ^^
-
-Typing[4297] Was expecting an array or collection but type is unknown
-   --> vendor/hhvm/hhast/src/Linters/GroupUseStatementsLinter.hack
-272 |           Dict\filter($result[$kind][$namespace][1], ($n) ==> {
-    |                                                       ^^ It is unknown because a type could not be determined here
-273 |             return $n[0] === $name && $n[1] === $alias;
-    |                                       ^^
-
-Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
-   --> vendor/hhvm/hhast/src/__Private/codegen/CodegenSyntax.hack
-173 |       ($acc, $i) ==> $acc = Keyset\intersect($acc, $i),
-    |                      ^^^
-
-Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
-   --> vendor/hhvm/hhast/src/nodes/Script.hack
- 66 |       $namespace = $all_declarations[$idx++];
-    |                                      ^^^
-
-Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
-   --> vendor/hhvm/hhast/src/nodes/Script.hack
- 89 |         $children[] = $all_declarations[$idx++];
-    |                                         ^^^
-
-Typing[4297] Was expecting an array or collection but type is unknown
-   --> vendor/hhvm/hhast/src/nodes/Token.hack
-124 |       ($j, $p) ==> $j['width'] + $p,
-    |                    ^^
-    |        ^^ It is unknown because the type of the lambda parameter could not be determined. Please add a type hint to the parameter
-
-Typing[4297] Was expecting an array or collection but type is unknown
-   --> vendor/hhvm/hhast/src/nodes/Token.hack
-147 |       ($j, $p) ==> $j['width'] + $p,
-    |                    ^^
-    |        ^^ It is unknown because the type of the lambda parameter could not be determined. Please add a type hint to the parameter
-
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/hhvm/hhvm-autoload/src/builders/FactParseScanner.hack
- 52 |         if (@\filesize($file) === 0) {
-    |             ^
-
 Naming[2083] Array literals are no longer legal; use varray or darray instead
    --> vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack
  27 |     $out = [];
@@ -199,4 +143,4 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
  42 |     $out = [];
     |            ^^
 
-39 errors found.
+29 errors found.
