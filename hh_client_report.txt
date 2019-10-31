@@ -1,1 +1,21 @@
-No errors!
+Parsing[1002] The error suppression operator @ is not allowed
+   --> vendor/facebook/fbexpect/src/Constraint/IsType.hack
+ 35 |             @\get_resource_type(
+    |             ^
+
+Parsing[1002] The error suppression operator @ is not allowed
+   --> vendor/facebook/hack-codegen/src/_Private/Filesystem.hack
+ 34 |     $data = @\file_get_contents($path);
+    |             ^
+
+Parsing[1002] The error suppression operator @ is not allowed
+   --> vendor/facebook/hack-codegen/src/_Private/Filesystem.hack
+ 43 |     $res = @\file_put_contents($path, $data);
+    |            ^
+
+Parsing[1002] The error suppression operator @ is not allowed
+   --> vendor/hhvm/hhvm-autoload/src/builders/FactParseScanner.hack
+ 52 |         if (@\filesize($file) === 0) {
+    |             ^
+
+4 errors found.
