@@ -29,12 +29,13 @@ disallow_func_ptrs_in_constants = true
 ; 31/10/2019
 ; disallow_silence = true
 
+; 31/10/2019
+; disallow_scrutinee_case_value_type_mismatch = true
+
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
 
-; 31/10/2019
-disallow_scrutinee_case_value_type_mismatch = true
 
 ;------------------;
 ; Failing settings ;
