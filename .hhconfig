@@ -1,1 +1,20 @@
 ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+"]
+
+;---------------------;
+; Known good settings ;
+;---------------------;
+
+disallow_toplevel_requires = true
+
+;------------------;
+; Failing settings ;
+;------------------;
+
+;deregister_php_stdlib = true
+
+;-------------------------------------------;
+; Settings that don't appear to do anything ;
+;-------------------------------------------;
+
+;allow_goto = false
+;disallow_execution_operator = false
