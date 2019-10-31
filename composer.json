@@ -10,6 +10,7 @@
         "facebook/hack-http-request-response-interfaces": "*",
         "facebook/hack-router": "*",
         "facebook/hack-router-codegen": "*",
+        "facebook/hh-clilib": "*",
         "facebook/xhp-lib": "*",
         "hhvm/hacktest": "*",
         "hhvm/hhast": "*",
