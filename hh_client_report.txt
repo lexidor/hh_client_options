@@ -18,11 +18,6 @@ Typing[4280] This case value has type Facebook\HHAST\ResolvedTypeKind, which is 
 116 |       case ResolvedTypeKind::QUALIFIED_TYPE:
     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/definition-finder/src/expression/StaticArrayExpression.hack
- 29 |     $ret = array();
-    |            ^^^^^^^
-
 Parsing[1002] The error suppression operator @ is not allowed
    --> vendor/facebook/fbexpect/src/Constraint/IsType.hack
  35 |             @\get_resource_type(
@@ -79,16 +74,6 @@ Parsing[1002] The error suppression operator @ is not allowed
     |            ^
 
 Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-router-codegen/src/Codegen.hack
-245 |     foreach ($config['trait']['requireExtends'] ?? [] as $what) {
-    |                                                    ^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-router-codegen/src/Codegen.hack
-248 |     foreach ($config['trait']['requireImplements'] ?? [] as $what) {
-    |                                                       ^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
    --> vendor/facebook/hack-router/src/router/PrefixMatchingResolver.php
  66 |       $matches = [];
     |                  ^^
@@ -108,4 +93,4 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
  42 |     $out = [];
     |            ^^
 
-22 errors found.
+19 errors found.

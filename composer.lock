@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/definition-finder.git",
-                "reference": "f6d81a2ac7445c3e5392b2db9a86aee2c6e0fae1"
+                "reference": "a89600fe9b14c964355e96107a2a7e220a05258c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/definition-finder/zipball/f6d81a2ac7445c3e5392b2db9a86aee2c6e0fae1",
-                "reference": "f6d81a2ac7445c3e5392b2db9a86aee2c6e0fae1",
+                "url": "https://api.github.com/repos/hhvm/definition-finder/zipball/a89600fe9b14c964355e96107a2a7e220a05258c",
+                "reference": "a89600fe9b14c964355e96107a2a7e220a05258c",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "hack",
                 "hhvm"
             ],
-            "time": "2019-10-29T19:29:19+00:00"
+            "time": "2019-10-31T20:26:14+00:00"
         },
         {
             "name": "facebook/difflib",
@@ -266,12 +266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-router-codegen.git",
-                "reference": "f80439ffe9c51c837af47d1c6ef8dbf7bc167b07"
+                "reference": "5b6293b0721a17f5bef8f6c31ae76868ddf7d286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/f80439ffe9c51c837af47d1c6ef8dbf7bc167b07",
-                "reference": "f80439ffe9c51c837af47d1c6ef8dbf7bc167b07",
+                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/5b6293b0721a17f5bef8f6c31ae76868ddf7d286",
+                "reference": "5b6293b0721a17f5bef8f6c31ae76868ddf7d286",
                 "shasum": ""
             },
             "require": {
@@ -279,7 +279,7 @@
                 "facebook/hack-codegen": "^4.1.0",
                 "facebook/hack-http-request-response-interfaces": "^0.2",
                 "facebook/hack-router": "^0.19",
-                "hhvm": "^4.13",
+                "hhvm": "^4.25",
                 "hhvm/type-assert": "^3.0"
             },
             "require-dev": {
@@ -309,7 +309,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-10-24T22:33:07+00:00"
+            "time": "2019-10-31T20:26:40+00:00"
         },
         {
             "name": "facebook/hh-clilib",
