@@ -42,13 +42,15 @@ disallow_func_ptrs_in_constants = true
 ; Setting that I am working on ;
 ;------------------------------;
 
+; 31/10/2019
+disallow_array_literal = true
+
 ;------------------;
 ; Failing settings ;
 ;------------------;
 
 ; deregister_php_stdlib = true
 ; disallow_array_typehint = true
-; disallow_array_literal = true
 ; disable_legacy_attribute_syntax = true
 
 ;-------------------------------------------;
