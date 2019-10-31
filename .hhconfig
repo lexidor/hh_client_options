@@ -8,6 +8,7 @@ disallow_toplevel_requires = true
 disable_static_closures = true
 disable_halt_compiler = true
 unsafe_rx = false
+disallow_invalid_arraykey = true
 
 ;------------------;
 ; Failing settings ;
@@ -16,6 +17,8 @@ unsafe_rx = false
 ; deregister_php_stdlib = true
 ; disallow_array_typehint = true
 ; disallow_array_literal = true
+; disallow_scrutinee_case_value_type_mismatch = true
+; new_inference_lambda = true
 
 ;-------------------------------------------;
 ; Settings that don't appear to do anything ;
