@@ -6,6 +6,7 @@ ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+"]
 
 disallow_toplevel_requires = true
 disable_static_closures = true
+disable_halt_compiler = true
 
 ;------------------;
 ; Failing settings ;
