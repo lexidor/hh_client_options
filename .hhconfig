@@ -27,19 +27,19 @@ disallow_func_ptrs_in_constants = true
 ;--------------------------------------------;
 
 ; 31/10/2019
-; disallow_silence = true
+disallow_silence = true
 
 ; 31/10/2019
-; disallow_scrutinee_case_value_type_mismatch = true
+disallow_scrutinee_case_value_type_mismatch = true
 
 ; 31/10/2019
-; disable_lval_as_an_expression = true
+disable_lval_as_an_expression = true
 
 ; 31/10/2019
-; new_inference_lambda = true
+new_inference_lambda = true
 
 ; 31/10/2019
-; disallow_array_literal = true
+disallow_array_literal = true
 
 ;------------------------------;
 ; Setting that I am working on ;
