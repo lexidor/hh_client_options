@@ -11,6 +11,7 @@ unsafe_rx = false
 disallow_invalid_arraykey = true
 disallow_byref_dynamic_calls = true
 disallow_byref_calls = true
+typecheck_xhp_cvars = true
 
 ;------------------;
 ; Failing settings ;
@@ -21,6 +22,7 @@ disallow_byref_calls = true
 ; disallow_array_literal = true
 ; disallow_scrutinee_case_value_type_mismatch = true
 ; new_inference_lambda = true
+; disable_lval_as_an_expression = true
 
 ;-------------------------------------------;
 ; Settings that don't appear to do anything ;
