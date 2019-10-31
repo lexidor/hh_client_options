@@ -1,0 +1,538 @@
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Foo does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 13 | <<Foo>>
+    |   ^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Foo (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 13 | <<Foo>>
+    |   ^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Foo does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 16 | <<Foo,Bar>>
+    |   ^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Foo (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 16 | <<Foo,Bar>>
+    |   ^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Bar does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 16 | <<Foo,Bar>>
+    |       ^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Bar (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 16 | <<Foo,Bar>>
+    |       ^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Herp does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 19 | <<Herp('derp')>>
+    |   ^^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Herp (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 19 | <<Herp('derp')>>
+    |   ^^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Herp does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 22 | <<Herp(123)>>
+    |   ^^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Herp (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 22 | <<Herp(123)>>
+    |   ^^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Foo does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 25 | <<Foo('bar','baz')>>
+    |   ^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Foo (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 25 | <<Foo('bar','baz')>>
+    |   ^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\FunctionFoo does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 28 | <<FunctionFoo>>
+    |   ^^^^^^^^^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\FunctionFoo (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 28 | <<FunctionFoo>>
+    |   ^^^^^^^^^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\ClassFoo does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 31 | <<ClassFoo>>
+    |   ^^^^^^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\ClassFoo (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 31 | <<ClassFoo>>
+    |   ^^^^^^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Foo does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 35 | Foo,
+    | ^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Foo (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 35 | Foo,
+    | ^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Bar does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 36 | Bar
+    | ^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Bar (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 36 | Bar
+    | ^^^
+
+Naming[2049] Unrecognized user attribute: Facebook\DefinitionFinder\Test\Bar does not have a class. Please declare a class for the attribute.
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 45 | Bar(
+    | ^^^
+
+Naming[2049] Unbound name: Facebook\DefinitionFinder\Test\Bar (an object type)
+   --> vendor/facebook/definition-finder/tests/data/attributes.php
+ 45 | Bar(
+    | ^^^
+
+Parsing[1002] No code may exist outside of namespace {}
+   --> vendor/facebook/definition-finder/tests/data/class_properties.php
+ 23 | namespace Facebook\DefinitionFinder\Test2 {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Parsing[1002] Cannot mix bracketed namespace declarations with unbracketed namespace declarations
+   --> vendor/facebook/definition-finder/tests/data/class_properties.php
+ 23 | namespace Facebook\DefinitionFinder\Test2 {
+    |                                           ^
+
+Typing[4030] Was expecting a return type hint
+   --> vendor/facebook/definition-finder/tests/data/doc_comments.php
+ 19 | function function_with_doc_comment() {}
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4030] Was expecting a return type hint
+   --> vendor/facebook/definition-finder/tests/data/doc_comments.php
+ 21 | function function_without_doc_comment() {}
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4030] Was expecting a return type hint
+   --> vendor/facebook/definition-finder/tests/data/doc_comments.php
+ 32 | function param_with_doc_comment(/** param doc */ $commented, $uncommented) {}
+    |          ^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4032] Was expecting a type hint
+   --> vendor/facebook/definition-finder/tests/data/doc_comments.php
+ 32 | function param_with_doc_comment(/** param doc */ $commented, $uncommented) {}
+    |                                                  ^^^^^^^^^^
+
+Typing[4032] Was expecting a type hint
+   --> vendor/facebook/definition-finder/tests/data/doc_comments.php
+ 32 | function param_with_doc_comment(/** param doc */ $commented, $uncommented) {}
+    |                                                              ^^^^^^^^^^^^
+
+Naming[2001] Please add a type hint 'const SomeType MY_CONST'
+   --> vendor/facebook/definition-finder/tests/data/nested_namespace_hack.php
+ 99 | const MY_CONST = 456;
+    |       ^^^^^^^^
+
+Naming[2001] Please add a type hint 'const SomeType MY_CONST'
+   --> vendor/facebook/definition-finder/tests/data/no_namespace_hack.php
+ 97 | const MY_CONST = 456;
+    |       ^^^^^^^^
+
+Naming[2001] Please add a type hint 'const SomeType MY_CONST'
+   --> vendor/facebook/definition-finder/tests/data/single_namespace_hack.php
+ 99 | const MY_CONST = 456;
+    |       ^^^^^^^^
+
+Naming[2012] Name already bound: HackLibTestForwardOnlyIterator
+   --> vendor/hhvm/hsl/tests/HackLibTestForwardOnlyIterator.php
+ 17 | final class HackLibTestForwardOnlyIterator<Tk as arraykey, Tv>
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/HackLibTestForwardOnlyIterator.php
+ 15 | final class HackLibTestForwardOnlyIterator<Tk as arraykey, Tv>
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Typing[4340] Class HackLibTestForwardOnlyIterator does not correctly implement all required members 
+   --> vendor/hhvm/hsl/tests/HackLibTestForwardOnlyIterator.php
+ 17 | final class HackLibTestForwardOnlyIterator<Tk as arraykey, Tv>
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 18 | implements \HH\Rx\Iterator<Tv>, \HH\Rx\KeyedIterator<Tk, Tv> {
+    |                                 ^^^^^^^^^^^^^^^^^^^^ Some members are incompatible with those declared in type HH\Rx\KeyedIterator
+Read the following to see why:
+   --> vendor/hhvm/hacktest/tests/HackLibTestForwardOnlyIterator.php
+ 25 |   public function current(): Tv  {
+    |                   ^^^^^^^ Member current has the wrong type
+    |                   ^^^^^^^ This function is non-reactive.
+   --> /tmp/hh_server/hhi_323495a/rx/interfaces.hhi
+ 45 |   public function current(): Tv;
+    |                   ^^^^^^^ This function is reactive.
+
+Typing[4340] Class HackLibTestForwardOnlyIterator does not correctly implement all required members 
+   --> vendor/hhvm/hsl/tests/HackLibTestForwardOnlyIterator.php
+ 17 | final class HackLibTestForwardOnlyIterator<Tk as arraykey, Tv>
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 18 | implements \HH\Rx\Iterator<Tv>, \HH\Rx\KeyedIterator<Tk, Tv> {
+    |            ^^^^^^^^^^^^^^^ Some members are incompatible with those declared in type HH\Rx\Iterator
+Read the following to see why:
+   --> vendor/hhvm/hacktest/tests/HackLibTestForwardOnlyIterator.php
+ 25 |   public function current(): Tv  {
+    |                   ^^^^^^^ Member current has the wrong type
+    |                   ^^^^^^^ This function is non-reactive.
+   --> /tmp/hh_server/hhi_323495a/rx/interfaces.hhi
+ 45 |   public function current(): Tv;
+    |                   ^^^^^^^ This function is reactive.
+
+Typing[4110] Invalid assignment
+   --> vendor/hhvm/hsl/tests/HackLibTestForwardOnlyIterator.php
+ 25 |     $this->keys = Vec\keys($data);
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/HackLibTestForwardOnlyIterator.php
+ 19 |   private varray<Tk> $keys;
+    |           ^^^^^^^^^^ Expected varray<Tk>
+   --> vendor/hhvm/hsl/src/vec/select.php
+226 | ): vec<Tk> {
+    |    ^^^^^^^ But got vec<Tk>
+
+Naming[2012] Name already bound: HackLibTestStringable
+   --> vendor/hhvm/hsl/tests/HackLibTestStringable.php
+ 12 | final class HackLibTestStringable {
+    |             ^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/HackLibTestStringable.php
+ 12 | final class HackLibTestStringable {
+    |             ^^^^^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: HackLibTestTraversables
+   --> vendor/hhvm/hsl/tests/HackLibTestTraversables.php
+ 17 | abstract final class HackLibTestTraversables {
+    |                      ^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/HackLibTestTraversables.php
+ 17 | abstract final class HackLibTestTraversables {
+    |                      ^^^^^^^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Typing[4110] Invalid return type
+   --> vendor/hhvm/hsl/tests/HackLibTestTraversables.php
+ 20 |   public static function getIterator<T>(Traversable<T> $ary): \HH\Rx\Iterator<T> {
+    |                                                               ^^^^^^^^^^^^^^^^^^ Expected HH\Rx\Iterator<T>
+ 27 |     return new HackLibTestForwardOnlyIterator($dict);
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ But got HackLibTestForwardOnlyIterator<[unresolved], [unresolved]>
+
+Typing[4110] Invalid return type
+   --> vendor/hhvm/hsl/tests/HackLibTestTraversables.php
+ 33 |   ): \HH\Rx\KeyedIterator<Tk, Tv> {
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Rx\KeyedIterator<Tk, Tv>
+ 34 |     return new HackLibTestForwardOnlyIterator(dict($ary));
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ But got HackLibTestForwardOnlyIterator<[unresolved], [unresolved]>
+
+Naming[2012] Name already bound: CAsyncTest
+   --> vendor/hhvm/hsl/tests/c/CAsyncTest.php
+ 17 | final class CAsyncTest extends HackTest {
+    |             ^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/c/CAsyncTest.php
+ 17 | final class CAsyncTest extends HackTest {
+    |             ^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: CIntrospectTest
+   --> vendor/hhvm/hsl/tests/c/CIntrospectTest.php
+ 16 | final class CIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/c/CIntrospectTest.php
+ 16 | final class CIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: CReduceTest
+   --> vendor/hhvm/hsl/tests/c/CReduceTest.php
+ 16 | final class CReduceTest extends HackTest {
+    |             ^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/c/CReduceTest.php
+ 16 | final class CReduceTest extends HackTest {
+    |             ^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: CSelectTest
+   --> vendor/hhvm/hsl/tests/c/CSelectTest.php
+ 17 | final class CSelectTest extends HackTest {
+    |             ^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/c/CSelectTest.php
+ 17 | final class CSelectTest extends HackTest {
+    |             ^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: DictAsyncTest
+   --> vendor/hhvm/hsl/tests/dict/DictAsyncTest.php
+ 16 | final class DictAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/dict/DictAsyncTest.php
+ 16 | final class DictAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: DictCombineTest
+   --> vendor/hhvm/hsl/tests/dict/DictCombineTest.php
+ 16 | final class DictCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/dict/DictCombineTest.php
+ 16 | final class DictCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: DictDivideTest
+   --> vendor/hhvm/hsl/tests/dict/DictDivideTest.php
+ 16 | final class DictDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/dict/DictDivideTest.php
+ 16 | final class DictDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: DictIntrospectTest
+   --> vendor/hhvm/hsl/tests/dict/DictIntrospectTest.php
+ 16 | final class DictIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/dict/DictIntrospectTest.php
+ 16 | final class DictIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: DictOrderTest
+   --> vendor/hhvm/hsl/tests/dict/DictOrderTest.php
+ 16 | final class DictOrderTest extends HackTest {
+    |             ^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/dict/DictOrderTest.php
+ 16 | final class DictOrderTest extends HackTest {
+    |             ^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: DictSelectTest
+   --> vendor/hhvm/hsl/tests/dict/DictSelectTest.php
+ 16 | final class DictSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/dict/DictSelectTest.php
+ 16 | final class DictSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: DictTransformTest
+   --> vendor/hhvm/hsl/tests/dict/DictTransformTest.php
+ 16 | final class DictTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/dict/DictTransformTest.php
+ 16 | final class DictTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: KeysetAsyncTest
+   --> vendor/hhvm/hsl/tests/keyset/KeysetAsyncTest.php
+ 16 | final class KeysetAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/keyset/KeysetAsyncTest.php
+ 16 | final class KeysetAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: KeysetCombineTest
+   --> vendor/hhvm/hsl/tests/keyset/KeysetCombineTest.php
+ 16 | final class KeysetCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/keyset/KeysetCombineTest.php
+ 16 | final class KeysetCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: KeysetDivideTest
+   --> vendor/hhvm/hsl/tests/keyset/KeysetDivideTest.php
+ 16 | final class KeysetDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/keyset/KeysetDivideTest.php
+ 16 | final class KeysetDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: KeysetIntrospectTest
+   --> vendor/hhvm/hsl/tests/keyset/KeysetIntrospectTest.php
+ 16 | final class KeysetIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/keyset/KeysetIntrospectTest.php
+ 16 | final class KeysetIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: KeysetOrderTest
+   --> vendor/hhvm/hsl/tests/keyset/KeysetOrderTest.php
+ 16 | final class KeysetOrderTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/keyset/KeysetOrderTest.php
+ 16 | final class KeysetOrderTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: KeysetSelectTest
+   --> vendor/hhvm/hsl/tests/keyset/KeysetSelectTest.php
+ 16 | final class KeysetSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/keyset/KeysetSelectTest.php
+ 16 | final class KeysetSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: KeysetTransformTest
+   --> vendor/hhvm/hsl/tests/keyset/KeysetTransformTest.php
+ 16 | final class KeysetTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/keyset/KeysetTransformTest.php
+ 16 | final class KeysetTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: MathCompareTest
+   --> vendor/hhvm/hsl/tests/math/MathCompareTest.php
+ 16 | final class MathCompareTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/math/MathCompareTest.php
+ 16 | final class MathCompareTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: MathComputeTest
+   --> vendor/hhvm/hsl/tests/math/MathComputeTest.php
+ 22 | final class MathComputeTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/math/MathComputeTest.php
+ 18 | final class MathComputeTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: MathConstantsTest
+   --> vendor/hhvm/hsl/tests/math/MathConstantsTest.php
+ 17 | final class MathConstantsTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/math/MathConstantsTest.php
+ 17 | final class MathConstantsTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Typing[4090] No class constant 'DELTA' in MathConstantsTest
+   --> vendor/hhvm/hsl/tests/math/MathConstantsTest.php
+ 25 |     expect(Math\PI)->toEqualWithDelta(M_PI, self::DELTA);
+    |                                                   ^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/math/MathConstantsTest.php
+ 17 | final class MathConstantsTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^ Declaration of MathConstantsTest is here
+
+Typing[4090] No class constant 'DELTA' in MathConstantsTest
+   --> vendor/hhvm/hsl/tests/math/MathConstantsTest.php
+ 28 |     expect(Math\E)->toEqualWithDelta(M_E, self::DELTA);
+    |                                                 ^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/math/MathConstantsTest.php
+ 17 | final class MathConstantsTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^ Declaration of MathConstantsTest is here
+
+Naming[2012] Name already bound: MathContainersTest
+   --> vendor/hhvm/hsl/tests/math/MathContainersTest.php
+ 16 | final class MathContainersTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/math/MathContainersTest.php
+ 16 | final class MathContainersTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: StrCombineTest
+   --> vendor/hhvm/hsl/tests/str/StrCombineTest.php
+ 16 | final class StrCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/str/StrCombineTest.php
+ 16 | final class StrCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: StrDivideTest
+   --> vendor/hhvm/hsl/tests/str/StrDivideTest.php
+ 16 | final class StrDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/str/StrDivideTest.php
+ 16 | final class StrDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: StrFormatTest
+   --> vendor/hhvm/hsl/tests/str/StrFormatTest.php
+ 16 | final class StrFormatTest extends HackTest {
+    |             ^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/str/StrFormatTest.php
+ 16 | final class StrFormatTest extends HackTest {
+    |             ^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: StrIntrospectTest
+   --> vendor/hhvm/hsl/tests/str/StrIntrospectTest.php
+ 17 | final class StrIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/str/StrIntrospectTest.php
+ 17 | final class StrIntrospectTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: StrSelectTest
+   --> vendor/hhvm/hsl/tests/str/StrSelectTest.php
+ 17 | final class StrSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/str/StrSelectTest.php
+ 17 | final class StrSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: StrTransformTest
+   --> vendor/hhvm/hsl/tests/str/StrTransformTest.php
+ 17 | final class StrTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/str/StrTransformTest.php
+ 17 | final class StrTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: TupleAsyncTest
+   --> vendor/hhvm/hsl/tests/tuple/TupleAsyncTest.php
+ 16 | final class TupleAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/tuple/TupleAsyncTest.php
+ 16 | final class TupleAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: VecAsyncTest
+   --> vendor/hhvm/hsl/tests/vec/VecAsyncTest.php
+ 16 | final class VecAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/vec/VecAsyncTest.php
+ 16 | final class VecAsyncTest extends HackTest {
+    |             ^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: VecCombineTest
+   --> vendor/hhvm/hsl/tests/vec/VecCombineTest.php
+ 16 | final class VecCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/vec/VecCombineTest.php
+ 16 | final class VecCombineTest extends HackTest {
+    |             ^^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: VecDivideTest
+   --> vendor/hhvm/hsl/tests/vec/VecDivideTest.php
+ 16 | final class VecDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/vec/VecDivideTest.php
+ 16 | final class VecDivideTest extends HackTest {
+    |             ^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: VecOrderTest
+   --> vendor/hhvm/hsl/tests/vec/VecOrderTest.php
+ 17 | final class VecOrderTest extends HackTest {
+    |             ^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/vec/VecOrderTest.php
+ 17 | final class VecOrderTest extends HackTest {
+    |             ^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: VecSelectTest
+   --> vendor/hhvm/hsl/tests/vec/VecSelectTest.php
+ 17 | final class VecSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/vec/VecSelectTest.php
+ 16 | final class VecSelectTest extends HackTest {
+    |             ^^^^^^^^^^^^^ Previous definition is here
+
+Naming[2012] Name already bound: VecTransformTest
+   --> vendor/hhvm/hsl/tests/vec/VecTransformTest.php
+ 17 | final class VecTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hacktest/tests/clean/hsl/vec/VecTransformTest.php
+ 17 | final class VecTransformTest extends HackTest {
+    |             ^^^^^^^^^^^^^^^^ Previous definition is here
+
+77 errors found.
