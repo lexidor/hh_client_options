@@ -50,9 +50,10 @@ disallow_func_ptrs_in_constants = true
 ;------------------------------------------------;
 
 ; union_intersection_type_hints = false
-; simple_pessimize = 0.0
-; complex_coercion = true
+; simple_pessimize = ??
+; complex_coercion = ??
 ; infer_missing = ??
 ; const_static_props = ??
 ; const_attribute = ??
 ; abstract_static_props = ??
+; error_php_lambdas = ??
