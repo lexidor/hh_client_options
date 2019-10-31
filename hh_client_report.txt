@@ -18,11 +18,6 @@ Typing[4280] This case value has type Facebook\HHAST\ResolvedTypeKind, which is 
 116 |       case ResolvedTypeKind::QUALIFIED_TYPE:
     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/facebook/fbexpect/src/Constraint/IsType.hack
- 35 |             @\get_resource_type(
-    |             ^
-
 Naming[2083] Array literals are no longer legal; use varray or darray instead
    --> vendor/facebook/hack-codegen/src/CodegenClassish.hack
 383 |     $doc_block_parts = \array_filter(array($this->docBlock, $generated_from));
@@ -93,4 +88,4 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
  42 |     $out = [];
     |            ^^
 
-19 errors found.
+18 errors found.

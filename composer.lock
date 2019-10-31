@@ -101,12 +101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/fbexpect.git",
-                "reference": "eb36e648fa637367b44fc111b8878ab4b0417bfb"
+                "reference": "16b10176d1ae3e8ab9deb48007324b13c13d93a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/eb36e648fa637367b44fc111b8878ab4b0417bfb",
-                "reference": "eb36e648fa637367b44fc111b8878ab4b0417bfb",
+                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/16b10176d1ae3e8ab9deb48007324b13c13d93a4",
+                "reference": "16b10176d1ae3e8ab9deb48007324b13c13d93a4",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "MIT"
             ],
             "description": "Unit test helpers for Facebook projects",
-            "time": "2019-10-21T22:45:43+00:00"
+            "time": "2019-10-31T20:29:41+00:00"
         },
         {
             "name": "facebook/hack-codegen",
