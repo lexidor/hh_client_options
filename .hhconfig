@@ -7,12 +7,15 @@ ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+"]
 disallow_toplevel_requires = true
 disable_static_closures = true
 disable_halt_compiler = true
+unsafe_rx = false
 
 ;------------------;
 ; Failing settings ;
 ;------------------;
 
 ; deregister_php_stdlib = true
+; disallow_array_typehint = true
+; disallow_array_literal = true
 
 ;-------------------------------------------;
 ; Settings that don't appear to do anything ;
@@ -21,3 +24,4 @@ disable_halt_compiler = true
 ; allow_goto = false
 ; disallow_execution_operator = false
 ; disable_nontoplevel_declarations = true
+; disallow_ambiguous_lambda = true
