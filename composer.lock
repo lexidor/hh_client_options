@@ -101,18 +101,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/fbexpect.git",
-                "reference": "f6925596ac8092995613b801571f5addc9da8c58"
+                "reference": "cd7439be5c0375220dc1bcb125447144cec2bfee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/f6925596ac8092995613b801571f5addc9da8c58",
-                "reference": "f6925596ac8092995613b801571f5addc9da8c58",
+                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/cd7439be5c0375220dc1bcb125447144cec2bfee",
+                "reference": "cd7439be5c0375220dc1bcb125447144cec2bfee",
                 "shasum": ""
             },
             "require": {
                 "facebook/difflib": "^1.0.0",
                 "hhvm": "^4.25",
-                "hhvm/hacktest": "^1.0",
+                "hhvm/hacktest": "^1.0|^2.0",
                 "hhvm/hsl": "^4.0"
             },
             "require-dev": {
@@ -125,7 +125,7 @@
                 "MIT"
             ],
             "description": "Unit test helpers for Facebook projects",
-            "time": "2019-11-01T00:43:16+00:00"
+            "time": "2019-11-01T15:49:58+00:00"
         },
         {
             "name": "facebook/hack-codegen",
@@ -266,12 +266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-router-codegen.git",
-                "reference": "5b6293b0721a17f5bef8f6c31ae76868ddf7d286"
+                "reference": "5e27d886eda88700bdffdd76c7a26982a53d7209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/5b6293b0721a17f5bef8f6c31ae76868ddf7d286",
-                "reference": "5b6293b0721a17f5bef8f6c31ae76868ddf7d286",
+                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/5e27d886eda88700bdffdd76c7a26982a53d7209",
+                "reference": "5e27d886eda88700bdffdd76c7a26982a53d7209",
                 "shasum": ""
             },
             "require": {
@@ -309,7 +309,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-10-31T20:26:40+00:00"
+            "time": "2019-11-01T01:16:09+00:00"
         },
         {
             "name": "facebook/hh-clilib",
@@ -397,12 +397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hacktest.git",
-                "reference": "2c70f92f235ea5bfb4d2d6f99ed83e44484cdcdf"
+                "reference": "298f4e9b9bd76490099d75e2aaeb01315cf2f760"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/2c70f92f235ea5bfb4d2d6f99ed83e44484cdcdf",
-                "reference": "2c70f92f235ea5bfb4d2d6f99ed83e44484cdcdf",
+                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/298f4e9b9bd76490099d75e2aaeb01315cf2f760",
+                "reference": "298f4e9b9bd76490099d75e2aaeb01315cf2f760",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -431,7 +431,7 @@
                 "MIT"
             ],
             "description": "The Hack Test Library",
-            "time": "2019-10-25T16:00:51+00:00"
+            "time": "2019-11-01T15:48:40+00:00"
         },
         {
             "name": "hhvm/hhast",
@@ -570,12 +570,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl-experimental.git",
-                "reference": "a379bc1435c6d3689ccf64fe8d2088b9d1872256"
+                "reference": "5bed5a55cf453386154d187fcf13eae24f056522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl-experimental/zipball/a379bc1435c6d3689ccf64fe8d2088b9d1872256",
-                "reference": "a379bc1435c6d3689ccf64fe8d2088b9d1872256",
+                "url": "https://api.github.com/repos/hhvm/hsl-experimental/zipball/5bed5a55cf453386154d187fcf13eae24f056522",
+                "reference": "5bed5a55cf453386154d187fcf13eae24f056522",
                 "shasum": ""
             },
             "require": {
@@ -598,7 +598,7 @@
                 "MIT"
             ],
             "description": "The Hack Standard Library - Experimental Additions",
-            "time": "2019-10-31T19:28:45+00:00"
+            "time": "2019-11-01T16:23:54+00:00"
         },
         {
             "name": "hhvm/type-assert",
