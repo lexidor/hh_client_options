@@ -22,29 +22,28 @@ disable_unset_class_const = true
 check_attribute_locations = true
 disallow_func_ptrs_in_constants = true
 
+;-------------------------------------------;
+; Settings that can be enabled after date X ;
+;-------------------------------------------;
+
+; 31/10/2019
+disallow_silence = true
+; 31/10/2019
+disallow_scrutinee_case_value_type_mismatch = true
+; 31/10/2019
+disable_lval_as_an_expression = true
+; 31/10/2019
+new_inference_lambda = true
+; 31/10/2019
+disallow_array_literal = true
+
 ;--------------------------------------------;
 ; Settings that would work after pending PRs ;
 ;--------------------------------------------;
 
-; 31/10/2019
-disallow_silence = true
-
-; 31/10/2019
-disallow_scrutinee_case_value_type_mismatch = true
-
-; 31/10/2019
-disable_lval_as_an_expression = true
-
-; 31/10/2019
-new_inference_lambda = true
-
-; 31/10/2019
-disallow_array_literal = true
-
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
-
 
 ;------------------;
 ; Failing settings ;
