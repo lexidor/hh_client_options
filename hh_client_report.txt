@@ -1,11 +1,1 @@
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-router/src/router/PrefixMatchingResolver.php
- 66 |       $matches = [];
-    |                  ^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-router/src/router/SimpleRegexpResolver.php
- 36 |       $matches = [];
-    |                  ^^
-
-2 errors found.
+No errors!
