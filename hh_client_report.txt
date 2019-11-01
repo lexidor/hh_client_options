@@ -1,54 +1,4 @@
 Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/CodegenClassish.hack
-383 |     $doc_block_parts = \array_filter(array($this->docBlock, $generated_from));
-    |                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/CodegenFile.hack
-466 |     $all_content = array();
-    |                    ^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/HackfmtFormatter.hack
- 24 |     $output = array();
-    |               ^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/PartiallyGeneratedCode.hack
- 58 |     $merged = array();
-    |               ^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/PartiallyGeneratedCode.hack
-113 |     $generated = array();
-    |                  ^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/PartiallyGeneratedCode.hack
-149 |     $chunk = array();
-    |              ^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/PartiallyGeneratedCode.hack
-154 |         $chunk = array($line);
-    |                  ^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/hack-codegen/src/PartiallyGeneratedCode.hack
-171 |         $chunk = array();
-    |                  ^^^^^^^
-
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/facebook/hack-codegen/src/_Private/Filesystem.hack
- 34 |     $data = @\file_get_contents($path);
-    |             ^
-
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/facebook/hack-codegen/src/_Private/Filesystem.hack
- 43 |     $res = @\file_put_contents($path, $data);
-    |            ^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
    --> vendor/facebook/hack-router/src/router/PrefixMatchingResolver.php
  66 |       $matches = [];
     |                  ^^
@@ -58,14 +8,4 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
  36 |       $matches = [];
     |                  ^^
 
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack
- 27 |     $out = [];
-    |            ^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack
- 42 |     $out = [];
-    |            ^^
-
-14 errors found.
+2 errors found.

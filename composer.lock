@@ -101,17 +101,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/fbexpect.git",
-                "reference": "16b10176d1ae3e8ab9deb48007324b13c13d93a4"
+                "reference": "f6925596ac8092995613b801571f5addc9da8c58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/16b10176d1ae3e8ab9deb48007324b13c13d93a4",
-                "reference": "16b10176d1ae3e8ab9deb48007324b13c13d93a4",
+                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/f6925596ac8092995613b801571f5addc9da8c58",
+                "reference": "f6925596ac8092995613b801571f5addc9da8c58",
                 "shasum": ""
             },
             "require": {
                 "facebook/difflib": "^1.0.0",
-                "hhvm": "^4.13",
+                "hhvm": "^4.25",
                 "hhvm/hacktest": "^1.0",
                 "hhvm/hsl": "^4.0"
             },
@@ -125,24 +125,24 @@
                 "MIT"
             ],
             "description": "Unit test helpers for Facebook projects",
-            "time": "2019-10-31T20:29:41+00:00"
+            "time": "2019-11-01T00:43:16+00:00"
         },
         {
             "name": "facebook/hack-codegen",
-            "version": "v4.3.7",
+            "version": "v4.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-codegen.git",
-                "reference": "294dce6bed3654b489e2e6818bd79c26827ab9f1"
+                "reference": "df42dc9fe2bb6bf15ffb482637238d8378a7e4a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-codegen/zipball/294dce6bed3654b489e2e6818bd79c26827ab9f1",
-                "reference": "294dce6bed3654b489e2e6818bd79c26827ab9f1",
+                "url": "https://api.github.com/repos/hhvm/hack-codegen/zipball/df42dc9fe2bb6bf15ffb482637238d8378a7e4a7",
+                "reference": "df42dc9fe2bb6bf15ffb482637238d8378a7e4a7",
                 "shasum": ""
             },
             "require": {
-                "hhvm": "^4.13.0",
+                "hhvm": "^4.25",
                 "hhvm/hhvm-autoload": "^2.0",
                 "hhvm/hsl": "^4.0"
             },
@@ -186,7 +186,7 @@
                 "code generation",
                 "hack"
             ],
-            "time": "2019-10-24T22:07:46+00:00"
+            "time": "2019-10-31T20:25:15+00:00"
         },
         {
             "name": "facebook/hack-http-request-response-interfaces",
@@ -606,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/type-assert.git",
-                "reference": "4f87cb8c141ef29ad5d77a069f17caba349d1bb9"
+                "reference": "d2d7b190df118461ab6c767ac41280aac1a2f501"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/4f87cb8c141ef29ad5d77a069f17caba349d1bb9",
-                "reference": "4f87cb8c141ef29ad5d77a069f17caba349d1bb9",
+                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/d2d7b190df118461ab6c767ac41280aac1a2f501",
+                "reference": "d2d7b190df118461ab6c767ac41280aac1a2f501",
                 "shasum": ""
             },
             "require": {
@@ -639,7 +639,7 @@
                 "TypeAssert",
                 "hack"
             ],
-            "time": "2019-10-25T20:46:53+00:00"
+            "time": "2019-11-01T00:26:30+00:00"
         }
     ],
     "packages-dev": [],
