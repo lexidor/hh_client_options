@@ -33,5 +33,4 @@ new_inference_lambda = true
 safe_array = true
 safe_vector_array = true
 typecheck_xhp_cvars = true
-union_intersection_type_hints = true
 unsafe_rx = false
