@@ -38,12 +38,13 @@ new_inference_lambda = true
 ; Settings that would work after pending PRs ;
 ;--------------------------------------------;
 
+; 2019/11/18
+; disallow_array_literal = true
+
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
 
-; 2019/11/18
-disallow_array_literal = true
 
 ;------------------;
 ; Failing settings ;

@@ -1,6 +1,1 @@
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/nuxed/console/src/Nuxed/Console/Table/AsciiTable.hack
- 73 |     $row = [];
-    |            ^^
-
-1 error found.
+No errors!
