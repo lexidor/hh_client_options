@@ -1,1 +1,81 @@
-No errors!
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Event/CommandEvent.hack
+ 21 |     return $this->commandShouldRun = false;
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Event/CommandEvent.hack
+ 28 |     return $this->commandShouldRun = true;
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Feedback/AbstractFeedback.hack
+303 |       $this->start = (int)(($this->timer = $now) / 1000);
+    |                             ^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Feedback/WaitFeedback.hack
+ 52 |     $index = $this->iteration++ % C\count<string>($this->characterSequence);
+    |              ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack
+ 81 |       if ($output = $this->renderSection($this->arguments)) {
+    |           ^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack
+ 92 |       if ($output = $this->renderSection($this->flags)) {
+    |           ^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack
+103 |       if ($output = $this->renderSection($this->options)) {
+    |           ^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Table/AsciiTable.hack
+107 |     if ($header = $this->buildRow($this->headers)) {
+    |         ^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+ 76 |         return $this->decorated = true;
+    |                ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+ 85 |         return $this->decorated = false;
+    |                ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+ 90 |       return $this->decorated = true;
+    |              ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+ 94 |       return $this->decorated = true;
+    |              ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+ 98 |       return $this->decorated = true;
+    |              ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+102 |       return $this->decorated = true;
+    |              ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+106 |       return $this->decorated = Str\contains_ci(
+    |              ^^^^^^^^^^^^^^^
+
+Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
+   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
+112 |     return $this->decorated = false;
+    |            ^^^^^^^^^^^^^^^
+
+16 errors found.

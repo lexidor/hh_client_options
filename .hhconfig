@@ -25,10 +25,7 @@ disallow_func_ptrs_in_constants = true
 ;-------------------------------------------;
 
 ; 2019/10/31
-; 2019/10/31
 disallow_scrutinee_case_value_type_mismatch = true
-; 2019/10/31
-; disable_lval_as_an_expression = true (Requires fixes to nuxed)
 ; 2019/10/31
 new_inference_lambda = true
 
@@ -47,6 +44,8 @@ new_inference_lambda = true
 ; Setting that I am working on ;
 ;------------------------------;
 
+; 2019/11/19
+disable_lval_as_an_expression = true
 
 ;------------------;
 ; Failing settings ;
