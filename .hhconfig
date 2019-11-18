@@ -16,7 +16,6 @@ disable_partially_abstract_typeconsts = true
 check_xhp_attribute = true
 disallow_invalid_arraykey_constraint = true
 disable_legacy_soft_typehints = true
-; const_default_func_args = true (Requires fixes to nuxed)
 disable_unset_class_const = true
 check_attribute_locations = true
 disallow_func_ptrs_in_constants = true
@@ -45,6 +44,8 @@ new_inference_lambda = true
 ; Setting that I am working on ;
 ;------------------------------;
 
+; 2019/11/18
+const_default_func_args = true
 
 ;------------------;
 ; Failing settings ;
