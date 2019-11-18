@@ -28,19 +28,19 @@ disallow_func_ptrs_in_constants = true
 disallow_scrutinee_case_value_type_mismatch = true
 ; 2019/10/31
 new_inference_lambda = true
-
-;--------------------------------------------;
-; Settings that would work after pending PRs ;
-;--------------------------------------------;
-
 ; 2019/11/18
 disallow_array_literal = true
 ; 2019/11/18
 const_default_func_args = true
 ; 2019/11/19
 disallow_silence = true
+
+;--------------------------------------------;
+; Settings that would work after pending PRs ;
+;--------------------------------------------;
+
 ; 2019/11/19
-disable_lval_as_an_expression = true
+; disable_lval_as_an_expression = true
 
 ;------------------------------;
 ; Setting that I am working on ;
