@@ -34,18 +34,17 @@ new_inference_lambda = true
 ;--------------------------------------------;
 
 ; 2019/11/18
-; disallow_array_literal = true
+disallow_array_literal = true
 ; 2019/11/18
-; const_default_func_args = true
+const_default_func_args = true
 ; 2019/11/19
-; disallow_silence = true
+disallow_silence = true
 ; 2019/11/19
-; disable_lval_as_an_expression = true
+disable_lval_as_an_expression = true
 
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
-
 
 ;------------------;
 ; Failing settings ;
@@ -76,4 +75,4 @@ new_inference_lambda = true
 ; const_static_props = ??
 ; const_attribute = ??
 ; abstract_static_props = ??
-; error_php_lambdas = ??
+; error_php_lambdas = true
