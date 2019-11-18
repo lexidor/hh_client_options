@@ -33,8 +33,6 @@ disallow_scrutinee_case_value_type_mismatch = true
 ; disable_lval_as_an_expression = true (Requires fixes to nuxed)
 ; 2019/10/31
 new_inference_lambda = true
-; 2019/10/31
-; disallow_array_literal = true (Requires fixes to nuxed)
 
 ;--------------------------------------------;
 ; Settings that would work after pending PRs ;
@@ -43,6 +41,9 @@ new_inference_lambda = true
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
+
+; 2019/11/18
+disallow_array_literal = true
 
 ;------------------;
 ; Failing settings ;
