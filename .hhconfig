@@ -40,13 +40,13 @@ new_inference_lambda = true
 ; disallow_array_literal = true
 ; 2019/11/18
 ; const_default_func_args = true
+; 2019/11/19
+; disallow_silence = true
 
 ;------------------------------;
 ; Setting that I am working on ;
 ;------------------------------;
 
-; 2019/11/19
-disallow_silence = true
 
 ;------------------;
 ; Failing settings ;
