@@ -18,16 +18,6 @@ Parsing[1002] Assignments can no longer be used as expressions. Pull the assignm
  52 |     $index = $this->iteration++ % C\count<string>($this->characterSequence);
     |              ^^^^^^^^^^^^^^^
 
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/console/src/Nuxed/Console/Formatter/Formatter.hack
- 40 |     protected Console\Terminal $terminal = new Console\Terminal(),
-    |                                            ^^^^^^^^^^^^^^^^^^^^^
-
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/console/src/Nuxed/Console/Formatter/Style/StyleStack.hack
-  9 |   public function __construct(private IStyle $emptyStyle = new Style()) {}
-    |                                                            ^^^^^^^^^^
-
 Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
    --> vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack
  81 |       if ($output = $this->renderSection($this->arguments)) {
@@ -47,21 +37,6 @@ Parsing[1002] Assignments can no longer be used as expressions. Pull the assignm
    --> vendor/nuxed/console/src/Nuxed/Console/Table/AsciiTable.hack
 107 |     if ($header = $this->buildRow($this->headers)) {
     |         ^^^^^^
-
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
- 19 |     IO\ReadHandle $stdin = IO\request_input(),
-    |                            ^^^^^^^^^^^^^^^^^
-
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
- 20 |     IO\WriteHandle $stdout = IO\request_output(),
-    |                              ^^^^^^^^^^^^^^^^^^
-
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
- 21 |     ?IO\WriteHandle $stderr = IO\request_error(),
-    |                               ^^^^^^^^^^^^^^^^^
 
 Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
    --> vendor/nuxed/console/src/Nuxed/Console/Terminal.hack
@@ -103,29 +78,4 @@ Parsing[1002] Assignments can no longer be used as expressions. Pull the assignm
 112 |     return $this->decorated = false;
     |            ^^^^^^^^^^^^^^^
 
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
-121 |     string $directory = \sys_get_temp_dir(),
-    |                         ^^^^^^^^^^^^^^^^^^
-
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
-389 |     @\symlink($this->path->toString(), $target->toString());
-    |     ^
-
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
-413 |     @\link($this->path->toString(), $link->toString());
-    |     ^
-
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/Folder.hack
-104 |     $ret = @\mkdir($this->path->toString(), $mode, true) as bool;
-    |            ^
-
-Parsing[1002] The error suppression operator @ is not allowed
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/Folder.hack
-191 |     $deleted = @\rmdir($this->path->toString()) as bool;
-    |                ^
-
-26 errors found.
+16 errors found.

@@ -692,12 +692,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/console.git",
-                "reference": "72899ebfff26a230810e433dd2aeb02c88dc8f8a"
+                "reference": "dea7caf274c172dfa94d653d24381d4bf6f1da3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/console/zipball/72899ebfff26a230810e433dd2aeb02c88dc8f8a",
-                "reference": "72899ebfff26a230810e433dd2aeb02c88dc8f8a",
+                "url": "https://api.github.com/repos/nuxed/console/zipball/dea7caf274c172dfa94d653d24381d4bf6f1da3e",
+                "reference": "dea7caf274c172dfa94d653d24381d4bf6f1da3e",
                 "shasum": ""
             },
             "require": {
@@ -728,7 +728,7 @@
                 }
             ],
             "description": "Nuxed Console",
-            "time": "2019-11-17T02:10:59+00:00"
+            "time": "2019-11-18T23:47:11+00:00"
         },
         {
             "name": "nuxed/crypto",
@@ -857,16 +857,16 @@
         },
         {
             "name": "nuxed/filesystem",
-            "version": "v1.2.0",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/filesystem.git",
-                "reference": "df0e56be79dff315173a7aa56140dec8284d9571"
+                "reference": "f349ee91ebd53e14b7d1745b9e2b9a5aaf77b286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/filesystem/zipball/df0e56be79dff315173a7aa56140dec8284d9571",
-                "reference": "df0e56be79dff315173a7aa56140dec8284d9571",
+                "url": "https://api.github.com/repos/nuxed/filesystem/zipball/f349ee91ebd53e14b7d1745b9e2b9a5aaf77b286",
+                "reference": "f349ee91ebd53e14b7d1745b9e2b9a5aaf77b286",
                 "shasum": ""
             },
             "require": {
@@ -896,7 +896,7 @@
                 }
             ],
             "description": "Nuxed Filesystem",
-            "time": "2019-11-17T01:25:59+00:00"
+            "time": "2019-11-18T23:16:13+00:00"
         },
         {
             "name": "nuxed/json",
