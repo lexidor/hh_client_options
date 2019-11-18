@@ -3,6 +3,14 @@
     "description": "Getting the most out of the typechecker",
     "require": {
         "hhvm": "^4.29",
+
+        "hhvm/hacktest": "*",
+        "hhvm/hhast": "*",
+        "hhvm/hhvm-autoload": "*",
+        "hhvm/hsl": "*",
+        "hhvm/hsl-experimental": "*",
+        "hhvm/type-assert": "*",
+
         "facebook/definition-finder": "*",
         "facebook/difflib": "*",
         "facebook/fbexpect": "*",
@@ -12,12 +20,13 @@
         "facebook/hack-router-codegen": "*",
         "facebook/hh-clilib": "*",
         "facebook/xhp-lib": "*",
-        "hhvm/hacktest": "*",
-        "hhvm/hhast": "*",
-        "hhvm/hhvm-autoload": "*",
-        "hhvm/hsl": "*",
-        "hhvm/hsl-experimental": "*",
-        "hhvm/type-assert": "*"
+
+        "nuxed/json": "*",
+        "nuxed/filesystem": "*",
+        "nuxed/crypto": "*",
+        "nuxed/environment": "*",
+        "nuxed/event-dispatcher": "*",
+        "nuxed/console": "*"
     },
     "minimum-stability": "dev"
 }
