@@ -41,6 +41,8 @@ disallow_silence = true
 
 ; 2019/11/19
 ; disable_lval_as_an_expression = true
+; 2019/11/19
+; error_php_lambdas = true
 
 ;------------------------------;
 ; Setting that I am working on ;
@@ -75,4 +77,3 @@ disallow_silence = true
 ; const_static_props = ??
 ; const_attribute = ??
 ; abstract_static_props = ??
-; error_php_lambdas = true
