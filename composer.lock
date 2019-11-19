@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "959984798bf697326fbdaad8afd1c2ac",
+    "content-hash": "6c408b79553a030224ae31eeeb0895e7",
     "packages": [
         {
             "name": "facebook/definition-finder",
@@ -687,6 +687,49 @@
             "time": "2019-03-04T07:50:32+00:00"
         },
         {
+            "name": "nuxed/asset",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/asset.git",
+                "reference": "02fbf39dc650d1a6796d0052724d9aad6a70e786"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/asset/zipball/02fbf39dc650d1a6796d0052724d9aad6a70e786",
+                "reference": "02fbf39dc650d1a6796d0052724d9aad6a70e786",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25",
+                "nuxed/filesystem": "^1.2",
+                "nuxed/json": "^1.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.7",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.25"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/asset/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Asset",
+            "time": "2019-11-19T00:56:24+00:00"
+        },
+        {
             "name": "nuxed/console",
             "version": "dev-master",
             "source": {
@@ -900,7 +943,7 @@
         },
         {
             "name": "nuxed/json",
-            "version": "dev-master",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/json.git",
@@ -947,7 +990,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "hhvm": "^4.29"
+        "hhvm": "^4.32"
     },
     "platform-dev": []
 }
