@@ -2,7 +2,7 @@
     "name": "lexidor/hh_client_options",
     "description": "Getting the most out of the typechecker",
     "require": {
-        "hhvm": "^4.29",
+        "hhvm": "^4.32",
 
         "hhvm/hacktest": "*",
         "hhvm/hhast": "*",
