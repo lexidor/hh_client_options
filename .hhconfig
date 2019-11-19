@@ -4,6 +4,8 @@ ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+"]
 ; ; Known good settings ;
 ; ;---------------------;
 
+ignored_fixme_codes =
+disallowed_decl_fixmes =
 disallow_toplevel_requires = true
 disable_static_closures = true
 disable_halt_compiler = true
