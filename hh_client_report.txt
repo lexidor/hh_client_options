@@ -1,3 +1,13 @@
+Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
+   --> vendor/facebook/fbexpect/src/utils.hack
+ 23 |     /* HH_IGNORE_ERROR[4007] sketchy array cast */
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
+   --> vendor/facebook/fbexpect/src/utils.hack
+ 24 |     return (array) $value;
+    |            ^^^^^^^^^^^^^^
+
 NastCheck[3084] PHP style anonymous functions are not allowed.
    --> vendor/facebook/hack-router-codegen/src/Codegen.hack
 230 |       function (classname<HasUriPattern> $class) {
@@ -12,10 +22,50 @@ Typing[4053] No method 'asyncRender' in :x:element (did you mean 'render'?)
  42 |       $composed = /* HH_FIXME[4112] protected */ await $this->asyncRender();
     |                                                               ^^^^^^^^^^^
 
+Typing[4009] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4009
+   --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
+113 |             /* HH_IGNORE_ERROR[4009] this is unsafe */
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4009] This call is invalid, this is not a function, it is a string
+   --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
+114 |             $tuples = $provider();
+    |                       ^^^^^^^^^^^
+
+Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
+   --> vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack
+ 60 |       /* HH_FIXME[4007] need a PHP array here for now */
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
+   --> vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack
+ 61 |       (array) $paths,
+    |       ^^^^^^^^^^^^^^
+
 NastCheck[3084] PHP style anonymous functions are not allowed.
    --> vendor/hhvm/hhast/src/__Private/LSPImpl/Server.hack
  27 |       function(int $severity, string $message, string $file, int $line): bool {
     |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4223] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4223
+   --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
+373 |     /* HH_IGNORE_ERROR[4223] Only allowed in partial mode. */
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4223] Cannot use ... without a parameter name in strict mode. Please add a parameter name.
+   --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
+374 |     (...) ==> null;
+    |     ^^^^^^^^^^^^^^
+
+Typing[4033] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4033
+   --> vendor/hhvm/hhvm-autoload/src/Exception.hack
+ 16 |     /* HH_FIXME[4033] expected type constraint */
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4033] Was expecting a type hint on this variadic parameter
+   --> vendor/hhvm/hhvm-autoload/src/Exception.hack
+ 17 |     ...$args
+    |        ^^^^^
 
 NastCheck[3084] PHP style anonymous functions are not allowed.
    --> vendor/hhvm/hhvm-autoload/src/Writer.hack
@@ -32,9 +82,49 @@ NastCheck[3084] PHP style anonymous functions are not allowed.
  39 |       function(string $path): bool {
     |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
+   --> vendor/hhvm/hsl/src/private.php
+ 63 |     : /* HH_IGNORE_ERROR[4007] */ (array) $x; // @oss-enable
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
+   --> vendor/hhvm/hsl/src/private.php
+ 63 |     : /* HH_IGNORE_ERROR[4007] */ (array) $x; // @oss-enable
+    |                                   ^^^^^^^^^^
+
+Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
+   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
+ 45 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
+   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
+ 45 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
+    |                                                     ^^^^^^^^^
+
+Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
+   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
+ 66 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
+   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
+ 66 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
+    |                                                     ^^^^^^^^^
+
+Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
+   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/TupleSpec.hack
+ 82 |     /* HH_IGNORE_ERROR[4007] */
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
+   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/TupleSpec.hack
+ 83 |     return (array)$tuple;
+    |            ^^^^^^^^^^^^^
+
 NastCheck[3084] PHP style anonymous functions are not allowed.
    --> vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack
  43 |       function(): \Generator<int, int, void> {
     |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-7 errors found.
+25 errors found.
