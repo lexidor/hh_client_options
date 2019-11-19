@@ -28,21 +28,6 @@ NastCheck[3084] PHP style anonymous functions are not allowed.
  43 |       function(): \Generator<int, int, void> {
     |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/asset/src/Nuxed/Asset/Package.hack
- 11 |     private Context\IContext $context = new Context\NullContext(),
-    |                                         ^^^^^^^^^^^^^^^^^^^^^^^^
-
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/asset/src/Nuxed/Asset/PathPackage.hack
- 24 |     IContext $context = new Context\NullContext(),
-    |                         ^^^^^^^^^^^^^^^^^^^^^^^^
-
-Parsing[1002] Invalid expression in constant initializer
-   --> vendor/nuxed/asset/src/Nuxed/Asset/UrlPackage.hack
- 29 |     Context\IContext $context = new Context\NullContext(),
-    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^
-
 Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
    --> vendor/nuxed/console/src/Nuxed/Console/Event/CommandEvent.hack
  21 |     return $this->commandShouldRun = false;
@@ -123,4 +108,4 @@ Parsing[1002] Assignments can no longer be used as expressions. Pull the assignm
 112 |     return $this->decorated = false;
     |            ^^^^^^^^^^^^^^^
 
-25 errors found.
+22 errors found.

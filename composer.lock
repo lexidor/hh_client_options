@@ -692,12 +692,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/asset.git",
-                "reference": "02fbf39dc650d1a6796d0052724d9aad6a70e786"
+                "reference": "771ff22d967305abd09d05cf7c67824cc55b1555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/asset/zipball/02fbf39dc650d1a6796d0052724d9aad6a70e786",
-                "reference": "02fbf39dc650d1a6796d0052724d9aad6a70e786",
+                "url": "https://api.github.com/repos/nuxed/asset/zipball/771ff22d967305abd09d05cf7c67824cc55b1555",
+                "reference": "771ff22d967305abd09d05cf7c67824cc55b1555",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +727,7 @@
                 }
             ],
             "description": "Nuxed Asset",
-            "time": "2019-11-19T00:56:24+00:00"
+            "time": "2019-11-19T13:14:37+00:00"
         },
         {
             "name": "nuxed/console",
