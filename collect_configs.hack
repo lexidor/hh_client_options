@@ -27,7 +27,7 @@ namespace Lexidor\HHClientOptions {
       |> Keyset\sort($$)
       |> Vec\map($$, $to_pair)
       |> Vec\filter($$, $is_applicable_option)
-      |> Vec\unique_by($$, $option ==> $option[0])
+      |> Vec\unique_by($$, $option ==> $option[0].'='.$option[1])
       |> $assert_no_contradition($$)
       |> Vec\map($$, $format)
       |> Str\join($$, \PHP_EOL);
@@ -92,7 +92,7 @@ namespace Lexidor\HHClientOptions {
         $errors = Vec\filter($options, $opt ==> $opt[0] === $contradiction);
 
         throw new \InvalidArgumentException(Str\format(
-          'Setting %s has been found to have the values %s and %s',
+          'Setting %s has been found to have the values "%s" and "%s"',
           $contradiction,
           $errors[0][1],
           $errors[1][1],
