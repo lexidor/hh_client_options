@@ -21,12 +21,13 @@
         "facebook/hh-clilib": "*",
         "facebook/xhp-lib": "*",
 
-        "nuxed/json": "*",
-        "nuxed/filesystem": "*",
+        "nuxed/asset": "*",
+        "nuxed/console": "*",
         "nuxed/crypto": "*",
         "nuxed/environment": "*",
         "nuxed/event-dispatcher": "*",
-        "nuxed/console": "*"
+        "nuxed/filesystem": "*",
+        "nuxed/json": "*"
     },
     "minimum-stability": "dev"
 }
