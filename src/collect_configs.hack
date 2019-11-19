@@ -5,7 +5,7 @@ namespace Lexidor\HHClientOptions {
 
   <<__EntryPoint>>
   function main_collect_configs(): void {
-    require_once __DIR__.'/vendor/autoload.hack';
+    require_once __DIR__.'/../vendor/autoload.hack';
     \Facebook\AutoloadMap\initialize();
 
     $is_comment = fun('\Lexidor\HHClientOptions\_Private\is_comment');
