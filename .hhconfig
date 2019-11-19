@@ -40,9 +40,9 @@ disallow_silence = true
 ;--------------------------------------------;
 
 ; 2019/11/19
-; disable_lval_as_an_expression = true
+disable_lval_as_an_expression = true
 ; 2019/11/19
-; error_php_lambdas = true
+error_php_lambdas = true
 
 ;------------------------------;
 ; Setting that I am working on ;
