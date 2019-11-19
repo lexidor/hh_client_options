@@ -266,12 +266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-router-codegen.git",
-                "reference": "925eb2bc6c2adbccc9712d3e015ec3664f95074d"
+                "reference": "647979ba521e72f0e6b128b42f0970b2d873eca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/925eb2bc6c2adbccc9712d3e015ec3664f95074d",
-                "reference": "925eb2bc6c2adbccc9712d3e015ec3664f95074d",
+                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/647979ba521e72f0e6b128b42f0970b2d873eca3",
+                "reference": "647979ba521e72f0e6b128b42f0970b2d873eca3",
                 "shasum": ""
             },
             "require": {
@@ -309,7 +309,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-11-12T17:15:29+00:00"
+            "time": "2019-11-19T22:31:22+00:00"
         },
         {
             "name": "facebook/hh-clilib",
@@ -735,12 +735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/console.git",
-                "reference": "dea7caf274c172dfa94d653d24381d4bf6f1da3e"
+                "reference": "c3bcdabc738683decb5eb0a66d423c699b2ad5e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/console/zipball/dea7caf274c172dfa94d653d24381d4bf6f1da3e",
-                "reference": "dea7caf274c172dfa94d653d24381d4bf6f1da3e",
+                "url": "https://api.github.com/repos/nuxed/console/zipball/c3bcdabc738683decb5eb0a66d423c699b2ad5e0",
+                "reference": "c3bcdabc738683decb5eb0a66d423c699b2ad5e0",
                 "shasum": ""
             },
             "require": {
@@ -771,7 +771,7 @@
                 }
             ],
             "description": "Nuxed Console",
-            "time": "2019-11-18T23:47:11+00:00"
+            "time": "2019-11-19T22:28:53+00:00"
         },
         {
             "name": "nuxed/crypto",
