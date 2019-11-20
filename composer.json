@@ -27,6 +27,7 @@
         "nuxed/environment": "*",
         "nuxed/event-dispatcher": "*",
         "nuxed/filesystem": "*",
+        "nuxed/inflector": "*",
         "nuxed/json": "*"
     },
     "minimum-stability": "dev"
