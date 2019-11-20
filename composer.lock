@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c408b79553a030224ae31eeeb0895e7",
+    "content-hash": "e7c3f5032b50df392bef8565dcf31c47",
     "packages": [
         {
             "name": "facebook/definition-finder",
@@ -266,12 +266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-router-codegen.git",
-                "reference": "647979ba521e72f0e6b128b42f0970b2d873eca3"
+                "reference": "941b0b1d16c390ad32338788fb9aff42b712ef52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/647979ba521e72f0e6b128b42f0970b2d873eca3",
-                "reference": "647979ba521e72f0e6b128b42f0970b2d873eca3",
+                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/941b0b1d16c390ad32338788fb9aff42b712ef52",
+                "reference": "941b0b1d16c390ad32338788fb9aff42b712ef52",
                 "shasum": ""
             },
             "require": {
@@ -309,7 +309,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-11-19T22:31:22+00:00"
+            "time": "2019-11-19T23:01:51+00:00"
         },
         {
             "name": "facebook/hh-clilib",
@@ -606,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/type-assert.git",
-                "reference": "ee49be82b3dfb8cdcf4628d6781e985389d8638c"
+                "reference": "d453d5fea047abaff1bc523b1293e95c90d1bd15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/ee49be82b3dfb8cdcf4628d6781e985389d8638c",
-                "reference": "ee49be82b3dfb8cdcf4628d6781e985389d8638c",
+                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/d453d5fea047abaff1bc523b1293e95c90d1bd15",
+                "reference": "d453d5fea047abaff1bc523b1293e95c90d1bd15",
                 "shasum": ""
             },
             "require": {
@@ -639,7 +639,7 @@
                 "TypeAssert",
                 "hack"
             ],
-            "time": "2019-11-12T17:15:25+00:00"
+            "time": "2019-11-19T22:54:46+00:00"
         },
         {
             "name": "his/container",
@@ -772,6 +772,46 @@
             ],
             "description": "Nuxed Console",
             "time": "2019-11-19T22:28:53+00:00"
+        },
+        {
+            "name": "nuxed/contract",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/contract.git",
+                "reference": "7df89197b953c40c39827b66b8379fcdebed130b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/contract/zipball/7df89197b953c40c39827b66b8379fcdebed130b",
+                "reference": "7df89197b953c40c39827b66b8379fcdebed130b",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25",
+                "hhvm/hsl-experimental": "^4.31"
+            },
+            "require-dev": {
+                "hhvm/hhast": "^4.25"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/contract/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Contract",
+            "time": "2019-11-20T19:15:02+00:00"
         },
         {
             "name": "nuxed/crypto",
@@ -940,6 +980,47 @@
             ],
             "description": "Nuxed Filesystem",
             "time": "2019-11-18T23:16:13+00:00"
+        },
+        {
+            "name": "nuxed/inflector",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/inflector.git",
+                "reference": "c5138fd13b7709fe18c01679b57e05beaddf8585"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/inflector/zipball/c5138fd13b7709fe18c01679b57e05beaddf8585",
+                "reference": "c5138fd13b7709fe18c01679b57e05beaddf8585",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.7",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.25"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/inflector/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Inflector",
+            "time": "2019-11-20T03:37:59+00:00"
         },
         {
             "name": "nuxed/json",
