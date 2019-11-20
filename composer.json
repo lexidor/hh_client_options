@@ -23,6 +23,7 @@
 
         "nuxed/asset": "*",
         "nuxed/console": "*",
+        "nuxed/contract": "*",
         "nuxed/crypto": "*",
         "nuxed/environment": "*",
         "nuxed/event-dispatcher": "*",
