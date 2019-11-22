@@ -4,8 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7c3f5032b50df392bef8565dcf31c47",
+    "content-hash": "985866c7ec769103ec248081e4b5a78d",
     "packages": [
+        {
+            "name": "azjezz/http-normalizer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/azjezz/http-normalizer.git",
+                "reference": "3b71b897440cd8ba20a29080a7178c05c9d69f91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/azjezz/http-normalizer/zipball/3b71b897440cd8ba20a29080a7178c05c9d69f91",
+                "reference": "3b71b897440cd8ba20a29080a7178c05c9d69f91",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hhvm-autoload": "^2.0",
+                "hhvm/hsl": "^4.25",
+                "hhvm/type-assert": "^3.6"
+            },
+            "require-dev": {
+                "hhvm/hhast": "^4.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                }
+            ],
+            "description": "Normalize Http super globals",
+            "time": "2019-11-22T17:28:06+00:00"
+        },
         {
             "name": "facebook/definition-finder",
             "version": "dev-master",
