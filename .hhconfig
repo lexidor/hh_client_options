@@ -35,13 +35,13 @@ disallow_array_literal = true
 const_default_func_args = true
 ; 2019/11/19
 disallow_silence = true
+; 2019/11/22
+disable_lval_as_an_expression = true
 
 ;--------------------------------------------;
 ; Settings that would work after pending PRs ;
 ;--------------------------------------------;
 
-; 2019/11/19
-disable_lval_as_an_expression = true
 ; 2019/11/19
 error_php_lambdas = true
 
