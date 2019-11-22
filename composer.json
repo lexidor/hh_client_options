@@ -29,7 +29,9 @@
         "nuxed/event-dispatcher": "*",
         "nuxed/filesystem": "*",
         "nuxed/inflector": "*",
-        "nuxed/json": "*"
+        "nuxed/json": "*",
+
+        "azjezz/http-normalizer": "*"
     },
     "minimum-stability": "dev"
 }
