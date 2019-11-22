@@ -13,15 +13,6 @@ NastCheck[3084] PHP style anonymous functions are not allowed.
 230 |       function (classname<HasUriPattern> $class) {
     |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Typing[4053] No method 'asyncRender' in :x:element (did you mean 'render'?)
-   --> vendor/facebook/xhp-lib/src/core/Element.php
- 18 | abstract class :x:element extends :x:composable-element implements XHPRoot {
-    |                ^^^^^^^^^^ Declaration of :x:element is here
- 41 |     if ($this is XHPAwaitable) {
-    |         ^^^^^ This is why I think it is an object of type :x:element
- 42 |       $composed = /* HH_FIXME[4112] protected */ await $this->asyncRender();
-    |                                                               ^^^^^^^^^^^
-
 Typing[4009] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4009
    --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
 113 |             /* HH_IGNORE_ERROR[4009] this is unsafe */
@@ -42,11 +33,6 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
  61 |       (array) $paths,
     |       ^^^^^^^^^^^^^^
 
-NastCheck[3084] PHP style anonymous functions are not allowed.
-   --> vendor/hhvm/hhast/src/__Private/LSPImpl/Server.hack
- 27 |       function(int $severity, string $message, string $file, int $line): bool {
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Typing[4223] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4223
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
 373 |     /* HH_IGNORE_ERROR[4223] Only allowed in partial mode. */
@@ -56,31 +42,6 @@ Typing[4223] Cannot use ... without a parameter name in strict mode. Please add 
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
 374 |     (...) ==> null;
     |     ^^^^^^^^^^^^^^
-
-Typing[4033] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4033
-   --> vendor/hhvm/hhvm-autoload/src/Exception.hack
- 16 |     /* HH_FIXME[4033] expected type constraint */
-    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4033] Was expecting a type hint on this variadic parameter
-   --> vendor/hhvm/hhvm-autoload/src/Exception.hack
- 17 |     ...$args
-    |        ^^^^^
-
-NastCheck[3084] PHP style anonymous functions are not allowed.
-   --> vendor/hhvm/hhvm-autoload/src/Writer.hack
-137 |       function($sub_map): mixed {
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-NastCheck[3084] PHP style anonymous functions are not allowed.
-   --> vendor/hhvm/hhvm-autoload/src/filters/BasePSRFilter.hack
- 54 |       function(string $class_name, string $file): bool {
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-NastCheck[3084] PHP style anonymous functions are not allowed.
-   --> vendor/hhvm/hhvm-autoload/src/filters/PathExclusionFilter.hack
- 39 |       function(string $path): bool {
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
    --> vendor/hhvm/hsl/src/private.php
@@ -122,9 +83,4 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
  83 |     return (array)$tuple;
     |            ^^^^^^^^^^^^^
 
-NastCheck[3084] PHP style anonymous functions are not allowed.
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack
- 43 |       function(): \Generator<int, int, void> {
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-25 errors found.
+17 errors found.

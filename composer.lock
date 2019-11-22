@@ -266,12 +266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-router-codegen.git",
-                "reference": "941b0b1d16c390ad32338788fb9aff42b712ef52"
+                "reference": "072f905fffc9b4145662552841ea8a5b8e31f843"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/941b0b1d16c390ad32338788fb9aff42b712ef52",
-                "reference": "941b0b1d16c390ad32338788fb9aff42b712ef52",
+                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/072f905fffc9b4145662552841ea8a5b8e31f843",
+                "reference": "072f905fffc9b4145662552841ea8a5b8e31f843",
                 "shasum": ""
             },
             "require": {
@@ -309,7 +309,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-11-19T23:01:51+00:00"
+            "time": "2019-11-22T01:07:15+00:00"
         },
         {
             "name": "facebook/hh-clilib",
@@ -354,12 +354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/xhp-lib.git",
-                "reference": "f46e7cefd9fa1b9a0bb70ef55fc2d514a071c54c"
+                "reference": "43e2e83f09b8bb1df5559eacbe1d3b3b42f0ba10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/xhp-lib/zipball/f46e7cefd9fa1b9a0bb70ef55fc2d514a071c54c",
-                "reference": "f46e7cefd9fa1b9a0bb70ef55fc2d514a071c54c",
+                "url": "https://api.github.com/repos/hhvm/xhp-lib/zipball/43e2e83f09b8bb1df5559eacbe1d3b3b42f0ba10",
+                "reference": "43e2e83f09b8bb1df5559eacbe1d3b3b42f0ba10",
                 "shasum": ""
             },
             "require": {
@@ -389,7 +389,7 @@
                 "hhvm",
                 "xhp"
             ],
-            "time": "2019-11-18T20:05:07+00:00"
+            "time": "2019-11-21T22:09:31+00:00"
         },
         {
             "name": "hhvm/hacktest",
@@ -439,12 +439,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhast.git",
-                "reference": "4f5046feed75ed8a924ba7fe42d13a84ace588f2"
+                "reference": "1de120fa169fc19a8a3d6a4055706b2760d3717f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhast/zipball/4f5046feed75ed8a924ba7fe42d13a84ace588f2",
-                "reference": "4f5046feed75ed8a924ba7fe42d13a84ace588f2",
+                "url": "https://api.github.com/repos/hhvm/hhast/zipball/1de120fa169fc19a8a3d6a4055706b2760d3717f",
+                "reference": "1de120fa169fc19a8a3d6a4055706b2760d3717f",
                 "shasum": ""
             },
             "require": {
@@ -479,7 +479,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-11-12T23:14:36+00:00"
+            "time": "2019-11-22T01:22:38+00:00"
         },
         {
             "name": "hhvm/hhvm-autoload",
@@ -487,12 +487,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhvm-autoload.git",
-                "reference": "66e0f1e9650f9c3a6d1ad20adf6bfe4706362a94"
+                "reference": "2506257ca18034d01f7cfe424ae2cef91fe29881"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhvm-autoload/zipball/66e0f1e9650f9c3a6d1ad20adf6bfe4706362a94",
-                "reference": "66e0f1e9650f9c3a6d1ad20adf6bfe4706362a94",
+                "url": "https://api.github.com/repos/hhvm/hhvm-autoload/zipball/2506257ca18034d01f7cfe424ae2cef91fe29881",
+                "reference": "2506257ca18034d01f7cfe424ae2cef91fe29881",
                 "shasum": ""
             },
             "require": {
@@ -526,7 +526,7 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-11-12T17:21:42+00:00"
+            "time": "2019-11-22T01:04:58+00:00"
         },
         {
             "name": "hhvm/hsl",
@@ -534,12 +534,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl.git",
-                "reference": "f588e844680eb424c872950f77c9dbbed8f691ba"
+                "reference": "2fdfddeaadda79723b4a7df812be24c9946d0d10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl/zipball/f588e844680eb424c872950f77c9dbbed8f691ba",
-                "reference": "f588e844680eb424c872950f77c9dbbed8f691ba",
+                "url": "https://api.github.com/repos/hhvm/hsl/zipball/2fdfddeaadda79723b4a7df812be24c9946d0d10",
+                "reference": "2fdfddeaadda79723b4a7df812be24c9946d0d10",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,7 @@
                 "MIT"
             ],
             "description": "The Hack Standard Library",
-            "time": "2019-11-18T18:33:19+00:00"
+            "time": "2019-11-21T00:17:22+00:00"
         },
         {
             "name": "hhvm/hsl-experimental",
@@ -606,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/type-assert.git",
-                "reference": "d453d5fea047abaff1bc523b1293e95c90d1bd15"
+                "reference": "9847869675beb609b1627ec3927c8fd3fe8d5677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/d453d5fea047abaff1bc523b1293e95c90d1bd15",
-                "reference": "d453d5fea047abaff1bc523b1293e95c90d1bd15",
+                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/9847869675beb609b1627ec3927c8fd3fe8d5677",
+                "reference": "9847869675beb609b1627ec3927c8fd3fe8d5677",
                 "shasum": ""
             },
             "require": {
@@ -639,7 +639,7 @@
                 "TypeAssert",
                 "hack"
             ],
-            "time": "2019-11-19T22:54:46+00:00"
+            "time": "2019-11-22T01:15:49+00:00"
         },
         {
             "name": "his/container",
@@ -779,12 +779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/contract.git",
-                "reference": "7df89197b953c40c39827b66b8379fcdebed130b"
+                "reference": "79c92cd944a5a1541b68c860cdb3e1e6324f15a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/contract/zipball/7df89197b953c40c39827b66b8379fcdebed130b",
-                "reference": "7df89197b953c40c39827b66b8379fcdebed130b",
+                "url": "https://api.github.com/repos/nuxed/contract/zipball/79c92cd944a5a1541b68c860cdb3e1e6324f15a3",
+                "reference": "79c92cd944a5a1541b68c860cdb3e1e6324f15a3",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +811,7 @@
                 }
             ],
             "description": "Nuxed Contract",
-            "time": "2019-11-20T19:15:02+00:00"
+            "time": "2019-11-22T01:11:11+00:00"
         },
         {
             "name": "nuxed/crypto",
