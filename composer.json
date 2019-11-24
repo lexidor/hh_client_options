@@ -28,6 +28,7 @@
         "nuxed/environment": "*",
         "nuxed/event-dispatcher": "*",
         "nuxed/filesystem": "*",
+        "nuxed/http-message": "*",
         "nuxed/inflector": "*",
         "nuxed/json": "*",
 
