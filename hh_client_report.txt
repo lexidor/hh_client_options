@@ -44,16 +44,6 @@ Typing[4223] Cannot use ... without a parameter name in strict mode. Please add 
     |     ^^^^^^^^^^^^^^
 
 Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
-   --> vendor/hhvm/hsl/src/private.php
- 63 |     : /* HH_IGNORE_ERROR[4007] */ (array) $x; // @oss-enable
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
-   --> vendor/hhvm/hsl/src/private.php
- 63 |     : /* HH_IGNORE_ERROR[4007] */ (array) $x; // @oss-enable
-    |                                   ^^^^^^^^^^
-
-Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
    --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
  45 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
     |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -83,4 +73,4 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
  83 |     return (array)$tuple;
     |            ^^^^^^^^^^^^^
 
-17 errors found.
+15 errors found.

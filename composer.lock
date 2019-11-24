@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "985866c7ec769103ec248081e4b5a78d",
+    "content-hash": "2224943492c319139dec3ee1d053a270",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/azjezz/http-normalizer.git",
@@ -102,12 +102,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/difflib.git",
-                "reference": "5c95206512b147b53b5e9975b561b615d7fe8f24"
+                "reference": "f486259e3a04cc4d274fedb48817cfbd6ecf15f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/difflib/zipball/5c95206512b147b53b5e9975b561b615d7fe8f24",
-                "reference": "5c95206512b147b53b5e9975b561b615d7fe8f24",
+                "url": "https://api.github.com/repos/hhvm/difflib/zipball/f486259e3a04cc4d274fedb48817cfbd6ecf15f1",
+                "reference": "f486259e3a04cc4d274fedb48817cfbd6ecf15f1",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-11-12T19:09:04+00:00"
+            "time": "2019-11-22T22:09:22+00:00"
         },
         {
             "name": "facebook/fbexpect",
@@ -253,16 +253,16 @@
         },
         {
             "name": "facebook/hack-router",
-            "version": "v0.19.4",
+            "version": "v0.19.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-router.git",
-                "reference": "2b723b39682b0531914772c600d1442dc1320d2f"
+                "reference": "cb83d4026c4f8c8fb877aa8ba40465a99b624534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-router/zipball/2b723b39682b0531914772c600d1442dc1320d2f",
-                "reference": "2b723b39682b0531914772c600d1442dc1320d2f",
+                "url": "https://api.github.com/repos/hhvm/hack-router/zipball/cb83d4026c4f8c8fb877aa8ba40465a99b624534",
+                "reference": "cb83d4026c4f8c8fb877aa8ba40465a99b624534",
                 "shasum": ""
             },
             "require": {
@@ -272,7 +272,7 @@
             },
             "require-dev": {
                 "facebook/fbexpect": "^2.0",
-                "hhvm/hacktest": "^1.1",
+                "hhvm/hacktest": "^2.0",
                 "hhvm/hhast": "^4.0",
                 "hhvm/hhvm-autoload": "^2.0.8",
                 "usox/hackttp": "^0.3"
@@ -295,7 +295,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-10-31T20:25:49+00:00"
+            "time": "2019-11-22T17:00:45+00:00"
         },
         {
             "name": "facebook/hack-router-codegen",
@@ -571,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl.git",
-                "reference": "2fdfddeaadda79723b4a7df812be24c9946d0d10"
+                "reference": "ef58f377c7e0ab8d1640d9230c9551b6b7ef78f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl/zipball/2fdfddeaadda79723b4a7df812be24c9946d0d10",
-                "reference": "2fdfddeaadda79723b4a7df812be24c9946d0d10",
+                "url": "https://api.github.com/repos/hhvm/hsl/zipball/ef58f377c7e0ab8d1640d9230c9551b6b7ef78f1",
+                "reference": "ef58f377c7e0ab8d1640d9230c9551b6b7ef78f1",
                 "shasum": ""
             },
             "require": {
@@ -599,7 +599,7 @@
                 "MIT"
             ],
             "description": "The Hack Standard Library",
-            "time": "2019-11-21T00:17:22+00:00"
+            "time": "2019-11-22T18:34:17+00:00"
         },
         {
             "name": "hhvm/hsl-experimental",
@@ -812,16 +812,16 @@
         },
         {
             "name": "nuxed/contract",
-            "version": "dev-master",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/contract.git",
-                "reference": "79c92cd944a5a1541b68c860cdb3e1e6324f15a3"
+                "reference": "e7885144a0c6ede59e6a8b88cc4c9ae6a4c792f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/contract/zipball/79c92cd944a5a1541b68c860cdb3e1e6324f15a3",
-                "reference": "79c92cd944a5a1541b68c860cdb3e1e6324f15a3",
+                "url": "https://api.github.com/repos/nuxed/contract/zipball/e7885144a0c6ede59e6a8b88cc4c9ae6a4c792f2",
+                "reference": "e7885144a0c6ede59e6a8b88cc4c9ae6a4c792f2",
                 "shasum": ""
             },
             "require": {
@@ -848,7 +848,7 @@
                 }
             ],
             "description": "Nuxed Contract",
-            "time": "2019-11-22T01:11:11+00:00"
+            "time": "2019-11-22T00:44:30+00:00"
         },
         {
             "name": "nuxed/crypto",
@@ -1017,6 +1017,52 @@
             ],
             "description": "Nuxed Filesystem",
             "time": "2019-11-18T23:16:13+00:00"
+        },
+        {
+            "name": "nuxed/http-message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/http-message.git",
+                "reference": "94cedc9defb76f1cf5660558029824a9008661f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/http-message/zipball/94cedc9defb76f1cf5660558029824a9008661f0",
+                "reference": "94cedc9defb76f1cf5660558029824a9008661f0",
+                "shasum": ""
+            },
+            "require": {
+                "azjezz/http-normalizer": "^1.0",
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25",
+                "hhvm/hsl-experimental": "^4.31",
+                "nuxed/contract": "^1.0",
+                "nuxed/json": "^1.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.7",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.25",
+                "nuxed/filesystem": "^1.2"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/http-message/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Http Message",
+            "time": "2019-11-24T03:34:07+00:00"
         },
         {
             "name": "nuxed/inflector",
