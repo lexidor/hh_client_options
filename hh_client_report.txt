@@ -10,8 +10,8 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
 
 NastCheck[3084] PHP style anonymous functions are not allowed.
    --> vendor/facebook/hack-router-codegen/src/Codegen.hack
-230 |       function (classname<HasUriPattern> $class) {
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+241 |             function(classname<HasUriPattern> $class) {
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Typing[4009] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4009
    --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
