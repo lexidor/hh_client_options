@@ -31,7 +31,7 @@
         "nuxed/http-message": "*",
         "nuxed/inflector": "*",
         "nuxed/json": "*",
-        "nuxed/uuid": "*"
+        "nuxed/uuid": "*",
 
         "azjezz/http-normalizer": "*"
     },
