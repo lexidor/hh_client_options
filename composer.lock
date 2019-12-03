@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee399eb47013cc73c9d3cc1440046139",
+    "content-hash": "935f69b649bf49776f7f98bd5c5f9895",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -1190,6 +1190,107 @@
             ],
             "description": "Nuxed Uuid",
             "time": "2019-12-02T05:16:23+00:00"
+        },
+        {
+            "name": "usox/hack-http-factory-interfaces",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usox/hack-http-factory-interfaces.git",
+                "reference": "ff15a201bfb6ef6b829b299639a49ba625505914"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usox/hack-http-factory-interfaces/zipball/ff15a201bfb6ef6b829b299639a49ba625505914",
+                "reference": "ff15a201bfb6ef6b829b299639a49ba625505914",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/hack-http-request-response-interfaces": "^0.2",
+                "hhvm": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Usox\\HackHttpFactory\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Jakob",
+                    "email": "dev@usox.org"
+                }
+            ],
+            "description": "PSR-17 like http factory interfaces",
+            "homepage": "https://github.com/usox/hack-http-factory-interfaces",
+            "keywords": [
+                "factory",
+                "hack",
+                "hhvm",
+                "http"
+            ],
+            "time": "2019-02-24T10:46:51+00:00"
+        },
+        {
+            "name": "usox/hackttp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usox/hackttp.git",
+                "reference": "37a73b125859a0cf240413ada69bfa70ab378dc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usox/hackttp/zipball/37a73b125859a0cf240413ada69bfa70ab378dc9",
+                "reference": "37a73b125859a0cf240413ada69bfa70ab378dc9",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/hack-http-request-response-interfaces": "^0.2",
+                "hhvm": "^4.1",
+                "hhvm/hsl": "^4.25",
+                "hhvm/hsl-experimental": "^4.25",
+                "hhvm/type-assert": "^3.3",
+                "usox/hack-http-factory-interfaces": "^0.2"
+            },
+            "require-dev": {
+                "hhvm/hhast": "^4.1",
+                "usox/hackmock": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Usox\\HackTTP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Jakob",
+                    "email": "dev@usox.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Work in progress demo implementation of facebookexperimental/hack-http-request-response-interfaces",
+            "homepage": "https://github.com/usox/hackttp",
+            "keywords": [
+                "hack",
+                "hacklang",
+                "hhvm",
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream"
+            ],
+            "time": "2019-10-21T17:41:28+00:00"
         }
     ],
     "packages-dev": [],

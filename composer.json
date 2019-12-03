@@ -33,7 +33,10 @@
         "nuxed/json": "*",
         "nuxed/uuid": "*",
 
-        "azjezz/http-normalizer": "*"
+        "azjezz/http-normalizer": "*",
+
+        "usox/hackttp": "*"
+
     },
     "minimum-stability": "dev"
 }
