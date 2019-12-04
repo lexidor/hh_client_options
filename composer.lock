@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "935f69b649bf49776f7f98bd5c5f9895",
+    "content-hash": "c1feb02c8eaaa63060591bb903703684",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -134,16 +134,16 @@
         },
         {
             "name": "facebook/fbexpect",
-            "version": "dev-master",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/fbexpect.git",
-                "reference": "6c874246760495f75f98338ab65fbfda019887db"
+                "reference": "11a1fcf64286943382ac2496b4c8c981763c218d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/6c874246760495f75f98338ab65fbfda019887db",
-                "reference": "6c874246760495f75f98338ab65fbfda019887db",
+                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/11a1fcf64286943382ac2496b4c8c981763c218d",
+                "reference": "11a1fcf64286943382ac2496b4c8c981763c218d",
                 "shasum": ""
             },
             "require": {
@@ -162,7 +162,7 @@
                 "MIT"
             ],
             "description": "Unit test helpers for Facebook projects",
-            "time": "2019-12-03T18:13:09+00:00"
+            "time": "2019-11-04T22:11:28+00:00"
         },
         {
             "name": "facebook/hack-codegen",
@@ -430,16 +430,16 @@
         },
         {
             "name": "hhvm/hacktest",
-            "version": "dev-master",
+            "version": "v1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hacktest.git",
-                "reference": "2d87eedce183393e2503177b73a80b3f82b7a78d"
+                "reference": "3e7f2b566cb32670193060c6167b4e2cc8ab7409"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/2d87eedce183393e2503177b73a80b3f82b7a78d",
-                "reference": "2d87eedce183393e2503177b73a80b3f82b7a78d",
+                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/3e7f2b566cb32670193060c6167b4e2cc8ab7409",
+                "reference": "3e7f2b566cb32670193060c6167b4e2cc8ab7409",
                 "shasum": ""
             },
             "require": {
@@ -460,7 +460,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -468,7 +468,7 @@
                 "MIT"
             ],
             "description": "The Hack Test Library",
-            "time": "2019-11-12T17:18:02+00:00"
+            "time": "2019-10-24T21:10:59+00:00"
         },
         {
             "name": "hhvm/hhast",
@@ -1234,6 +1234,59 @@
                 "http"
             ],
             "time": "2019-02-24T10:46:51+00:00"
+        },
+        {
+            "name": "usox/hackmock",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usox/hackmock.git",
+                "reference": "2c9003b078b9b38550c57bc583086a05d9bea1de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usox/hackmock/zipball/2c9003b078b9b38550c57bc583086a05d9bea1de",
+                "reference": "2c9003b078b9b38550c57bc583086a05d9bea1de",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/fbexpect": "^2.3",
+                "facebook/hack-codegen": "^4",
+                "hhvm": "^4.1",
+                "hhvm/hacktest": "^1.4",
+                "hhvm/hsl": "^4.1",
+                "hhvm/type-assert": "^3.2"
+            },
+            "require-dev": {
+                "hhvm/hhast": "^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Usox\\HackMock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Jakob",
+                    "email": "dev@usox.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mocking framework for hacklang",
+            "homepage": "https://github.com/usox/hackmock",
+            "keywords": [
+                "hack",
+                "hacklang",
+                "hhvm",
+                "mock",
+                "testing"
+            ],
+            "time": "2019-09-11T20:57:33+00:00"
         },
         {
             "name": "usox/hackttp",

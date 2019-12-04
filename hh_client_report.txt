@@ -1,3 +1,13 @@
+Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
+   --> vendor/facebook/fbexpect/src/utils.hack
+ 23 |     /* HH_IGNORE_ERROR[4007] sketchy array cast */
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
+   --> vendor/facebook/fbexpect/src/utils.hack
+ 24 |     return (array) $value;
+    |            ^^^^^^^^^^^^^^
+
 NastCheck[3084] PHP style anonymous functions are not allowed.
    --> vendor/facebook/hack-router-codegen/src/Codegen.hack
 230 |       function (classname<HasUriPattern> $class) {
@@ -18,12 +28,12 @@ This functionality is being removed from HHVM.
 
 Typing[4009] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4009
    --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
-113 |             /* HH_IGNORE_ERROR[4009] this is unsafe */
+115 |             /* HH_IGNORE_ERROR[4009] this is unsafe */
     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Typing[4009] This call is invalid, this is not a function, it is a string
    --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
-114 |             $tuples = $provider();
+116 |             $tuples = $provider();
     |                       ^^^^^^^^^^^
 
 Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
@@ -35,6 +45,14 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
    --> vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack
  61 |       (array) $paths,
     |       ^^^^^^^^^^^^^^
+
+Typing[4064] You are trying to access the method 'writeAsync' but this object can be null.
+   --> vendor/hhvm/hacktest/src/Runner/HackTestRunner.hack
+ 51 |       await \HH\Lib\Experimental\IO\request_error()->writeAsync(
+    |                                                      ^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/stdio.php
+ 63 | function request_error(): ?NonDisposableWriteHandle {
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^ This can be null
 
 Typing[4223] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4223
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
@@ -115,6 +133,16 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
  83 |     return (array)$tuple;
     |            ^^^^^^^^^^^^^
 
+Typing[4009] This call is invalid, this is not a function, it is a mixed value
+   --> vendor/usox/hackmock/src/Expectation.hh
+ 97 | 					\call_user_func($param_expectation, $param),
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2083] Array literals are no longer legal; use varray or darray instead
+   --> vendor/usox/hackmock/src/Mock/MockBuilder.hh
+ 56 | 			$param_list = [];
+    |                  ^^
+
 Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead
    --> vendor/usox/hackttp/example/index.hack
   3 | require_once '../vendor/hh_autoload.hh';
@@ -135,4 +163,4 @@ NastCheck[3084] PHP style anonymous functions are not allowed.
 358 |       function($match) {
     |       ^^^^^^^^^^^^^^^^^^
 
-25 errors found.
+30 errors found.
