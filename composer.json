@@ -36,7 +36,8 @@
         "azjezz/http-normalizer": "*",
 
         "usox/hackttp": "*",
-        "usox/hackmock": "*"
+        "usox/hackmock": "*",
+        "usox/sharesta": "*"
 
     },
     "minimum-stability": "dev"

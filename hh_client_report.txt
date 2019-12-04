@@ -163,4 +163,53 @@ NastCheck[3084] PHP style anonymous functions are not allowed.
 358 |       function($match) {
     |       ^^^^^^^^^^^^^^^^^^
 
-30 errors found.
+Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead
+   --> vendor/usox/sharesta/example/webroot/index.hh
+  4 | require_once '../../vendor/hh_autoload.hh';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2083] Array literals are no longer legal; use varray or darray instead
+   --> vendor/usox/sharesta/src/RequestBody.hh
+ 12 | 			return dict([]);
+    |                ^^
+
+Typing[4110] Invalid argument
+   --> vendor/usox/sharesta/src/RequestBody.hh
+ 55 | 	public function getAsDict(string $key): dict<string, mixed> {
+    |                                               ^^^^^^ Expected string
+ 57 | 		if (!\is_array($value)) {
+    |        ^^^^^^^^^ This is varray_or_darray, which requires arraykey-typed keys when used with an array (used like a hashtable)
+ 60 | 		return dict($value);
+    |               ^^^^^^
+
+Parsing[1002] The error suppression operator @ is not allowed
+   --> vendor/usox/sharesta/src/Response.hh
+ 39 | 			@\header($header);
+    |    ^
+
+Naming[2083] Array literals are no longer legal; use varray or darray instead
+   --> vendor/usox/sharesta/src/Router.hh
+ 78 | 		$route_parameters = dict([]);
+    |                            ^^
+
+Naming[2083] Array literals are no longer legal; use varray or darray instead
+   --> vendor/usox/sharesta/src/Router.hh
+ 95 | 			$uri_params = [];
+    |                  ^^
+
+Typing[4106] Unbound global constant (Typing)
+   --> vendor/usox/sharesta/src/Router.hh
+ 96 | 			if (\preg_match('%^'.$route_pattern.'$%', $request_prepend.$requested_route, &$uri_params)) {
+    |                                                                                 ^
+
+Naming[2049] Unbound name: Usox\Sharesta\& (a global constant)
+   --> vendor/usox/sharesta/src/Router.hh
+ 96 | 			if (\preg_match('%^'.$route_pattern.'$%', $request_prepend.$requested_route, &$uri_params)) {
+    |                                                                                 ^
+
+Parsing[1002] An expression is expected here.
+   --> vendor/usox/sharesta/src/Router.hh
+ 96 | 			if (\preg_match('%^'.$route_pattern.'$%', $request_prepend.$requested_route, &$uri_params)) {
+    |                                                                                  ^
+
+39 errors found.

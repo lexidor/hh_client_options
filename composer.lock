@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1feb02c8eaaa63060591bb903703684",
+    "content-hash": "591fa0dc6fb0583a78f46a498ed7a758",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -1344,6 +1344,55 @@
                 "stream"
             ],
             "time": "2019-10-21T17:41:28+00:00"
+        },
+        {
+            "name": "usox/sharesta",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usox/sharesta.git",
+                "reference": "199dba7f393943cd3117b7704db518f20234501f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usox/sharesta/zipball/199dba7f393943cd3117b7704db518f20234501f",
+                "reference": "199dba7f393943cd3117b7704db518f20234501f",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.1",
+                "hhvm/hsl": "^4.1",
+                "hhvm/type-assert": "^3"
+            },
+            "require-dev": {
+                "hhvm/hhast": "^4.1",
+                "usox/hackmock": "^1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Usox\\Sharesta\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Jakob",
+                    "email": "dev@usox.org"
+                }
+            ],
+            "description": "restful json api creation using strict hack",
+            "keywords": [
+                "api",
+                "hack",
+                "hhvm",
+                "json",
+                "restful"
+            ],
+            "time": "2019-04-15T11:44:04+00:00"
         }
     ],
     "packages-dev": [],
