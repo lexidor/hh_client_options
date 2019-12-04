@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "591fa0dc6fb0583a78f46a498ed7a758",
+    "content-hash": "6ec21da7420b261f61f89bc8fe34bb12",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -1344,6 +1344,54 @@
                 "stream"
             ],
             "time": "2019-10-21T17:41:28+00:00"
+        },
+        {
+            "name": "usox/hadb",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usox/hadb.git",
+                "reference": "3baa8cdfa2e61629a92b847561c3d6a598e0c0a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usox/hadb/zipball/3baa8cdfa2e61629a92b847561c3d6a598e0c0a2",
+                "reference": "3baa8cdfa2e61629a92b847561c3d6a598e0c0a2",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": ">=3.24"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0",
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Usox\\HaDb\\": "src/",
+                    "Usox\\HaDb\\Test\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Jakob",
+                    "email": "dev@usox.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Query sql databases using hack in strict mode",
+            "homepage": "https://github.com/usox/hadb",
+            "keywords": [
+                "hack",
+                "pgsql",
+                "postgres"
+            ],
+            "time": "2018-04-06T11:12:09+00:00"
         },
         {
             "name": "usox/sharesta",
