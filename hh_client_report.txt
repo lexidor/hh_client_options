@@ -28,12 +28,12 @@ This functionality is being removed from HHVM.
 
 Typing[4009] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4009
    --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
-115 |             /* HH_IGNORE_ERROR[4009] this is unsafe */
+113 |             /* HH_IGNORE_ERROR[4009] this is unsafe */
     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Typing[4009] This call is invalid, this is not a function, it is a string
    --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
-116 |             $tuples = $provider();
+114 |             $tuples = $provider();
     |                       ^^^^^^^^^^^
 
 Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
@@ -45,14 +45,6 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
    --> vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack
  61 |       (array) $paths,
     |       ^^^^^^^^^^^^^^
-
-Typing[4064] You are trying to access the method 'writeAsync' but this object can be null.
-   --> vendor/hhvm/hacktest/src/Runner/HackTestRunner.hack
- 51 |       await \HH\Lib\Experimental\IO\request_error()->writeAsync(
-    |                                                      ^^^^^^^^^^
-   --> vendor/hhvm/hsl-experimental/src/io/stdio.php
- 63 | function request_error(): ?NonDisposableWriteHandle {
-    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^ This can be null
 
 Typing[4223] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4223
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
@@ -132,36 +124,6 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
    --> vendor/hhvm/type-assert/src/TypeSpec/__Private/TupleSpec.hack
  83 |     return (array)$tuple;
     |            ^^^^^^^^^^^^^
-
-Typing[4009] This call is invalid, this is not a function, it is a mixed value
-   --> vendor/usox/hackmock/src/Expectation.hh
- 97 | 					\call_user_func($param_expectation, $param),
-    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/usox/hackmock/src/Mock/MockBuilder.hh
- 56 | 			$param_list = [];
-    |                  ^^
-
-Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead
-   --> vendor/usox/hackttp/example/index.hack
-  3 | require_once '../vendor/hh_autoload.hh';
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Parsing[1002] Assignments can no longer be used as expressions. Pull the assignment out into a separate statement.
-   --> vendor/usox/hackttp/src/Request.hack
-118 |     if (($port = $this->uri->getPort()) !== null) {
-    |          ^^^^
-
-NastCheck[3084] PHP style anonymous functions are not allowed.
-   --> vendor/usox/hackttp/src/Uri.hack
-342 |       function($match) {
-    |       ^^^^^^^^^^^^^^^^^^
-
-NastCheck[3084] PHP style anonymous functions are not allowed.
-   --> vendor/usox/hackttp/src/Uri.hack
-358 |       function($match) {
-    |       ^^^^^^^^^^^^^^^^^^
 
 Typing[4107] Unbound name (typing): Usox\HaDb\mysql_connect
    --> vendor/usox/hadb/src/DatabaseMySql.hh
@@ -474,17 +436,8 @@ Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute in
 
 Naming[2083] Array literals are no longer legal; use varray or darray instead
    --> vendor/usox/sharesta/src/RequestBody.hh
- 12 | 			return dict([]);
+ 28 | 			return dict([]);
     |                ^^
-
-Typing[4110] Invalid argument
-   --> vendor/usox/sharesta/src/RequestBody.hh
- 55 | 	public function getAsDict(string $key): dict<string, mixed> {
-    |                                               ^^^^^^ Expected string
- 57 | 		if (!\is_array($value)) {
-    |        ^^^^^^^^^ This is varray_or_darray, which requires arraykey-typed keys when used with an array (used like a hashtable)
- 60 | 		return dict($value);
-    |               ^^^^^^
 
 Parsing[1002] The error suppression operator @ is not allowed
    --> vendor/usox/sharesta/src/Response.hh
@@ -501,19 +454,4 @@ Naming[2083] Array literals are no longer legal; use varray or darray instead
  95 | 			$uri_params = [];
     |                  ^^
 
-Typing[4106] Unbound global constant (Typing)
-   --> vendor/usox/sharesta/src/Router.hh
- 96 | 			if (\preg_match('%^'.$route_pattern.'$%', $request_prepend.$requested_route, &$uri_params)) {
-    |                                                                                 ^
-
-Naming[2049] Unbound name: Usox\Sharesta\& (a global constant)
-   --> vendor/usox/sharesta/src/Router.hh
- 96 | 			if (\preg_match('%^'.$route_pattern.'$%', $request_prepend.$requested_route, &$uri_params)) {
-    |                                                                                 ^
-
-Parsing[1002] An expression is expected here.
-   --> vendor/usox/sharesta/src/Router.hh
- 96 | 			if (\preg_match('%^'.$route_pattern.'$%', $request_prepend.$requested_route, &$uri_params)) {
-    |                                                                                  ^
-
-97 errors found.
+86 errors found.
