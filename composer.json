@@ -37,8 +37,7 @@
 
         "usox/hackttp": "*",
         "usox/hackmock": "*",
-        "usox/sharesta": "*",
-        "usox/hadb": "*"
+        "usox/sharesta": "*"
 
     },
     "minimum-stability": "dev"
