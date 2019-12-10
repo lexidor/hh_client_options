@@ -1352,12 +1352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/usox/sharesta.git",
-                "reference": "1b586dbb5e1bd819ccc443cbe550e5b715793e4c"
+                "reference": "654f6a07056783a1b3ff5e74d59fe291b56a4f1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/usox/sharesta/zipball/1b586dbb5e1bd819ccc443cbe550e5b715793e4c",
-                "reference": "1b586dbb5e1bd819ccc443cbe550e5b715793e4c",
+                "url": "https://api.github.com/repos/usox/sharesta/zipball/654f6a07056783a1b3ff5e74d59fe291b56a4f1c",
+                "reference": "654f6a07056783a1b3ff5e74d59fe291b56a4f1c",
                 "shasum": ""
             },
             "require": {
@@ -1393,7 +1393,7 @@
                 "json",
                 "restful"
             ],
-            "time": "2019-12-05T10:21:37+00:00"
+            "time": "2019-12-10T06:28:11+00:00"
         }
     ],
     "packages-dev": [],
