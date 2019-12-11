@@ -76,45 +76,6 @@ Typing[4007] (array) cast forbidden; arrays with unspecified key and value types
  66 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
     |                                                     ^^^^^^^^^
 
-Typing[4281] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4281
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/FloatSpec.hack
- 30 |       /* HH_FIXME[4281] Stringish is going */
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4281] Cannot cast a value of type Stringish to string.
-Only primitives may be used in a (string) cast.
-If you are trying to cast a Stringish type, please use `stringish_cast`.
-This functionality is being removed from HHVM.
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/FloatSpec.hack
- 31 |       $str = (string)$value;
-    |              ^^^^^^^^^^^^^^
-
-Typing[4281] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4281
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/IntSpec.hack
- 24 |       /* HH_FIXME[4281] Stringish is going */
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4281] Cannot cast a value of type Stringish to string.
-Only primitives may be used in a (string) cast.
-If you are trying to cast a Stringish type, please use `stringish_cast`.
-This functionality is being removed from HHVM.
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/IntSpec.hack
- 25 |       $str = (string)$value;
-    |              ^^^^^^^^^^^^^^
-
-Typing[4281] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4281
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/StringSpec.hack
- 23 |       /* HH_FIXME[4281] Stringish is going */
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4281] Cannot cast a value of type Stringish to string.
-Only primitives may be used in a (string) cast.
-If you are trying to cast a Stringish type, please use `stringish_cast`.
-This functionality is being removed from HHVM.
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/StringSpec.hack
- 24 |       return (string)$value;
-    |              ^^^^^^^^^^^^^^
-
 Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
    --> vendor/hhvm/type-assert/src/TypeSpec/__Private/TupleSpec.hack
  82 |     /* HH_IGNORE_ERROR[4007] */
@@ -135,4 +96,4 @@ Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute in
   5 | require_once '../../vendor/hh_autoload.hh';
     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-25 errors found.
+19 errors found.

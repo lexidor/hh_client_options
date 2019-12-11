@@ -571,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl.git",
-                "reference": "c8c386a1f2cde06b519939099863413e797ea978"
+                "reference": "94c81cd7f62e4e58148073e94b0fcdc2dee3c05b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl/zipball/c8c386a1f2cde06b519939099863413e797ea978",
-                "reference": "c8c386a1f2cde06b519939099863413e797ea978",
+                "url": "https://api.github.com/repos/hhvm/hsl/zipball/94c81cd7f62e4e58148073e94b0fcdc2dee3c05b",
+                "reference": "94c81cd7f62e4e58148073e94b0fcdc2dee3c05b",
                 "shasum": ""
             },
             "require": {
@@ -599,7 +599,7 @@
                 "MIT"
             ],
             "description": "The Hack Standard Library",
-            "time": "2019-12-05T23:18:52+00:00"
+            "time": "2019-12-10T20:31:43+00:00"
         },
         {
             "name": "hhvm/hsl-experimental",
@@ -643,16 +643,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/type-assert.git",
-                "reference": "9847869675beb609b1627ec3927c8fd3fe8d5677"
+                "reference": "7a57b5ef6d392dc99bbb0409e67fc244802c16bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/9847869675beb609b1627ec3927c8fd3fe8d5677",
-                "reference": "9847869675beb609b1627ec3927c8fd3fe8d5677",
+                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/7a57b5ef6d392dc99bbb0409e67fc244802c16bd",
+                "reference": "7a57b5ef6d392dc99bbb0409e67fc244802c16bd",
                 "shasum": ""
             },
             "require": {
-                "hhvm": "^4.17",
+                "hhvm": "^4.20",
                 "hhvm/hsl": "^4.0"
             },
             "require-dev": {
@@ -676,7 +676,7 @@
                 "TypeAssert",
                 "hack"
             ],
-            "time": "2019-11-22T01:15:49+00:00"
+            "time": "2019-12-11T17:31:41+00:00"
         },
         {
             "name": "his/container",
