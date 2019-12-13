@@ -1,13 +1,3 @@
-Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
-   --> vendor/facebook/fbexpect/src/utils.hack
- 23 |     /* HH_IGNORE_ERROR[4007] sketchy array cast */
-    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
-   --> vendor/facebook/fbexpect/src/utils.hack
- 24 |     return (array) $value;
-    |            ^^^^^^^^^^^^^^
-
 NastCheck[3084] PHP style anonymous functions are not allowed.
    --> vendor/facebook/hack-router-codegen/src/Codegen.hack
 230 |       function (classname<HasUriPattern> $class) {
@@ -36,16 +26,6 @@ Typing[4009] This call is invalid, this is not a function, it is a string
 114 |             $tuples = $provider();
     |                       ^^^^^^^^^^^
 
-Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
-   --> vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack
- 60 |       /* HH_FIXME[4007] need a PHP array here for now */
-    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
-   --> vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack
- 61 |       (array) $paths,
-    |       ^^^^^^^^^^^^^^
-
 Typing[4223] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4223
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
 373 |     /* HH_IGNORE_ERROR[4223] Only allowed in partial mode. */
@@ -55,36 +35,6 @@ Typing[4223] Cannot use ... without a parameter name in strict mode. Please add 
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
 374 |     (...) ==> null;
     |     ^^^^^^^^^^^^^^
-
-Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
- 45 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
-    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
- 45 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
-    |                                                     ^^^^^^^^^
-
-Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
- 66 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
-    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack
- 66 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
-    |                                                     ^^^^^^^^^
-
-Typing[4007] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4007
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/TupleSpec.hack
- 82 |     /* HH_IGNORE_ERROR[4007] */
-    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4007] (array) cast forbidden; arrays with unspecified key and value types are not allowed
-   --> vendor/hhvm/type-assert/src/TypeSpec/__Private/TupleSpec.hack
- 83 |     return (array)$tuple;
-    |            ^^^^^^^^^^^^^
 
 Parsing[1002] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 1002
    --> vendor/usox/sharesta/example/webroot/index.hh
@@ -96,4 +46,4 @@ Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute in
   5 | require_once '../../vendor/hh_autoload.hh';
     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-19 errors found.
+9 errors found.
