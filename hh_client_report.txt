@@ -16,16 +16,6 @@ This functionality is being removed from HHVM.
 103 |     return htmlspecialchars((string)$child);
     |                             ^^^^^^^^^^^^^^
 
-Typing[4009] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4009
-   --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
-113 |             /* HH_IGNORE_ERROR[4009] this is unsafe */
-    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4009] This call is invalid, this is not a function, it is a string
-   --> vendor/hhvm/hacktest/src/Framework/HackTest.hack
-114 |             $tuples = $provider();
-    |                       ^^^^^^^^^^^
-
 Typing[4223] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4223
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
 373 |     /* HH_IGNORE_ERROR[4223] Only allowed in partial mode. */
@@ -35,6 +25,245 @@ Typing[4223] Cannot use ... without a parameter name in strict mode. Please add 
    --> vendor/hhvm/hhast/src/__Private/codegen/CodegenRelations.hack
 374 |     (...) ==> null;
     |     ^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableReadHandle
+   --> vendor/nuxed/console/src/Nuxed/Console/Application.hack
+ 13 |     IO\NonDisposableReadHandle,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableWriteHandle
+   --> vendor/nuxed/console/src/Nuxed/Console/Application.hack
+ 14 |     IO\NonDisposableWriteHandle,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableWriteHandle
+   --> vendor/nuxed/console/src/Nuxed/Console/Application.hack
+ 15 |     ?IO\NonDisposableWriteHandle,
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4110] Invalid assignment
+   --> vendor/nuxed/console/src/Nuxed/Console/Application.hack
+ 13 |     IO\NonDisposableReadHandle,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\IO\NonDisposableReadHandle
+ 71 |     $this->handles = tuple(
+    |     ^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/stdio.php
+ 99 | function request_input(): CloseableReadHandle {
+    |                           ^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\IO\CloseableReadHandle
+
+Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableReadHandle
+   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
+  7 |   public function getReadHandle(): File\NonDisposableReadHandle {
+    |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4110] Invalid return type
+   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
+  7 |   public function getReadHandle(): File\NonDisposableReadHandle {
+    |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableReadHandle
+ 12 |       return File\open_read_only_nd($this->path->toString());
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/file/open.php
+ 13 | function open_read_only_nd(string $path): CloseableReadHandle {
+    |                                           ^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableReadHandle
+
+Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableWriteHandle
+   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
+ 27 |   ): File\NonDisposableWriteHandle {
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4110] Invalid return type
+   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
+ 27 |   ): File\NonDisposableWriteHandle {
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableWriteHandle
+ 56 |       return File\open_write_only_nd($this->path->toString(), $mode);
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/file/open.php
+ 20 | ): CloseableWriteHandle {
+    |    ^^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableWriteHandle
+
+Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableReadWriteHandle
+   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
+ 72 |   ): File\NonDisposableReadWriteHandle {
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4110] Invalid return type
+   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
+ 72 |   ): File\NonDisposableReadWriteHandle {
+    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableReadWriteHandle
+105 |       return File\open_read_write_nd($this->path()->toString(), $mode);
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/file/open.php
+ 27 | ): CloseableReadWriteHandle {
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableReadWriteHandle
+
+Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableReadHandle
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack
+ 11 |   private ?File\NonDisposableReadHandle $handle;
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableReadHandle
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack
+ 31 |   public function getHandle(): File\NonDisposableReadHandle {
+    |                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4110] Invalid assignment
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack
+ 11 |   private ?File\NonDisposableReadHandle $handle;
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableReadHandle
+ 48 |     $this->handle = File\open_read_only_nd($this->file);
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/file/open.php
+ 13 | function open_read_only_nd(string $path): CloseableReadHandle {
+    |                                           ^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableReadHandle
+
+Typing[4110] Invalid return type
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack
+ 31 |   public function getHandle(): File\NonDisposableReadHandle {
+    |                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableReadHandle
+ 49 |     return $this->handle;
+    |            ^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/file/open.php
+ 13 | function open_read_only_nd(string $path): CloseableReadHandle {
+    |                                           ^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableReadHandle
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableSeekableReadWriteHandle (an object type)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/LazyHandle.hack
+ 11 |     IO\NonDisposableSeekableReadWriteHandle,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableReadWriteHandle (an object type)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/LazyHandle.hack
+ 12 |     IO\NonDisposableReadWriteHandle {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableHandle
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/LazyHandle.hack
+ 74 |     if ($this->handle is nonnull && $this->handle is IO\NonDisposableHandle) {
+    |                                                      ^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4053] No method 'closeAsync' in HH\Lib\Experimental\IO\SeekableReadWriteHandle (did you mean 'flushAsync'?)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/LazyHandle.hack
+ 14 |   private ?IO\SeekableReadWriteHandle $handle = null;
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^ This is why I think it is an object of type HH\Lib\Experimental\IO\SeekableReadWriteHandle
+ 75 |       await $this->handle->closeAsync();
+    |                            ^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/SeekableReadWriteHandle.php
+ 16 | interface SeekableReadWriteHandle
+    |           ^^^^^^^^^^^^^^^^^^^^^^^ Declaration of HH\Lib\Experimental\IO\SeekableReadWriteHandle is here
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableSeekableReadWriteHandle (an object type)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/MemoryHandle.hack
+  8 |     IO\NonDisposableSeekableReadWriteHandle,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4123] Nuxed\Http\Message\_Private\IO\ResourceHandle has a non-<?hh grandparent; this is not allowed in strict mode because that parent may define methods of unknowable name and type
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+  5 | final class ResourceHandle
+    |             ^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\File\_Private\NonDisposableFileHandle (an object type)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+  6 |   extends File\_Private\NonDisposableFileHandle
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableSeekableReadWriteHandle (an object type)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+  9 |     IO\NonDisposableSeekableReadWriteHandle,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableReadWriteHandle (an object type)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 10 |     IO\NonDisposableReadWriteHandle {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4111] Failure to satisfy requirement: HH\Lib\Experimental\IO\_Private\LegacyPHPResourceHandle
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 11 |   use IO\_Private\LegacyPHPResourceReadHandleTrait;
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/_Private/LegacyPHPResourceReadHandleTrait.php
+ 18 |   require extends LegacyPHPResourceHandle;
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^ Required here
+
+Typing[4111] Failure to satisfy requirement: HH\Lib\Experimental\IO\_Private\LegacyPHPResourceHandle
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 12 |   use IO\_Private\LegacyPHPResourceWriteHandleTrait;
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/_Private/LegacyPHPResourceWriteHandleTrait.php
+ 18 |   require extends LegacyPHPResourceHandle;
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^ Required here
+
+Typing[4111] Failure to satisfy requirement: HH\Lib\Experimental\IO\_Private\LegacyPHPResourceHandle
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 13 |   use IO\_Private\LegacyPHPResourceSeekableHandleTrait;
+    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/_Private/LegacyPHPResourceSeekableHandleTrait.php
+ 17 |   require extends LegacyPHPResourceHandle;
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^ Required here
+
+Typing[4105] Too many arguments (expected 1 but got 2)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 17 |       (): ResourceHandle ==> new ResourceHandle('php://input', 'r+'),
+    |                                  ^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/_Private/LegacyPHPResourceHandle.php
+ 18 |   protected function __construct(protected resource $impl) {
+    |                      ^^^^^^^^^^^ Definition is here
+
+Typing[4110] Invalid argument
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 17 |       (): ResourceHandle ==> new ResourceHandle('php://input', 'r+'),
+    |                                                 ^^^^^^^^^^^^^
+    |                                                 ^^^^^^^^^^^^^ But got string
+   --> vendor/hhvm/hsl-experimental/src/io/_Private/LegacyPHPResourceHandle.php
+ 18 |   protected function __construct(protected resource $impl) {
+    |                                            ^^^^^^^^ Expected resource
+
+Typing[4105] Too many arguments (expected 1 but got 2)
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 23 |       (): ResourceHandle ==> new ResourceHandle('php://output', 'rw+'),
+    |                                  ^^^^^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/_Private/LegacyPHPResourceHandle.php
+ 18 |   protected function __construct(protected resource $impl) {
+    |                      ^^^^^^^^^^^ Definition is here
+
+Typing[4110] Invalid argument
+   --> vendor/nuxed/http-message/src/Nuxed/Http/Message/_Private/IO/ResourceHandle.hack
+ 23 |       (): ResourceHandle ==> new ResourceHandle('php://output', 'rw+'),
+    |                                                 ^^^^^^^^^^^^^^
+    |                                                 ^^^^^^^^^^^^^^ But got string
+   --> vendor/hhvm/hsl-experimental/src/io/_Private/LegacyPHPResourceHandle.php
+ 18 |   protected function __construct(protected resource $impl) {
+    |                                            ^^^^^^^^ Expected resource
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableHandle
+   --> vendor/usox/hackttp/src/Response/TemporaryFileSapiEmitter.hack
+ 47 | 		if ($body is IO\NonDisposableHandle) {
+    |                ^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4053] No method 'closeAsync' in HH\Lib\Experimental\IO\WriteHandle (did you mean 'flushAsync'?)
+   --> vendor/usox/hackttp/src/Response/TemporaryFileSapiEmitter.hack
+ 48 | 			await $body->closeAsync();
+    |                 ^^^^^^^^^^
+   --> vendor/facebook/hack-http-request-response-interfaces/src/ResponseInterface.hh
+101 |   public function getBody(): IO\WriteHandle;
+    |                              ^^^^^^^^^^^^^^ This is why I think it is an object of type HH\Lib\Experimental\IO\WriteHandle
+   --> vendor/hhvm/hsl-experimental/src/io/WriteHandle.php
+ 21 | interface WriteHandle extends Handle {
+    |           ^^^^^^^^^^^ Declaration of HH\Lib\Experimental\IO\WriteHandle is here
+
+Naming[2049] Unbound name: HH\Lib\Experimental\IO\NonDisposableHandle
+   --> vendor/usox/hackttp/src/UploadedFile.hack
+ 56 |     if ($this->stream is IO\NonDisposableHandle) {
+    |                          ^^^^^^^^^^^^^^^^^^^^^^
+
+Typing[4053] No method 'closeAsync' in HH\Lib\Experimental\IO\ReadHandle (did you mean 'readAsync'?)
+   --> vendor/usox/hackttp/src/UploadedFile.hack
+ 22 |     private IO\ReadHandle $stream,
+    |             ^^^^^^^^^^^^^ This is why I think it is an object of type HH\Lib\Experimental\IO\ReadHandle
+ 57 |       await $this->stream->closeAsync();
+    |                            ^^^^^^^^^^
+   --> vendor/hhvm/hsl-experimental/src/io/ReadHandle.php
+ 17 | interface ReadHandle extends Handle {
+    |           ^^^^^^^^^^ Declaration of HH\Lib\Experimental\IO\ReadHandle is here
 
 Parsing[1002] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 1002
    --> vendor/usox/sharesta/example/webroot/index.hh
@@ -46,4 +275,4 @@ Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute in
   5 | require_once '../../vendor/hh_autoload.hh';
     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-9 errors found.
+41 errors found.
