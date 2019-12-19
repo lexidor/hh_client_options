@@ -977,22 +977,22 @@
         },
         {
             "name": "nuxed/filesystem",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/filesystem.git",
-                "reference": "f349ee91ebd53e14b7d1745b9e2b9a5aaf77b286"
+                "reference": "7674e3798de08762c0753e549d474d6f7cf32ce4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/filesystem/zipball/f349ee91ebd53e14b7d1745b9e2b9a5aaf77b286",
-                "reference": "f349ee91ebd53e14b7d1745b9e2b9a5aaf77b286",
+                "url": "https://api.github.com/repos/nuxed/filesystem/zipball/7674e3798de08762c0753e549d474d6f7cf32ce4",
+                "reference": "7674e3798de08762c0753e549d474d6f7cf32ce4",
                 "shasum": ""
             },
             "require": {
                 "hhvm": "^4.25",
                 "hhvm/hsl": "^4.25",
-                "hhvm/hsl-experimental": "^4.31"
+                "hhvm/hsl-experimental": "^4.37"
             },
             "require-dev": {
                 "facebook/fbexpect": "^2.7",
@@ -1016,7 +1016,7 @@
                 }
             ],
             "description": "Nuxed Filesystem",
-            "time": "2019-11-18T23:16:13+00:00"
+            "time": "2019-12-19T20:42:56+00:00"
         },
         {
             "name": "nuxed/http-emitter",

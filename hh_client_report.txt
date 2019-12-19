@@ -52,51 +52,6 @@ Typing[4110] Invalid assignment
     |                           ^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\IO\CloseableReadHandle
 
 Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableReadHandle
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
-  7 |   public function getReadHandle(): File\NonDisposableReadHandle {
-    |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4110] Invalid return type
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
-  7 |   public function getReadHandle(): File\NonDisposableReadHandle {
-    |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableReadHandle
- 12 |       return File\open_read_only_nd($this->path->toString());
-    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   --> vendor/hhvm/hsl-experimental/src/file/open.php
- 13 | function open_read_only_nd(string $path): CloseableReadHandle {
-    |                                           ^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableReadHandle
-
-Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableWriteHandle
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
- 27 |   ): File\NonDisposableWriteHandle {
-    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4110] Invalid return type
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
- 27 |   ): File\NonDisposableWriteHandle {
-    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableWriteHandle
- 56 |       return File\open_write_only_nd($this->path->toString(), $mode);
-    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   --> vendor/hhvm/hsl-experimental/src/file/open.php
- 20 | ): CloseableWriteHandle {
-    |    ^^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableWriteHandle
-
-Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableReadWriteHandle
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
- 72 |   ): File\NonDisposableReadWriteHandle {
-    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4110] Invalid return type
-   --> vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack
- 72 |   ): File\NonDisposableReadWriteHandle {
-    |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Expected HH\Lib\Experimental\File\NonDisposableReadWriteHandle
-105 |       return File\open_read_write_nd($this->path()->toString(), $mode);
-    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   --> vendor/hhvm/hsl-experimental/src/file/open.php
- 27 | ): CloseableReadWriteHandle {
-    |    ^^^^^^^^^^^^^^^^^^^^^^^^ But got HH\Lib\Experimental\File\CloseableReadWriteHandle
-
-Naming[2049] Unbound name: HH\Lib\Experimental\File\NonDisposableReadHandle
    --> vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack
  11 |   private ?File\NonDisposableReadHandle $handle;
     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -275,4 +230,4 @@ Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute in
   5 | require_once '../../vendor/hh_autoload.hh';
     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-41 errors found.
+35 errors found.
