@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e8de40796f55e079a2bbc70db1b8a27",
+    "content-hash": "846286db670ec121a4444c4530555dff",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -1195,6 +1195,51 @@
             ],
             "description": "Nuxed Json",
             "time": "2019-11-17T02:45:00+00:00"
+        },
+        {
+            "name": "nuxed/translation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/translation.git",
+                "reference": "d25c5e692aa0560ecefa0aefb534fd28308b9cf2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/translation/zipball/d25c5e692aa0560ecefa0aefb534fd28308b9cf2",
+                "reference": "d25c5e692aa0560ecefa0aefb534fd28308b9cf2",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25",
+                "hhvm/type-assert": "^3.6",
+                "nuxed/contract": "^0.2",
+                "nuxed/filesystem": "^1.2",
+                "nuxed/json": "^1.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.7",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.25"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/translation/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Translation",
+            "time": "2019-12-14T21:51:23+00:00"
         },
         {
             "name": "nuxed/uuid",
