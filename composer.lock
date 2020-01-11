@@ -476,12 +476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhast.git",
-                "reference": "9f639a0f28cfc0a888cb86046dee636ec34eabb2"
+                "reference": "485b3da858d067dc0a21b0e08f4de327b3b890ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhast/zipball/9f639a0f28cfc0a888cb86046dee636ec34eabb2",
-                "reference": "9f639a0f28cfc0a888cb86046dee636ec34eabb2",
+                "url": "https://api.github.com/repos/hhvm/hhast/zipball/485b3da858d067dc0a21b0e08f4de327b3b890ff",
+                "reference": "485b3da858d067dc0a21b0e08f4de327b3b890ff",
                 "shasum": ""
             },
             "require": {
@@ -516,7 +516,8 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-12-19T17:55:05+00:00"
+            "description": "A mutable AST library for Hack with linting and code migrations",
+            "time": "2020-01-09T23:27:59+00:00"
         },
         {
             "name": "hhvm/hhvm-autoload",
@@ -571,12 +572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl.git",
-                "reference": "0e32c584189b6c23f88b456777ffb58538df5b89"
+                "reference": "b14a430062ad95c378765899f955457f3454f2f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl/zipball/0e32c584189b6c23f88b456777ffb58538df5b89",
-                "reference": "0e32c584189b6c23f88b456777ffb58538df5b89",
+                "url": "https://api.github.com/repos/hhvm/hsl/zipball/b14a430062ad95c378765899f955457f3454f2f9",
+                "reference": "b14a430062ad95c378765899f955457f3454f2f9",
                 "shasum": ""
             },
             "require": {
@@ -599,7 +600,7 @@
                 "MIT"
             ],
             "description": "The Hack Standard Library",
-            "time": "2020-01-02T19:20:02+00:00"
+            "time": "2020-01-08T23:12:08+00:00"
         },
         {
             "name": "hhvm/hsl-experimental",
@@ -643,12 +644,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/type-assert.git",
-                "reference": "e02ad70a9aad7bbfbd8708307fe8df1828e2a883"
+                "reference": "264e2b344155663ba28f0dee3496480443d5f1b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/e02ad70a9aad7bbfbd8708307fe8df1828e2a883",
-                "reference": "e02ad70a9aad7bbfbd8708307fe8df1828e2a883",
+                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/264e2b344155663ba28f0dee3496480443d5f1b9",
+                "reference": "264e2b344155663ba28f0dee3496480443d5f1b9",
                 "shasum": ""
             },
             "require": {
@@ -676,7 +677,7 @@
                 "TypeAssert",
                 "hack"
             ],
-            "time": "2019-12-16T18:39:38+00:00"
+            "time": "2020-01-09T23:02:59+00:00"
         },
         {
             "name": "his/container",
@@ -772,12 +773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/console.git",
-                "reference": "8ed4880549386265503f687d0f40b59c3d082d2d"
+                "reference": "762c95253e567aeebe17f2676a171b42637dccc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/console/zipball/8ed4880549386265503f687d0f40b59c3d082d2d",
-                "reference": "8ed4880549386265503f687d0f40b59c3d082d2d",
+                "url": "https://api.github.com/repos/nuxed/console/zipball/762c95253e567aeebe17f2676a171b42637dccc2",
+                "reference": "762c95253e567aeebe17f2676a171b42637dccc2",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +810,7 @@
                 }
             ],
             "description": "Nuxed Console",
-            "time": "2019-12-20T04:10:03+00:00"
+            "time": "2020-01-03T05:38:46+00:00"
         },
         {
             "name": "nuxed/contract",
@@ -1069,12 +1070,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/http-message.git",
-                "reference": "d884bd3d680897c59f920546e16422c919649115"
+                "reference": "f46c017de78b7b8b65530b7851bca0040d7f478a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/http-message/zipball/d884bd3d680897c59f920546e16422c919649115",
-                "reference": "d884bd3d680897c59f920546e16422c919649115",
+                "url": "https://api.github.com/repos/nuxed/http-message/zipball/f46c017de78b7b8b65530b7851bca0040d7f478a",
+                "reference": "f46c017de78b7b8b65530b7851bca0040d7f478a",
                 "shasum": ""
             },
             "require": {
@@ -1110,7 +1111,7 @@
                 }
             ],
             "description": "Nuxed Http Message",
-            "time": "2019-12-20T01:39:34+00:00"
+            "time": "2020-01-02T20:44:06+00:00"
         },
         {
             "name": "nuxed/inflector",
