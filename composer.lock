@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "846286db670ec121a4444c4530555dff",
+    "content-hash": "ae778f6ab715d309f90c295990b75ee5",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -723,6 +723,38 @@
                 "his"
             ],
             "time": "2019-03-04T07:50:32+00:00"
+        },
+        {
+            "name": "lexidor/banned-functions",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lexidor/banned-functions.git",
+                "reference": "0f1e7983d86a8caa0bdf60da30ec2679fd68fccf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lexidor/banned-functions/zipball/0f1e7983d86a8caa0bdf60da30ec2679fd68fccf",
+                "reference": "0f1e7983d86a8caa0bdf60da30ec2679fd68fccf",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm/hhvm-autoload": "^2.0",
+                "hhvm/hsl": "^4.36",
+                "hhvm/hsl-experimental": "^4.37",
+                "hhvm/type-assert": "^3.7"
+            },
+            "bin": [
+                "bin/banned-functions",
+                "bin/banned-functions.hack"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Ban (built-in) functions from your Hack projects",
+            "time": "2020-01-11T17:33:21+00:00"
         },
         {
             "name": "nuxed/asset",
