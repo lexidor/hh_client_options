@@ -10,10 +10,11 @@
         "hhvm/hsl": "*",
         "hhvm/hsl-experimental": "*",
         "hhvm/type-assert": "*",
-
+        
         "facebook/definition-finder": "*",
         "facebook/difflib": "*",
         "facebook/fbexpect": "*",
+        "facebook/fbmarkdown": "*",
         "facebook/hack-codegen": "*",
         "facebook/hack-http-request-response-interfaces": "*",
         "facebook/hack-router": "*",

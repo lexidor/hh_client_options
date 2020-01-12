@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae778f6ab715d309f90c295990b75ee5",
+    "content-hash": "2ed2a90094e699d28c7c7a420257a2a4",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -163,6 +163,50 @@
             ],
             "description": "Unit test helpers for Facebook projects",
             "time": "2019-11-04T22:11:28+00:00"
+        },
+        {
+            "name": "facebook/fbmarkdown",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hhvm/fbmarkdown.git",
+                "reference": "7915e2da4c5b877ac3eeb45eb6b1f9c8b6d53a2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hhvm/fbmarkdown/zipball/7915e2da4c5b877ac3eeb45eb6b1f9c8b6d53a2a",
+                "reference": "7915e2da4c5b877ac3eeb45eb6b1f9c8b6d53a2a",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.18",
+                "hhvm/hsl": "^4.0",
+                "hhvm/type-assert": "^3.1"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.1.0",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.0",
+                "hhvm/hhvm-autoload": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Markdown parser and renderer for Hack",
+            "keywords": [
+                "facebook",
+                "gfm",
+                "hack",
+                "markdown"
+            ],
+            "time": "2019-12-19T20:05:22+00:00"
         },
         {
             "name": "facebook/hack-codegen",
@@ -730,12 +774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lexidor/banned-functions.git",
-                "reference": "0f1e7983d86a8caa0bdf60da30ec2679fd68fccf"
+                "reference": "a003fa2d0f5ffce86a79c49beff0564367605c13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lexidor/banned-functions/zipball/0f1e7983d86a8caa0bdf60da30ec2679fd68fccf",
-                "reference": "0f1e7983d86a8caa0bdf60da30ec2679fd68fccf",
+                "url": "https://api.github.com/repos/lexidor/banned-functions/zipball/a003fa2d0f5ffce86a79c49beff0564367605c13",
+                "reference": "a003fa2d0f5ffce86a79c49beff0564367605c13",
                 "shasum": ""
             },
             "require": {
@@ -754,7 +798,7 @@
                 "MIT"
             ],
             "description": "Ban (built-in) functions from your Hack projects",
-            "time": "2020-01-11T17:33:21+00:00"
+            "time": "2020-01-11T17:44:16+00:00"
         },
         {
             "name": "nuxed/asset",
@@ -1522,7 +1566,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "facebook/fbmarkdown": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
