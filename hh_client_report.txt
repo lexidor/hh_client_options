@@ -1,21 +1,6 @@
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/fbmarkdown/src/inlines/AutoLinkExtension.php
- 46 |     $matches = [];
-    |                ^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/fbmarkdown/src/inlines/RawHTML.php
- 56 |     $matches = [];
-    |                ^^
-
-Naming[2083] Array literals are no longer legal; use varray or darray instead
-   --> vendor/facebook/fbmarkdown/src/render/MarkdownRenderer.php
-317 |         [0, 0xffff, 0, 0xffff],
-    |         ^^^^^^^^^^^^^^^^^^^^^^
-
 Typing[4281] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4281
    --> vendor/facebook/xhp-lib/src/core/XHP.php
-102 |     /* HH_FIXME[4281] stringish migration */
+107 |     /* HH_FIXME[4281] stringish migration */
     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Typing[4281] Cannot cast a value of type XHPChild to string.
@@ -23,7 +8,7 @@ Only primitives may be used in a (string) cast.
 If you are trying to cast a Stringish type, please use `stringish_cast`.
 This functionality is being removed from HHVM.
    --> vendor/facebook/xhp-lib/src/core/XHP.php
-103 |     return htmlspecialchars((string)$child);
+108 |     return htmlspecialchars((string)$child);
     |                             ^^^^^^^^^^^^^^
 
 Typing[4223] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4223
@@ -46,4 +31,4 @@ Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute in
   5 | require_once '../../vendor/hh_autoload.hh';
     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-9 errors found.
+6 errors found.
