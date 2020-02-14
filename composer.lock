@@ -347,12 +347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hack-router-codegen.git",
-                "reference": "895fb7db8ff54735804f7ccd1856b889f986941e"
+                "reference": "59df7bbb51223a670a9ae27a3d3933d564641d49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/895fb7db8ff54735804f7ccd1856b889f986941e",
-                "reference": "895fb7db8ff54735804f7ccd1856b889f986941e",
+                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/59df7bbb51223a670a9ae27a3d3933d564641d49",
+                "reference": "59df7bbb51223a670a9ae27a3d3933d564641d49",
                 "shasum": ""
             },
             "require": {
@@ -390,7 +390,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2020-02-07T21:57:16+00:00"
+            "time": "2020-02-11T00:01:33+00:00"
         },
         {
             "name": "facebook/hh-clilib",
@@ -435,12 +435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/xhp-lib.git",
-                "reference": "cc039800829f705aa37ab0f896e06972886899db"
+                "reference": "83e81a37e2f66b0fd158aa318d820a05530c5a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/xhp-lib/zipball/cc039800829f705aa37ab0f896e06972886899db",
-                "reference": "cc039800829f705aa37ab0f896e06972886899db",
+                "url": "https://api.github.com/repos/hhvm/xhp-lib/zipball/83e81a37e2f66b0fd158aa318d820a05530c5a77",
+                "reference": "83e81a37e2f66b0fd158aa318d820a05530c5a77",
                 "shasum": ""
             },
             "require": {
@@ -470,7 +470,7 @@
                 "hhvm",
                 "xhp"
             ],
-            "time": "2020-02-07T21:57:16+00:00"
+            "time": "2020-02-12T21:38:32+00:00"
         },
         {
             "name": "hhvm/hacktest",
@@ -478,12 +478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hacktest.git",
-                "reference": "cde86b675923d56955a2f0f95840206e52bd8618"
+                "reference": "af4929fc0c0751c127d48767f67d3a91550b0e31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/cde86b675923d56955a2f0f95840206e52bd8618",
-                "reference": "cde86b675923d56955a2f0f95840206e52bd8618",
+                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/af4929fc0c0751c127d48767f67d3a91550b0e31",
+                "reference": "af4929fc0c0751c127d48767f67d3a91550b0e31",
                 "shasum": ""
             },
             "require": {
@@ -512,7 +512,7 @@
                 "MIT"
             ],
             "description": "The Hack Test Library",
-            "time": "2020-02-07T21:57:16+00:00"
+            "time": "2020-02-12T06:21:57+00:00"
         },
         {
             "name": "hhvm/hhast",
@@ -520,12 +520,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhast.git",
-                "reference": "f8853916899f16c6f49e7bebb73ea5e005bd0ff1"
+                "reference": "e166d940e0ce28c516d528224575a22e73489ee8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhast/zipball/f8853916899f16c6f49e7bebb73ea5e005bd0ff1",
-                "reference": "f8853916899f16c6f49e7bebb73ea5e005bd0ff1",
+                "url": "https://api.github.com/repos/hhvm/hhast/zipball/e166d940e0ce28c516d528224575a22e73489ee8",
+                "reference": "e166d940e0ce28c516d528224575a22e73489ee8",
                 "shasum": ""
             },
             "require": {
@@ -561,7 +561,7 @@
                 "MIT"
             ],
             "description": "A mutable AST library for Hack with linting and code migrations",
-            "time": "2020-02-10T18:42:13+00:00"
+            "time": "2020-02-13T21:21:00+00:00"
         },
         {
             "name": "hhvm/hhvm-autoload",
@@ -569,12 +569,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhvm-autoload.git",
-                "reference": "645a83cb9a0ba97084a753a20bebfe4e9442f75c"
+                "reference": "982147b179557be7c220f4e4a745c7d836fc3e54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhvm-autoload/zipball/645a83cb9a0ba97084a753a20bebfe4e9442f75c",
-                "reference": "645a83cb9a0ba97084a753a20bebfe4e9442f75c",
+                "url": "https://api.github.com/repos/hhvm/hhvm-autoload/zipball/982147b179557be7c220f4e4a745c7d836fc3e54",
+                "reference": "982147b179557be7c220f4e4a745c7d836fc3e54",
                 "shasum": ""
             },
             "require": {
@@ -608,7 +608,7 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2020-02-07T21:25:25+00:00"
+            "time": "2020-02-13T17:38:07+00:00"
         },
         {
             "name": "hhvm/hsl",
