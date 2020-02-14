@@ -37,12 +37,7 @@ const_default_func_args = true
 disallow_silence = true
 ; 2019/11/22
 disable_lval_as_an_expression = true
-
-;--------------------------------------------;
-; Settings that would work after pending PRs ;
-;--------------------------------------------;
-
-; 2019/11/19
+; 2020/01/06
 error_php_lambdas = true
 
 ;------------------------------;
