@@ -8,7 +8,7 @@ If you believe that the stricter hh_client options are providing value, you may 
 
 ### How to get started
 
-At the root of this project, you;ll find the `.hhconfig` file. The options that are set in there have been found to work for all the listed dependencies. You can copy these options as a base for you own project, removing those that you don't care about, without fear that a library will not support these options.
+At the root of this project, you'll find the `.hhconfig` file. The options that are set in there have been found to work for all the listed dependencies. You can copy these options as a base for you own project, removing those that you don't care about, without fear that a library will not support these options.
 
 For the full list of checked libraries, see composer.json.
 
