@@ -1,73 +1,3 @@
-Naming[2049] Unbound name: HH\Lib\Experimental\File\open_read_only_nd (a global function)
-   --> vendor/bin/banned-functions.hack
- 18 |     $config_file = File\open_read_only_nd($config_path);
-    |                    ^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4107] Unbound name (typing): HH\Lib\Experimental\File\open_read_only_nd
-   --> vendor/bin/banned-functions.hack
- 18 |     $config_file = File\open_read_only_nd($config_path);
-    |                    ^^^^^^^^^^^^^^^^^^^^^^
-
-Naming[2049] Unbound name: HH\Lib\Experimental\OS\NotFoundException (an object type)
-   --> vendor/bin/banned-functions.hack
- 19 |   } catch (OS\NotFoundException $e) {
-    |            ^^^^^^^^^^^^^^^^^^^^
-
-Typing[4053] No method 'getNamex' in Facebook\HHAST\NamespaceDeclaration (did you mean 'getName'?)
-   --> vendor/facebook/definition-finder/src/consumers/scope_from_ast.hack
- 23 |   $namespaces = vec($ast->getChildrenOfType(HHAST\NamespaceDeclaration::class));
-    |                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^ This is why I think it is an object of type Facebook\HHAST\NamespaceDeclaration
- 43 |         $ns->hasName() ? name_from_ast($ns->getNamex()) : null,
-    |                                             ^^^^^^^^
-   --> /tmp/hh_server/hhi_2ed3e2e3/hackarray.hhi
- 15 | abstract final class vec<+T> implements KeyedContainer<int, T>, \XHPChild {}
-    |                                                             ^   via this generic T
-   --> /tmp/hh_server/hhi_2ed3e2e3/interfaces.hhi
-119 | interface KeyedContainer<+Tk as arraykey, +Tv> extends \HH\Rx\KeyedTraversable<Tk, Tv>, Container<Tv> {}
-    |                                                                                    ^^   via this generic Tv
-   --> /tmp/hh_server/hhi_2ed3e2e3/rx/interfaces.hhi
- 35 |   extends namespace\Traversable<Tv>, \HH\KeyedTraversable<Tk, Tv> {}
-    |                                                               ^^   via this generic Tv
-   --> vendor/hhvm/hhast/src/nodes/NamespaceDeclaration.hack
- 14 | final class NamespaceDeclaration extends NamespaceDeclarationGeneratedBase {
-    |             ^^^^^^^^^^^^^^^^^^^^ Declaration of Facebook\HHAST\NamespaceDeclaration is here
-
-Typing[4053] No method 'getNamex' in Facebook\HHAST\NamespaceDeclaration (did you mean 'getName'?)
-   --> vendor/facebook/definition-finder/src/consumers/scope_from_ast.hack
- 23 |   $namespaces = vec($ast->getChildrenOfType(HHAST\NamespaceDeclaration::class));
-    |                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^ This is why I think it is an object of type Facebook\HHAST\NamespaceDeclaration
- 61 |       name_from_ast($ns->getNamex()),
-    |                          ^^^^^^^^
-   --> /tmp/hh_server/hhi_2ed3e2e3/hackarray.hhi
- 15 | abstract final class vec<+T> implements KeyedContainer<int, T>, \XHPChild {}
-    |                                                             ^   via this generic T
-   --> /tmp/hh_server/hhi_2ed3e2e3/interfaces.hhi
-119 | interface KeyedContainer<+Tk as arraykey, +Tv> extends \HH\Rx\KeyedTraversable<Tk, Tv>, Container<Tv> {}
-    |                                                                                    ^^   via this generic Tv
-   --> /tmp/hh_server/hhi_2ed3e2e3/rx/interfaces.hhi
- 35 |   extends namespace\Traversable<Tv>, \HH\KeyedTraversable<Tk, Tv> {}
-    |                                                               ^^   via this generic Tv
-   --> vendor/hhvm/hhast/src/nodes/NamespaceDeclaration.hack
- 14 | final class NamespaceDeclaration extends NamespaceDeclarationGeneratedBase {
-    |             ^^^^^^^^^^^^^^^^^^^^ Declaration of Facebook\HHAST\NamespaceDeclaration is here
-
-Naming[2049] Unbound name: Facebook\HHAST\ArrayCreationExpression
-   --> vendor/facebook/definition-finder/src/expression/StaticArrayExpression.hack
- 19 |     if ($node is HHAST\ArrayCreationExpression) {
-    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Typing[4053] No method 'getMembers' in Facebook\HHAST\Node (did you mean 'getCode'?)
-   --> vendor/facebook/definition-finder/src/expression/StaticArrayExpression.hack
- 15 |   const type TNode = HHAST\Node;
-    |                      ^^^^^^^^^^ This is why I think it is an object of type Facebook\HHAST\Node
- 18 |   protected static function matchImpl(this::TNode $node): ?Expression<mixed> {
-    |                                       ^^^^^^^^^^^   resulting from expanding the type constant this::TNode
- 20 |       $members = $node->getMembers();
-    |                         ^^^^^^^^^^
-   --> vendor/hhvm/hhast/src/nodes/Node.hack
- 15 | abstract class Node implements IMemoizeParam {
-    |                ^^^^ Declaration of Facebook\HHAST\Node is here
-
 Typing[4054] This type doesn't implement the method read
    --> vendor/facebook/hh-clilib/src/TestLib/StringInput.hack
  18 | final class StringInput implements IO\ReadHandle, IO\UserspaceHandle {
@@ -822,4 +752,4 @@ Naming[2049] Unbound name: HH\Lib\Experimental\IO\ReadHandle (an object type)
   7 | class MockIOHandle implements IO\ReadHandle {
     |                               ^^^^^^^^^^^^^
 
-150 errors found.
+143 errors found.

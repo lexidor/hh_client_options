@@ -40,9 +40,7 @@
 
         "usox/hackttp": "*",
         "usox/hackmock": "*",
-        "usox/sharesta": "*",
-        
-        "lexidor/banned-functions": "*"
+        "usox/sharesta": "*"
 
     },
     "minimum-stability": "dev"

@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df81a232a3ab77c6a38bf7fc4584b11b",
+    "content-hash": "88bb251e2f10b754e97499a8ca19ef32",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/azjezz/http-normalizer.git",
-                "reference": "3b71b897440cd8ba20a29080a7178c05c9d69f91"
+                "reference": "f4777d8da99b78e41f846318b87b55cd71b42668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azjezz/http-normalizer/zipball/3b71b897440cd8ba20a29080a7178c05c9d69f91",
-                "reference": "3b71b897440cd8ba20a29080a7178c05c9d69f91",
+                "url": "https://api.github.com/repos/azjezz/http-normalizer/zipball/f4777d8da99b78e41f846318b87b55cd71b42668",
+                "reference": "f4777d8da99b78e41f846318b87b55cd71b42668",
                 "shasum": ""
             },
             "require": {
                 "hhvm": "^4.25",
-                "hhvm/hhvm-autoload": "^2.0",
+                "hhvm/hhvm-autoload": "^2.0|^3.0",
                 "hhvm/hsl": "^4.25",
                 "hhvm/type-assert": "^3.6"
             },
@@ -41,7 +41,7 @@
                 }
             ],
             "description": "Normalize Http super globals",
-            "time": "2019-11-22T17:28:06+00:00"
+            "time": "2020-04-17T20:41:34+00:00"
         },
         {
             "name": "facebook/definition-finder",
@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/definition-finder.git",
-                "reference": "6d28cc9343bd0333924edeb65a3001f4d9ab3773"
+                "reference": "dcca6c27cd4e4f359fa14b5df856b865f08a5a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/definition-finder/zipball/6d28cc9343bd0333924edeb65a3001f4d9ab3773",
-                "reference": "6d28cc9343bd0333924edeb65a3001f4d9ab3773",
+                "url": "https://api.github.com/repos/hhvm/definition-finder/zipball/dcca6c27cd4e4f359fa14b5df856b865f08a5a73",
+                "reference": "dcca6c27cd4e4f359fa14b5df856b865f08a5a73",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
                 "hack",
                 "hhvm"
             ],
-            "time": "2020-03-30T17:23:01+00:00"
+            "time": "2020-04-16T23:45:48+00:00"
         },
         {
             "name": "facebook/difflib",
@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhast.git",
-                "reference": "44ad8ca68b9e0ca36e61979d26bda95c0b43fc86"
+                "reference": "078f893f5542c22a0b7151e034f09276803e4da6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhast/zipball/44ad8ca68b9e0ca36e61979d26bda95c0b43fc86",
-                "reference": "44ad8ca68b9e0ca36e61979d26bda95c0b43fc86",
+                "url": "https://api.github.com/repos/hhvm/hhast/zipball/078f893f5542c22a0b7151e034f09276803e4da6",
+                "reference": "078f893f5542c22a0b7151e034f09276803e4da6",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,7 @@
                 "MIT"
             ],
             "description": "A mutable AST library for Hack with linting and code migrations",
-            "time": "2020-04-16T20:51:07+00:00"
+            "time": "2020-04-17T17:02:46+00:00"
         },
         {
             "name": "hhvm/hhvm-autoload",
@@ -653,16 +653,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl-experimental.git",
-                "reference": "419b40e9fe98212ca2460d7a31535e0fd746387d"
+                "reference": "d06cdd41fcb1060625c2f254f8f11c8f1fbd45cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl-experimental/zipball/419b40e9fe98212ca2460d7a31535e0fd746387d",
-                "reference": "419b40e9fe98212ca2460d7a31535e0fd746387d",
+                "url": "https://api.github.com/repos/hhvm/hsl-experimental/zipball/d06cdd41fcb1060625c2f254f8f11c8f1fbd45cc",
+                "reference": "d06cdd41fcb1060625c2f254f8f11c8f1fbd45cc",
                 "shasum": ""
             },
             "require": {
-                "hhvm": "^4.51",
+                "hhvm": "^4.52",
                 "hhvm/hsl": "^4.15"
             },
             "require-dev": {
@@ -681,7 +681,7 @@
                 "MIT"
             ],
             "description": "The Hack Standard Library - Experimental Additions",
-            "time": "2020-04-16T18:57:44+00:00"
+            "time": "2020-04-16T21:44:20+00:00"
         },
         {
             "name": "hhvm/type-assert",
@@ -768,38 +768,6 @@
                 "his"
             ],
             "time": "2019-03-04T07:50:32+00:00"
-        },
-        {
-            "name": "lexidor/banned-functions",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lexidor/banned-functions.git",
-                "reference": "6c694b2594732847419924c94b78172a35232551"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lexidor/banned-functions/zipball/6c694b2594732847419924c94b78172a35232551",
-                "reference": "6c694b2594732847419924c94b78172a35232551",
-                "shasum": ""
-            },
-            "require": {
-                "hhvm/hhvm-autoload": "^2.0",
-                "hhvm/hsl": "^4.31",
-                "hhvm/hsl-experimental": "^4.31",
-                "hhvm/type-assert": "^3.6.2"
-            },
-            "bin": [
-                "bin/banned-functions",
-                "bin/banned-functions.hack"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Ban (built-in) functions from your Hack projects",
-            "time": "2020-01-17T23:45:01+00:00"
         },
         {
             "name": "nuxed/asset",
