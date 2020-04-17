@@ -1,0 +1,7 @@
+{
+  "roots": [ "vendor/" ],
+  "builtinLinters": "all",
+  "disabledLinters": [
+    "Facebook\\HHAST\\LicenseHeaderLinter"
+  ]
+}

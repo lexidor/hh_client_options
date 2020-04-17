@@ -15,3 +15,18 @@ For the full list of checked libraries, see composer.json.
 #### Footnote
 
 This project intentionally depends on the bleeding edge. If you are not able/willing to run hhvm-latest and/or some projects `dev-master`, you might find that some options don't work for you yet.
+
+#### Experimental
+
+hhast-lint support
+
+Copy paste this into the console to strip out all the `<?php` files.
+https://github.com/hhvm/hhast/issues/290
+
+find . -wholename "**/ComposerPlugin.php" -type f -delete
+find . -wholename "**/autoload_files.php" -type f -delete
+
+I have published the location of all lint errors in all dependencies.
+The idea is not to fix all of them.
+The idea is that we'll be able to diff the lint errors right before pushing a linter to hhast master.
+That way we can check how many lint error would occur in oss libs, before releasing the linter.
