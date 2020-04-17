@@ -1,6 +1,17 @@
 {
     "name": "lexidor/hh_client_options",
     "description": "Getting the most out of the typechecker",
+    "_comment": [
+      "The following packages have been temporarily removed",
+      "They nolonger work on newer hhvm versions,",
+      "because they rely on hhvm-autoload ^2.0.",
+      "#####",
+      "azjezz/http-normalizer",
+      "facebook/fbexpect",
+      "nuxed/console",
+      "nuxed/event-dispatcher",
+      "#####"
+    ],
     "require": {
         "hhvm": "^4.32",
 
@@ -13,7 +24,6 @@
         
         "facebook/definition-finder": "*",
         "facebook/difflib": "*",
-        "facebook/fbexpect": "*",
         "facebook/fbmarkdown": "*",
         "facebook/hack-codegen": "*",
         "facebook/hack-http-request-response-interfaces": "*",
@@ -23,11 +33,9 @@
         "facebook/xhp-lib": "*",
 
         "nuxed/asset": "*",
-        "nuxed/console": "*",
         "nuxed/contract": "*",
         "nuxed/crypto": "*",
         "nuxed/environment": "*",
-        "nuxed/event-dispatcher": "*",
         "nuxed/filesystem": "*",
         "nuxed/http-emitter": "*",
         "nuxed/http-message": "*",
@@ -35,8 +43,6 @@
         "nuxed/json": "*",
         "nuxed/translation": "*",
         "nuxed/uuid": "*",
-
-        "azjezz/http-normalizer": "*",
 
         "usox/hackttp": "*",
         "usox/hackmock": "*",
