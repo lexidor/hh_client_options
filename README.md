@@ -23,8 +23,13 @@ hhast-lint support
 Copy paste this into the console to strip out all the `<?php` files.
 https://github.com/hhvm/hhast/issues/290
 
+```
 find . -wholename "**/ComposerPlugin.php" -type f -delete
 find . -wholename "**/autoload_files.php" -type f -delete
+find . -wholename "**/autoload_static.php" -type f -delete
+find . -wholename "**/ClassLoader.php" -type f -delete
+find . -wholename "**/autoload_real.php" -type f -delete
+```
 
 I have published the location of all lint errors in all dependencies.
 The idea is not to fix all of them.
