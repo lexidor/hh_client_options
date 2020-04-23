@@ -10,7 +10,10 @@
         "nuxed/environment",
         "nuxed/http-emitter",
         "nuxed/http-message",
-        "nuxed/translation"
+        "nuxed/translation",
+        "#####",
+        "The following packages rely on hsl-experimental < 4.50",
+        "usox/sharesta"
     ],
     "require": {
         "hhvm": "^4.32",
@@ -36,7 +39,7 @@
         "nuxed/contract": "*",
         "nuxed/crypto": "*",
         "nuxed/event-dispatcher": "*",
-        "nuxed/filesystem": "dev-master",
+        "nuxed/filesystem": "*",
         "nuxed/inflector": "*",
         "nuxed/json": "*",
         "nuxed/uuid": "*",
