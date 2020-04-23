@@ -134,16 +134,16 @@
         },
         {
             "name": "facebook/fbexpect",
-            "version": "v2.7.3",
+            "version": "v2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/fbexpect.git",
-                "reference": "11a1fcf64286943382ac2496b4c8c981763c218d"
+                "reference": "02a831d27bc928460c1407e0d48d02d339b03798"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/11a1fcf64286943382ac2496b4c8c981763c218d",
-                "reference": "11a1fcf64286943382ac2496b4c8c981763c218d",
+                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/02a831d27bc928460c1407e0d48d02d339b03798",
+                "reference": "02a831d27bc928460c1407e0d48d02d339b03798",
                 "shasum": ""
             },
             "require": {
@@ -154,7 +154,7 @@
             },
             "require-dev": {
                 "hhvm/hhast": "^4.0",
-                "hhvm/hhvm-autoload": "^2.0"
+                "hhvm/hhvm-autoload": "^2.0|^3.0"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -162,7 +162,7 @@
                 "MIT"
             ],
             "description": "Unit test helpers for Facebook projects",
-            "time": "2019-11-04T22:11:28+00:00"
+            "time": "2020-04-23T03:58:41+00:00"
         },
         {
             "name": "facebook/fbmarkdown",

@@ -1,23 +1,3 @@
-Typing[4110] Invalid argument
-   --> vendor/facebook/fbexpect/src/ExpectObj.hack
-533 |             $t = $t as KeyedContainer<_, _>;
-    |                  ^^ But got ([unresolved] & <expr#1>) from this "as" assertion
-534 |             return \sprintf('%s: %s', idx($t, 'file'), idx($t, 'line'));
-    |                                           ^^
-   --> /tmp/hh_server/hhi_774119b/idx.hhi
- 32 |   ?KeyedContainer<Tk, Tv> $collection,
-    |   ^^^^^^^^^^^^^^^^^^^^^^^ Expected ?KeyedContainer<[unresolved], ?[unresolved]>
-
-Typing[4110] Invalid argument
-   --> vendor/facebook/fbexpect/src/ExpectObj.hack
-533 |             $t = $t as KeyedContainer<_, _>;
-    |                  ^^ But got ([unresolved] & <expr#1>) from this "as" assertion
-534 |             return \sprintf('%s: %s', idx($t, 'file'), idx($t, 'line'));
-    |                                                            ^^
-   --> /tmp/hh_server/hhi_774119b/idx.hhi
- 32 |   ?KeyedContainer<Tk, Tv> $collection,
-    |   ^^^^^^^^^^^^^^^^^^^^^^^ Expected ?KeyedContainer<[unresolved], ?[unresolved]>
-
 Typing[4281] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4281
    --> vendor/facebook/xhp-lib/src/core/Node.hack
 721 |     /* HH_FIXME[4281] stringish migration */
@@ -56,4 +36,4 @@ Parsing[1002] XHP children declarations are no longer supported.
  12 |   children (pcdata);
     |            ^
 
-9 errors found.
+7 errors found.
