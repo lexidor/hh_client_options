@@ -4,7 +4,7 @@ Typing[4110] Invalid argument
     |                  ^^ But got ([unresolved] & <expr#1>) from this "as" assertion
 534 |             return \sprintf('%s: %s', idx($t, 'file'), idx($t, 'line'));
     |                                           ^^
-   --> /tmp/hh_server/hhi_3a6da8dc/idx.hhi
+   --> /tmp/hh_server/hhi_774119b/idx.hhi
  32 |   ?KeyedContainer<Tk, Tv> $collection,
     |   ^^^^^^^^^^^^^^^^^^^^^^^ Expected ?KeyedContainer<[unresolved], ?[unresolved]>
 
@@ -14,7 +14,7 @@ Typing[4110] Invalid argument
     |                  ^^ But got ([unresolved] & <expr#1>) from this "as" assertion
 534 |             return \sprintf('%s: %s', idx($t, 'file'), idx($t, 'line'));
     |                                                            ^^
-   --> /tmp/hh_server/hhi_3a6da8dc/idx.hhi
+   --> /tmp/hh_server/hhi_774119b/idx.hhi
  32 |   ?KeyedContainer<Tk, Tv> $collection,
     |   ^^^^^^^^^^^^^^^^^^^^^^^ Expected ?KeyedContainer<[unresolved], ?[unresolved]>
 
