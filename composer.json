@@ -10,7 +10,18 @@
       "facebook/fbexpect",
       "nuxed/console",
       "nuxed/event-dispatcher",
-      "#####"
+      "#####",
+      "",
+      "The following packages have temporarily removed",
+      "They do not support hsl-experimental 4.25, which remove Experimental from the namespace name",
+      "usox/sharesta",
+      "nuxed/http-message",
+      "nuxed/http-emitter",
+      "nuxed/filesystem",
+      "nuxed/contract",
+      "nuxed/asset",
+      "nuxed/environment",
+      "nuxed/translation"
     ],
     "require": {
         "hhvm": "^4.32",
@@ -19,7 +30,7 @@
         "hhvm/hhast": "*",
         "hhvm/hhvm-autoload": "*",
         "hhvm/hsl": "*",
-        "hhvm/hsl-experimental": "*",
+        "hhvm/hsl-experimental": "<=4.50.1",
         "hhvm/type-assert": "*",
         
         "facebook/definition-finder": "*",
@@ -32,21 +43,13 @@
         "facebook/hh-clilib": "*",
         "facebook/xhp-lib": "*",
 
-        "nuxed/asset": "*",
-        "nuxed/contract": "*",
         "nuxed/crypto": "*",
-        "nuxed/environment": "*",
-        "nuxed/filesystem": "*",
-        "nuxed/http-emitter": "*",
-        "nuxed/http-message": "*",
         "nuxed/inflector": "*",
         "nuxed/json": "*",
-        "nuxed/translation": "*",
         "nuxed/uuid": "*",
 
         "usox/hackttp": "*",
-        "usox/hackmock": "*",
-        "usox/sharesta": "*"
+        "usox/hackmock": "*"
 
     },
     "minimum-stability": "dev"
