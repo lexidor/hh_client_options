@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c86d0f5ff2ba0f9f7544855273c88272",
+    "content-hash": "e81b4771112a7aad2ebc894d400f073a",
     "packages": [
         {
             "name": "azjezz/http-normalizer",
@@ -398,12 +398,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hh-clilib.git",
-                "reference": "19dda71376f9df87bb4301969435fbfb91a82b9b"
+                "reference": "dfc543f7b291d627981def4814f3fce9e554c105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hh-clilib/zipball/19dda71376f9df87bb4301969435fbfb91a82b9b",
-                "reference": "19dda71376f9df87bb4301969435fbfb91a82b9b",
+                "url": "https://api.github.com/repos/hhvm/hh-clilib/zipball/dfc543f7b291d627981def4814f3fce9e554c105",
+                "reference": "dfc543f7b291d627981def4814f3fce9e554c105",
                 "shasum": ""
             },
             "require": {
@@ -427,7 +427,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2020-03-30T17:11:16+00:00"
+            "time": "2020-04-27T19:22:54+00:00"
         },
         {
             "name": "facebook/xhp-lib",
@@ -478,12 +478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hacktest.git",
-                "reference": "7bf63219b1bcb9b406b9937644c1f43dbbd6395d"
+                "reference": "e3fd815762cc09f72b65cbd676d39eb491c0c62b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/7bf63219b1bcb9b406b9937644c1f43dbbd6395d",
-                "reference": "7bf63219b1bcb9b406b9937644c1f43dbbd6395d",
+                "url": "https://api.github.com/repos/hhvm/hacktest/zipball/e3fd815762cc09f72b65cbd676d39eb491c0c62b",
+                "reference": "e3fd815762cc09f72b65cbd676d39eb491c0c62b",
                 "shasum": ""
             },
             "require": {
@@ -513,7 +513,7 @@
                 "MIT"
             ],
             "description": "The Hack Test Library",
-            "time": "2020-04-20T21:10:39+00:00"
+            "time": "2020-04-28T15:49:47+00:00"
         },
         {
             "name": "hhvm/hhast",
@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhast.git",
-                "reference": "088a5a25f88cc3cbb55bd96e3146f20936dfa754"
+                "reference": "072e555eaaa5ef59259620cff2fa6fb64f3ad5bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhast/zipball/088a5a25f88cc3cbb55bd96e3146f20936dfa754",
-                "reference": "088a5a25f88cc3cbb55bd96e3146f20936dfa754",
+                "url": "https://api.github.com/repos/hhvm/hhast/zipball/072e555eaaa5ef59259620cff2fa6fb64f3ad5bf",
+                "reference": "072e555eaaa5ef59259620cff2fa6fb64f3ad5bf",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,7 @@
                 "MIT"
             ],
             "description": "A mutable AST library for Hack with linting and code migrations",
-            "time": "2020-04-23T04:05:14+00:00"
+            "time": "2020-04-24T22:26:10+00:00"
         },
         {
             "name": "hhvm/hhvm-autoload",
@@ -617,12 +617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl.git",
-                "reference": "86966f541a5ffb9ebc7854c576e79af139b1a997"
+                "reference": "36e97917495c33baca3248be9caf9beaf83af170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl/zipball/86966f541a5ffb9ebc7854c576e79af139b1a997",
-                "reference": "86966f541a5ffb9ebc7854c576e79af139b1a997",
+                "url": "https://api.github.com/repos/hhvm/hsl/zipball/36e97917495c33baca3248be9caf9beaf83af170",
+                "reference": "36e97917495c33baca3248be9caf9beaf83af170",
                 "shasum": ""
             },
             "require": {
@@ -645,7 +645,7 @@
                 "MIT"
             ],
             "description": "The Hack Standard Library",
-            "time": "2020-04-15T19:16:38+00:00"
+            "time": "2020-04-28T00:04:24+00:00"
         },
         {
             "name": "hhvm/hsl-experimental",
@@ -770,6 +770,94 @@
             "time": "2020-04-23T15:57:12+00:00"
         },
         {
+            "name": "nuxed/asset",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/asset.git",
+                "reference": "7e5653d350a6593fc4690f01373d140f2b34c768"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/asset/zipball/7e5653d350a6593fc4690f01373d140f2b34c768",
+                "reference": "7e5653d350a6593fc4690f01373d140f2b34c768",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25",
+                "nuxed/filesystem": "^1.2",
+                "nuxed/json": "^1.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.7",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.25"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/asset/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Asset",
+            "time": "2019-12-20T04:17:50+00:00"
+        },
+        {
+            "name": "nuxed/console",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/console.git",
+                "reference": "764df5ee7d67c520619dde47fd56bd013b4b5287"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/console/zipball/764df5ee7d67c520619dde47fd56bd013b4b5287",
+                "reference": "764df5ee7d67c520619dde47fd56bd013b4b5287",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25",
+                "hhvm/hsl-experimental": "^4.50",
+                "his/container": "^0.1.0",
+                "nuxed/environment": "^1.2",
+                "nuxed/event-dispatcher": "^1.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.7",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.25"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/console/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Console",
+            "time": "2020-04-23T17:07:23+00:00"
+        },
+        {
             "name": "nuxed/contract",
             "version": "dev-master",
             "source": {
@@ -811,21 +899,64 @@
         },
         {
             "name": "nuxed/crypto",
-            "version": "v1.0.4",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/crypto.git",
-                "reference": "3886151ab5e3e4b7da4a77b78aa98047ee8a8834"
+                "reference": "20c7a5dddbfcef5a6051d58a5c4b31a8f26c0ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/crypto/zipball/3886151ab5e3e4b7da4a77b78aa98047ee8a8834",
-                "reference": "3886151ab5e3e4b7da4a77b78aa98047ee8a8834",
+                "url": "https://api.github.com/repos/nuxed/crypto/zipball/20c7a5dddbfcef5a6051d58a5c4b31a8f26c0ed8",
+                "reference": "20c7a5dddbfcef5a6051d58a5c4b31a8f26c0ed8",
                 "shasum": ""
             },
             "require": {
                 "hhvm": "^4.25",
                 "hhvm/hsl": "^4.25"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.7",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.25",
+                "hhvm/hsl-experimental": "^4.50"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azjezz",
+                    "email": "azjezz@protonmail.com"
+                },
+                {
+                    "name": "Nuxed Community",
+                    "homepage": "https://github.com/nuxed/crypto/graphs/contributors"
+                }
+            ],
+            "description": "Nuxed Crypto",
+            "time": "2020-04-23T17:10:47+00:00"
+        },
+        {
+            "name": "nuxed/environment",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuxed/environment.git",
+                "reference": "5c0908b31f70cdc4d5df7ab75e6f72de22e1e736"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuxed/environment/zipball/5c0908b31f70cdc4d5df7ab75e6f72de22e1e736",
+                "reference": "5c0908b31f70cdc4d5df7ab75e6f72de22e1e736",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.25",
+                "nuxed/filesystem": "^1.2"
             },
             "require-dev": {
                 "facebook/fbexpect": "^2.7",
@@ -844,24 +975,24 @@
                 },
                 {
                     "name": "Nuxed Community",
-                    "homepage": "https://github.com/nuxed/crypto/graphs/contributors"
+                    "homepage": "https://github.com/nuxed/environment/graphs/contributors"
                 }
             ],
-            "description": "Nuxed Crypto",
-            "time": "2019-11-17T02:31:46+00:00"
+            "description": "Nuxed Environment",
+            "time": "2019-11-17T01:59:19+00:00"
         },
         {
             "name": "nuxed/event-dispatcher",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/event-dispatcher.git",
-                "reference": "35a28c34a8e43d343b06f580a9cc8ea7df4a7f1a"
+                "reference": "57454b40fc2c24d5cb9707d77e66c576151f31a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/event-dispatcher/zipball/35a28c34a8e43d343b06f580a9cc8ea7df4a7f1a",
-                "reference": "35a28c34a8e43d343b06f580a9cc8ea7df4a7f1a",
+                "url": "https://api.github.com/repos/nuxed/event-dispatcher/zipball/57454b40fc2c24d5cb9707d77e66c576151f31a7",
+                "reference": "57454b40fc2c24d5cb9707d77e66c576151f31a7",
                 "shasum": ""
             },
             "require": {
@@ -890,11 +1021,11 @@
                 }
             ],
             "description": "Nuxed Event Dispatcher",
-            "time": "2020-04-23T16:23:45+00:00"
+            "time": "2019-11-02T17:57:31+00:00"
         },
         {
             "name": "nuxed/filesystem",
-            "version": "dev-master",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/filesystem.git",
@@ -978,16 +1109,16 @@
         },
         {
             "name": "nuxed/json",
-            "version": "dev-master",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuxed/json.git",
-                "reference": "55198dac021e0a68f919ef4b9f22fcd010b5ef29"
+                "reference": "601964911d0df621950d0c8bc65847e2aae6ed74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/json/zipball/55198dac021e0a68f919ef4b9f22fcd010b5ef29",
-                "reference": "55198dac021e0a68f919ef4b9f22fcd010b5ef29",
+                "url": "https://api.github.com/repos/nuxed/json/zipball/601964911d0df621950d0c8bc65847e2aae6ed74",
+                "reference": "601964911d0df621950d0c8bc65847e2aae6ed74",
                 "shasum": ""
             },
             "require": {
@@ -1015,7 +1146,7 @@
                 }
             ],
             "description": "Nuxed Json",
-            "time": "2019-12-01T22:56:06+00:00"
+            "time": "2019-11-17T02:45:00+00:00"
         },
         {
             "name": "nuxed/uuid",
