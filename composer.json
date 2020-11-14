@@ -6,7 +6,7 @@
         "usox/sharesta"
       ],
       "require": {
-        "hhvm": "^4.32",
+        "hhvm": "^4.80",
         "hhvm/hacktest": "*",
         "hhvm/hhast": "*",
         "hhvm/hhvm-autoload": "*",

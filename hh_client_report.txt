@@ -1,30 +1,1245 @@
-Parsing[1002] XHP children declarations are no longer supported.
-   --> vendor/hhvm/hhast/src/__Private/codegen/data/XHPChildrenSyntaxExample.hack
- 12 |   children (pcdata);
-    |            ^
+Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
 
-Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead
-   --> vendor/nuxed/console/example/app.hack
-  5 | require __DIR__.'/../vendor/hh_autoload.hh';
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+main.hack:6:3
+    4 | async function main_async(): Awaitable<void> {
+    5 |   require_once __DIR__.'/vendor/autoload.hack';
+[1] 6 |   \Facebook\AutoloadMap\initialize();
+    7 | 
+    8 |   echo "Read README.md, found at the root of this repository.";
 
-Parsing[1002] The `goto` operator is not allowed in Hack files
-   --> vendor/nuxed/console/src/Nuxed/Console/Application.hack
-312 |           goto terminate;
-    |           ^^^^^^^^^^^^^^^
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
 
-Parsing[1002] Labels are used only for `goto`, which is not allowed in Hack files
-   --> vendor/nuxed/console/src/Nuxed/Console/Application.hack
-320 |     terminate:
-    |     ^^^^^^^^^^
+main.hack:6:3
+    4 | async function main_async(): Awaitable<void> {
+    5 |   require_once __DIR__.'/vendor/autoload.hack';
+[1] 6 |   \Facebook\AutoloadMap\initialize();
+    7 | 
+    8 |   echo "Read README.md, found at the root of this repository.";
 
-Typing[4341] The method getCode has the wrong type
-   --> vendor/nuxed/console/src/Nuxed/Console/Exception/CommandNotFoundException.hack
- 13 |   public function getCode(): int {
-    |                   ^^^^^^^
-    |                   ^^^^^^^ This function is reactive.
-   --> /tmp/hh_server/hhi_2fd05435/exceptions.hhi
- 99 |   public function getCode(): int;
-    |                   ^^^^^^^ This function is pure.
+Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
 
-5 errors found.
+src/collect_configs.hack:9:5
+    7 |   function main_collect_configs(): void {
+    8 |     require_once __DIR__.'/../vendor/autoload.hack';
+[1] 9 |     \Facebook\AutoloadMap\initialize();
+   10 | 
+   11 |     $is_comment = fun('\Lexidor\HHClientOptions\_Private\is_comment');
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
+
+src/collect_configs.hack:9:5
+    7 |   function main_collect_configs(): void {
+    8 |     require_once __DIR__.'/../vendor/autoload.hack';
+[1] 9 |     \Facebook\AutoloadMap\initialize();
+   10 | 
+   11 |     $is_comment = fun('\Lexidor\HHClientOptions\_Private\is_comment');
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\is_dev (a global function) [1]
+
+vendor/facebook/hack-router/src/router/BaseRouter.php:82:9
+    80 |     }
+    81 | 
+[1] 82 |     if (is_dev()) {
+    83 |       $routes = null;
+    84 |     } else {
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\is_dev (a global function) [1]
+
+vendor/facebook/hack-router/src/router/BaseRouter.php:99:12
+    97 |       );
+    98 | 
+[1] 99 |       if (!is_dev()) {
+   100 |         \apc_store(__FILE__.'/cache', $routes);
+   101 |       }
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\is_dev [1]
+
+vendor/facebook/hack-router/src/router/BaseRouter.php:82:9
+    80 |     }
+    81 | 
+[1] 82 |     if (is_dev()) {
+    83 |       $routes = null;
+    84 |     } else {
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\is_dev [1]
+
+vendor/facebook/hack-router/src/router/BaseRouter.php:99:12
+    97 |       );
+    98 | 
+[1] 99 |       if (!is_dev()) {
+   100 |         \apc_store(__FILE__.'/cache', $routes);
+   101 |       }
+
+Parsing[1002] $GLOBALS variable is removed from the language. Use HH\global functions [1]
+
+vendor/facebook/hh-clilib/src/CLIBase.hack:178:41
+    176 |     try {
+    177 |       $responder = new static(
+[1] 178 |         vec(/* HH_IGNORE_ERROR[2050] */ $GLOBALS['argv']),
+    179 |         new Terminal($in, $out, $err),
+    180 |       );
+
+Naming[2049] Unbound name: HH\Lib\IO\UserspaceHandle (an object type) [1]
+
+vendor/facebook/hh-clilib/src/TestLib/StringInput.hack:18:51
+    16 |  * It is intended for unit testing.
+    17 |  */
+[1] 18 | final class StringInput implements IO\ReadHandle, IO\UserspaceHandle {
+    19 |   private string $buffer = '';
+    20 |   private bool $isClosed = false;
+
+Typing[4054] This type doesn't implement the method readAllAsync [1]
+-> Which is required by this interface [2]
+-> As defined here [3]
+
+vendor/facebook/hh-clilib/src/TestLib/StringInput.hack:18:13
+      16 |  * It is intended for unit testing.
+      17 |  */
+[1,2] 18 | final class StringInput implements IO\ReadHandle, IO\UserspaceHandle {
+      19 |   private string $buffer = '';
+      20 |   private bool $isClosed = false;
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+      68 |    * unnecessarily hitting the request memory limit.
+      69 |    */
+[3]   70 |   public function readAllAsync(
+      71 |     ?int $max_bytes = null,
+      72 |     ?int $timeout_ns = null,
+
+Typing[4054] This type doesn't implement the method readFixedSizeAsync [1]
+-> Which is required by this interface [2]
+-> As defined here [3]
+
+vendor/facebook/hh-clilib/src/TestLib/StringInput.hack:18:13
+      16 |  * It is intended for unit testing.
+      17 |  */
+[1,2] 18 | final class StringInput implements IO\ReadHandle, IO\UserspaceHandle {
+      19 |   private string $buffer = '';
+      20 |   private bool $isClosed = false;
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:84:19
+      82 |    * do not want this to happen.
+      83 |    */
+[3]   84 |   public function readFixedSizeAsync(
+      85 |     int $size,
+      86 |     ?int $timeout_ns = null,
+
+Naming[2049] Unbound name: HH\Lib\IO\UserspaceHandle (an object type) [1]
+
+vendor/facebook/hh-clilib/src/TestLib/StringOutput.hack:16:53
+    14 | 
+    15 | /** This class stores all CLI output in a string */
+[1] 16 | final class StringOutput implements IO\WriteHandle, IO\UserspaceHandle {
+    17 |   private string $buffer = '';
+    18 | 
+
+Typing[4054] This type doesn't implement the method writeAllAsync [1]
+-> Which is required by this interface [2]
+-> As defined here [3]
+
+vendor/facebook/hh-clilib/src/TestLib/StringOutput.hack:16:13
+      14 | 
+      15 | /** This class stores all CLI output in a string */
+[1,2] 16 | final class StringOutput implements IO\WriteHandle, IO\UserspaceHandle {
+      17 |   private string $buffer = '';
+      18 | 
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+      57 |    * do not want this to happen.
+      58 |    */
+[3]   59 |   public function writeAllAsync(
+      60 |     string $bytes,
+      61 |     ?int $timeout_ns = null,
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\map (a global function) [1]
+
+vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack:51:19
+    49 |       return Dict\map(
+    50 |         $paths,
+[1] 51 |         $path ==> \Facebook\AutoloadMap\Generated\map()['class']
+    52 |           |> Dict\filter($$, $class_path ==> $class_path === $path)
+    53 |           |> Keyset\keys($$)
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\map [1]
+
+vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack:51:19
+    49 |       return Dict\map(
+    50 |         $paths,
+[1] 51 |         $path ==> \Facebook\AutoloadMap\Generated\map()['class']
+    52 |           |> Dict\filter($$, $class_path ==> $class_path === $path)
+    53 |           |> Keyset\keys($$)
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\map (a global function) [1]
+
+vendor/hhvm/hacktest/src/Retriever/FileRetriever.hack:22:14
+    20 |   public function getTestFiles(): keyset<string> {
+    21 |     if (\ini_get('hhvm.repo.authoritative')) {
+[1] 22 |       return \Facebook\AutoloadMap\Generated\map()['class']
+    23 |         |> Keyset\filter(
+    24 |           $$,
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\map [1]
+
+vendor/hhvm/hacktest/src/Retriever/FileRetriever.hack:22:14
+    20 |   public function getTestFiles(): keyset<string> {
+    21 |     if (\ini_get('hhvm.repo.authoritative')) {
+[1] 22 |       return \Facebook\AutoloadMap\Generated\map()['class']
+    23 |         |> Keyset\filter(
+    24 |           $$,
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\root (a global function) [1]
+
+vendor/hhvm/hhast/src/Linters/LicenseHeaderLinter.hack:146:40
+    144 |     $path = \dirname(\realpath($path));
+    145 |     if (
+[1] 146 |       Str\starts_with($path, \realpath(\Facebook\AutoloadMap\Generated\root()))
+    147 |     ) {
+    148 |       return self::getLicenseHeaderForPath($path);
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\root [1]
+
+vendor/hhvm/hhast/src/Linters/LicenseHeaderLinter.hack:146:40
+    144 |     $path = \dirname(\realpath($path));
+    145 |     if (
+[1] 146 |       Str\starts_with($path, \realpath(\Facebook\AutoloadMap\Generated\root()))
+    147 |     ) {
+    148 |       return self::getLicenseHeaderForPath($path);
+
+Typing[4110] Using cannot be used on non-disposable expression [1]
+-> Expected IAsyncDisposable because it was assigned in a using clause [1]
+-> But got HH\Lib\File\CloseableWriteHandle [2]
+
+vendor/hhvm/hhast/src/__Private/LinterCLI.hack:82:19
+    80 |         $dot = XHProf::disableAndGenerateDot();
+    81 |         await using (
+[1] 82 |           $file = \HH\Lib\File\open_write_only(
+[1] 83 |             $dotfile,
+[1] 84 |             \HH\Lib\File\WriteMode::TRUNCATE,
+[1] 85 |           )
+    86 |         ) {
+    87 |           await $file->writeAsync($dot);
+
+vendor/hhvm/hsl-experimental/src/file/open.php:23:4
+    21 |   WriteMode $mode = WriteMode::OPEN_OR_CREATE,
+    22 |   int $create_file_permissions = 0644,
+[2] 23 | ): CloseableWriteHandle {
+    24 |   return OS\open(
+    25 |     $path,
+
+Typing[4323] Some type constraint(s) here are violated [1]
+-> T is a constrained type parameter [2]
+-> Expected ?Facebook\HHAST\Node [3]
+-> But got T [4]
+
+vendor/hhvm/hhast/src/nodes/NodeList.hack:44:66
+      42 |   }
+      43 | 
+[1,4] 44 |   public function getChildrenOfItems<T>(): vec<T> where Titem as ListItem<T> {
+      45 |     return Vec\map($this->getChildren(), $child ==> $child->getItem());
+      46 |   }
+
+vendor/hhvm/hhast/src/nodes/ListItem.hack:15:23
+      13 | use namespace HH\Lib\{Dict, Str};
+      14 | 
+[2,3] 15 | final class ListItem<+T as ?Node> extends Node {
+      16 | 
+      17 |   const string SYNTAX_KIND = 'list_item';
+
+Typing[4323] Some type constraint(s) here are violated [1]
+-> T is a constrained type parameter [2]
+-> Expected ?Facebook\HHAST\Node [3]
+-> But got T [4]
+
+vendor/hhvm/hhast/src/nodes/NodeList.hack:50:28
+      48 |   public function getChildrenOfItemsOfType<T>(
+      49 |     classname<T> $what,
+[1,4] 50 |   ): vec<T> where Titem as ListItem<T> {
+      51 |     $out = vec[];
+      52 |     foreach ($this->getChildrenOfItems() as $item) {
+
+vendor/hhvm/hhast/src/nodes/ListItem.hack:15:23
+      13 | use namespace HH\Lib\{Dict, Str};
+      14 | 
+[2,3] 15 | final class ListItem<+T as ?Node> extends Node {
+      16 | 
+      17 |   const string SYNTAX_KIND = 'list_item';
+
+Typing[4323] Some type constraint(s) here are violated [1]
+-> T is a constrained type parameter [2]
+-> Expected ?Facebook\HHAST\Node [3]
+-> But got Tinner [4]
+
+vendor/hhvm/hhast/src/nodes/NodeList.hack:222:26
+      220 |   public function withoutItemWithChild<Tinner super Node>(
+      221 |     Tinner $inner,
+[1,4] 222 |   ): this where Titem as ListItem<Tinner> {
+      223 |     $new = Vec\filter($this->_children, $c ==> $c->getItem() !== $inner);
+      224 |     if ($new === $this->_children) {
+
+vendor/hhvm/hhast/src/nodes/ListItem.hack:15:23
+       13 | use namespace HH\Lib\{Dict, Str};
+       14 | 
+[2,3]  15 | final class ListItem<+T as ?Node> extends Node {
+       16 | 
+       17 |   const string SYNTAX_KIND = 'list_item';
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\map (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:31:18
+    29 | 
+    30 |   public function __construct() {
+[1] 31 |     $this->map = Generated\map();
+    32 |   }
+    33 | 
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\build_id (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:90:31
+    88 |       return;
+    89 |     }
+[1] 90 |     if ($data['build_id'] !== Generated\build_id()) {
+    91 |       $this->dirty = true;
+    92 |       return;
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\root (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:99:7
+    97 |     \HH\autoload_set_paths(
+    98 |       /* HH_IGNORE_ERROR[4110] incorrect hhi */ $map,
+[1] 99 |       Generated\root(),
+   100 |     );
+   101 | 
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\build_id (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:110:21
+    108 |     }
+    109 |     $data = shape(
+[1] 110 |       'build_id' => Generated\build_id(),
+    111 |       'map' => $this->map,
+    112 |     );
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\root (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:118:12
+    116 |   /** Where to store the file cache */
+    117 |   protected function getCacheFilePath(): string {
+[1] 118 |     return Generated\root().'/vendor/hh_autoload.hh-cache';
+    119 |   }
+    120 | 
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\map [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:31:18
+    29 | 
+    30 |   public function __construct() {
+[1] 31 |     $this->map = Generated\map();
+    32 |   }
+    33 | 
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\build_id [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:90:31
+    88 |       return;
+    89 |     }
+[1] 90 |     if ($data['build_id'] !== Generated\build_id()) {
+    91 |       $this->dirty = true;
+    92 |       return;
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\root [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:99:7
+    97 |     \HH\autoload_set_paths(
+    98 |       /* HH_IGNORE_ERROR[4110] incorrect hhi */ $map,
+[1] 99 |       Generated\root(),
+   100 |     );
+   101 | 
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\build_id [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:110:21
+    108 |     }
+    109 |     $data = shape(
+[1] 110 |       'build_id' => Generated\build_id(),
+    111 |       'map' => $this->map,
+    112 |     );
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\root [1]
+
+vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:118:12
+    116 |   /** Where to store the file cache */
+    117 |   protected function getCacheFilePath(): string {
+[1] 118 |     return Generated\root().'/vendor/hh_autoload.hh-cache';
+    119 |   }
+    120 | 
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\is_dev (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/is_dev.hack:13:13
+    11 | <<__EntryPoint>>
+    12 | function main(): void {
+[1] 13 |   \var_dump(\Facebook\AutoloadMap\Generated\is_dev());
+    14 | }
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\is_dev [1]
+
+vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/is_dev.hack:13:13
+    11 | <<__EntryPoint>>
+    12 | function main(): void {
+[1] 13 |   \var_dump(\Facebook\AutoloadMap\Generated\is_dev());
+    14 | }
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-dev.php:18:3
+    16 | 
+    17 |   require($argv[1]);
+[1] 18 |   \Facebook\AutoloadMap\initialize();
+    19 | 
+    20 |   $x = new ExampleClass();
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\TestFixtures\MyExampleTest (an object type) [1]
+
+vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-dev.php:37:19
+    35 |   );
+    36 |   invariant(
+[1] 37 |     \class_exists(MyExampleTest::class),
+    38 |     "Should be able to load class from dev root in prod mode",
+    39 |   );
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
+
+vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:20:3
+    18 |   \var_dump($argv[1]);
+    19 |   \var_dump(\file_get_contents($argv[1] as string));
+[1] 20 |   \Facebook\AutoloadMap\initialize();
+    21 | 
+    22 |   $x = new ExampleClass();
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\TestFixtures\MyExampleTest (an object type) [1]
+
+vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:39:20
+    37 |   );
+    38 |   invariant(
+[1] 39 |     !\class_exists(MyExampleTest::class),
+    40 |     "Should *not* be able to load class from dev root in prod mode",
+    41 |   );
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
+
+vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:20:3
+    18 |   \var_dump($argv[1]);
+    19 |   \var_dump(\file_get_contents($argv[1] as string));
+[1] 20 |   \Facebook\AutoloadMap\initialize();
+    21 | 
+    22 |   $x = new ExampleClass();
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
+
+vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:17:5
+    15 |   function generate_intersection_interfaces(): void {
+    16 |     require_once(__DIR__.'/../../vendor/autoload.hack'); // @oss-enable
+[1] 17 |     \Facebook\AutoloadMap\initialize(); // @oss-enable
+    18 | 
+    19 |     // Map these to powers of two, so we can later use a bitmask
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
+
+vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:17:5
+    15 |   function generate_intersection_interfaces(): void {
+    16 |     require_once(__DIR__.'/../../vendor/autoload.hack'); // @oss-enable
+[1] 17 |     \Facebook\AutoloadMap\initialize(); // @oss-enable
+    18 | 
+    19 |     // Map these to powers of two, so we can later use a bitmask
+
+Naming[2049] Unbound name: Facebook\TypeSpec\array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec.hack:79:13
+    77 |   TypeSpec<Tk> $tsk,
+    78 |   TypeSpec<Tv> $tsv,
+[1] 79 | ): TypeSpec<array<Tk, Tv>> {
+    80 |   return new __Private\DictLikeArraySpec('array', $tsk, $tsv);
+    81 | }
+
+Naming[2049] Unbound name: Facebook\TypeSpec\array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec.hack:154:36
+    152 | 
+    153 | /* HH_IGNORE_ERROR[4045] untyped array */
+[1] 154 | function untyped_array(): TypeSpec<array> {
+    155 |   return new __Private\UntypedArraySpec();
+    156 | }
+
+Naming[2049] Unbound name: Facebook\TypeSpec\array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec.hack:166:58
+    164 | }
+    165 | 
+[1] 166 | function vec_like_array<Tv>(TypeSpec<Tv> $tsv): TypeSpec<array<Tv>> {
+    167 |   return new __Private\VecLikeArraySpec('array', $tsv);
+    168 | }
+
+Typing[4110] Invalid return type [1]
+-> Expected darray<Tk, Tv> [2]
+-> But got Facebook\TypeSpec\__Private\array<[unresolved], [unresolved]> [3]
+
+vendor/hhvm/type-assert/src/TypeSpec.hack:66:10
+    63 |   TypeSpec<Tk> $tsk,
+    64 |   TypeSpec<Tv> $tsv,
+[2] 65 | ): TypeSpec<darray<Tk, Tv>> {
+[1] 66 |   return new __Private\DictLikeArraySpec('darray', $tsk, $tsv);
+    67 | }
+    68 | 
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack:19:20
+    17 | 
+    18 | final class DictLikeArraySpec<Tk as arraykey, Tv>
+[3] 19 |   extends TypeSpec<array<Tk, Tv>> {
+    20 | 
+    21 |   public function __construct(
+
+Typing[4110] Invalid return type [1]
+-> Expected varray<Tv> [2]
+-> But got Facebook\TypeSpec\__Private\array<[unresolved]> [3]
+
+vendor/hhvm/type-assert/src/TypeSpec.hack:159:10
+    156 | }
+    157 | 
+[2] 158 | function varray<Tv>(TypeSpec<Tv> $tsv): TypeSpec<varray<Tv>> {
+[1] 159 |   return new __Private\VecLikeArraySpec('varray', $tsv);
+    160 | }
+    161 | 
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:17:50
+     15 | use namespace HH\Lib\Vec;
+     16 | 
+[3]  17 | final class VecLikeArraySpec<T> extends TypeSpec<array<T>> {
+     18 |   public function __construct(
+     19 |     private string $name,
+
+Parsing[1002] Encountered unexpected token $$. [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/DictLikeArraySpec.hack:46:60
+    44 |       ($k, $_v) ==> $this->tsk->withTrace($kt)->coerceType($k),
+    45 |     )
+[1] 46 |       |> /* HH_IGNORE_ERROR[4007] PHP array cast */ (array)$$;
+    47 |   }
+    48 | 
+
+Naming[2049] Unbound name: is_array (a global function) [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/ShapeSpec.hack:70:11
+    68 |   <<__Override>>
+    69 |   public function assertType(mixed $value): shape() {
+[1] 70 |     if (!(\is_array($value) || ($value is dict<_, _>))) {
+    71 |       throw IncorrectTypeException::withValue(
+    72 |         $this->getTrace(),
+
+Typing[4107] Unbound name (typing): is_array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/ShapeSpec.hack:70:11
+    68 |   <<__Override>>
+    69 |   public function assertType(mixed $value): shape() {
+[1] 70 |     if (!(\is_array($value) || ($value is dict<_, _>))) {
+    71 |       throw IncorrectTypeException::withValue(
+    72 |         $this->getTrace(),
+
+Parsing[1002] Encountered unexpected token $tuple. [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/TupleSpec.hack:84:19
+    82 |     }
+    83 |     /* HH_IGNORE_ERROR[4007] */
+[1] 84 |     return (array)$tuple;
+    85 |   }
+    86 | 
+
+Naming[2049] Unbound name: Facebook\TypeSpec\__Private\array (an object type) [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack:17:47
+    15 | 
+    16 | /* HH_IGNORE_ERROR[4045] array without generics */
+[1] 17 | final class UntypedArraySpec extends TypeSpec<array> {
+    18 | 
+    19 |   <<__Override>>
+
+Naming[2049] Unbound name: Facebook\TypeSpec\__Private\array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack:21:45
+    19 |   <<__Override>>
+    20 |   /* HH_IGNORE_ERROR[4045] array without generics */
+[1] 21 |   public function coerceType(mixed $value): array {
+    22 |     if (!$value is KeyedTraversable<_, _>) {
+    23 |       throw
+
+Naming[2049] Unbound name: Facebook\TypeSpec\__Private\array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack:36:45
+    34 |   <<__Override>>
+    35 |   /* HH_IGNORE_ERROR[4045] array without generics */
+[1] 36 |   public function assertType(mixed $value): array {
+    37 |     if (!\is_array($value)) {
+    38 |       throw
+
+Naming[2049] Unbound name: is_array (a global function) [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack:37:10
+    35 |   /* HH_IGNORE_ERROR[4045] array without generics */
+    36 |   public function assertType(mixed $value): array {
+[1] 37 |     if (!\is_array($value)) {
+    38 |       throw
+    39 |         IncorrectTypeException::withValue($this->getTrace(), 'array', $value);
+
+Typing[4110] Invalid return type [1]
+-> Expected Facebook\TypeSpec\__Private\array [2]
+-> But got darray<arraykey, mixed> [3]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack:31:12
+    19 |   <<__Override>>
+    20 |   /* HH_IGNORE_ERROR[4045] array without generics */
+[2] 21 |   public function coerceType(mixed $value): array {
+    22 |     if (!$value is KeyedTraversable<_, _>) {
+    23 |       throw
+    24 |         TypeCoercionException::withValue($this->getTrace(), 'array', $value);
+    25 |     }
+    26 | 
+[3] 27 |     $out = darray[];
+    28 |     foreach ($value as $k => $v) {
+    29 |       $out[$k as arraykey] = $v;
+    30 |     }
+[1] 31 |     return $out;
+    32 |   }
+    33 | 
+
+Typing[4107] Unbound name (typing): is_array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack:37:10
+    35 |   /* HH_IGNORE_ERROR[4045] array without generics */
+    36 |   public function assertType(mixed $value): array {
+[1] 37 |     if (!\is_array($value)) {
+    38 |       throw
+    39 |         IncorrectTypeException::withValue($this->getTrace(), 'array', $value);
+
+Typing[4110] Invalid return type [1]
+-> Expected Facebook\TypeSpec\__Private\array [2]
+-> But got mixed [3]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/UntypedArraySpec.hack:42:12
+      34 |   <<__Override>>
+      35 |   /* HH_IGNORE_ERROR[4045] array without generics */
+[2,3] 36 |   public function assertType(mixed $value): array {
+      37 |     if (!\is_array($value)) {
+      38 |       throw
+      39 |         IncorrectTypeException::withValue($this->getTrace(), 'array', $value);
+      40 |     }
+      41 | 
+[1]   42 |     return $value;
+      43 |   }
+      44 | 
+
+Naming[2049] Unbound name: Facebook\TypeSpec\__Private\array (an object type) [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:17:50
+    15 | use namespace HH\Lib\Vec;
+    16 | 
+[1] 17 | final class VecLikeArraySpec<T> extends TypeSpec<array<T>> {
+    18 |   public function __construct(
+    19 |     private string $name,
+
+Naming[2049] Unbound name: Facebook\TypeSpec\__Private\array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:25:45
+    23 | 
+    24 |   <<__Override>>
+[1] 25 |   public function coerceType(mixed $value): array<T> {
+    26 |     if (!$value is Traversable<_>) {
+    27 |       throw TypeCoercionException::withValue(
+
+Naming[2049] Unbound name: Facebook\TypeSpec\__Private\array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:39:45
+    37 | 
+    38 |   <<__Override>>
+[1] 39 |   public function assertType(mixed $value): array<T> {
+    40 |     if (!\is_array($value)) {
+    41 |       throw IncorrectTypeException::withValue(
+
+Naming[2049] Unbound name: is_array (a global function) [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:40:10
+    38 |   <<__Override>>
+    39 |   public function assertType(mixed $value): array<T> {
+[1] 40 |     if (!\is_array($value)) {
+    41 |       throw IncorrectTypeException::withValue(
+    42 |         $this->getTrace(),
+
+Typing[4110] Invalid return type [1]
+-> Expected Facebook\TypeSpec\__Private\array<T> [2]
+-> But got varray<([unresolved] | T)> [3]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:34:12
+     23 | 
+     24 |   <<__Override>>
+[2]  25 |   public function coerceType(mixed $value): array<T> {
+     26 |     if (!$value is Traversable<_>) {
+     27 |       throw TypeCoercionException::withValue(
+        :
+     32 |     }
+     33 | 
+[1]  34 |     return Vec\map($value, $inner ==> $this->inner->coerceType($inner))
+[1]  35 |       |> \array_values($$);
+     36 |   }
+     37 | 
+
+/tmp/hh_server/hhi_eeee9ab/stdlib/builtins_array.hhi:229:69
+    227 | function array_unshift(inout $array, $var, ...$args);
+    228 | <<__PHPStdLib, __Pure>>
+[3] 229 | function array_values<Tv>(<<__MaybeMutable>> Container<Tv> $input): varray<Tv>;
+    230 | <<__PHPStdLib>>
+    231 | function shuffle(inout $array);
+
+Typing[4107] Unbound name (typing): is_array [1]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:40:10
+    38 |   <<__Override>>
+    39 |   public function assertType(mixed $value): array<T> {
+[1] 40 |     if (!\is_array($value)) {
+    41 |       throw IncorrectTypeException::withValue(
+    42 |         $this->getTrace(),
+
+Typing[4110] Invalid return type [1]
+-> Expected Facebook\TypeSpec\__Private\array<T> [2]
+-> But got varray<([unresolved] | T)> [3]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:56:12
+     37 | 
+     38 |   <<__Override>>
+[2]  39 |   public function assertType(mixed $value): array<T> {
+     40 |     if (!\is_array($value)) {
+     41 |       throw IncorrectTypeException::withValue(
+        :
+     54 |     )();
+     55 | 
+[1]  56 |     return Vec\map_with_key(
+[1]  57 |       $value,
+[1]  58 |       ($k, $inner) ==> {
+[1]  59 |         $counter->next();
+[1]  60 |         $i = $counter->current();
+[1]  61 |         if ($k !== $i) {
+[1]  62 |           throw IncorrectTypeException::withValue(
+[1]  63 |             $this->getTrace(),
+[1]  64 |             'key '.$i,
+[1]  65 |             $k,
+[1]  66 |           );
+[1]  67 |         }
+[1]  68 |         return $this
+[1]  69 |           ->inner
+[1]  70 |           ->withTrace($this->getTrace()->withFrame($this->name.'['.$i.']'))
+[1]  71 |           ->assertType($inner);
+[1]  72 |       },
+[1]  73 |     )
+[1]  74 |       |> \array_values($$);
+     75 |   }
+     76 | 
+
+/tmp/hh_server/hhi_eeee9ab/stdlib/builtins_array.hhi:229:69
+    227 | function array_unshift(inout $array, $var, ...$args);
+    228 | <<__PHPStdLib, __Pure>>
+[3] 229 | function array_values<Tv>(<<__MaybeMutable>> Container<Tv> $input): varray<Tv>;
+    230 | <<__PHPStdLib>>
+    231 | function shuffle(inout $array);
+
+Typing[4110] Invalid argument [1]
+-> Expected KeyedTraversable<[unresolved], [unresolved]> [2]
+-> But got mixed [3]
+
+vendor/hhvm/type-assert/src/TypeSpec/__Private/VecLikeArraySpec.hack:57:7
+     37 | 
+     38 |   <<__Override>>
+[3]  39 |   public function assertType(mixed $value): array<T> {
+     40 |     if (!\is_array($value)) {
+     41 |       throw IncorrectTypeException::withValue(
+        :
+     55 | 
+     56 |     return Vec\map_with_key(
+[1]  57 |       $value,
+     58 |       ($k, $inner) ==> {
+     59 |         $counter->next();
+
+vendor/hhvm/hsl/src/vec/transform.php:124:3
+    122 | function map_with_key<Tk, Tv1, Tv2>(
+    123 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\KeyedTraversable::class)>>
+[2] 124 |   KeyedTraversable<Tk, Tv1> $traversable,
+    125 |   <<__AtMostRxAsFunc>>
+    126 |   (function(Tk, Tv1): Tv2) $value_func,
+
+Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead [1]
+
+vendor/nuxed/console/example/app.hack:5:1
+    3 | use namespace Nuxed\Console;
+    4 | 
+[1] 5 | require __DIR__.'/../vendor/hh_autoload.hh';
+    6 | 
+    7 | <<__EntryPoint>>
+
+Parsing[1002] The goto operator is not allowed in Hack files [1]
+
+vendor/nuxed/console/src/Nuxed/Console/Application.hack:312:11
+    310 |         $exitCode = $event->getExitCode();
+    311 |         if ($exitCode === Command\ExitCode::Success) {
+[1] 312 |           goto terminate;
+    313 |         }
+    314 |       }
+
+Parsing[1002] Labels are used only for goto, which is not allowed in Hack files [1]
+
+vendor/nuxed/console/src/Nuxed/Console/Application.hack:320:5
+    318 |     }
+    319 | 
+[1] 320 |     terminate:
+    321 |     return await $this->terminate($input, $output, $command, 0);
+    322 |   }
+
+Naming[2049] Unbound name: Nuxed\Console\ErrorHandler\array [1]
+
+vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:89:10
+    87 |         /* HH_IGNORE_ERROR[4110] */
+    88 |         $exception->getTrace(),
+[1] 89 |         (array<string, mixed> $frame): dict<string, string> ==> {
+    90 |           unset($frame['args']);
+    91 |           /* HH_IGNORE_ERROR[4110] */
+
+Typing[4110] Invalid argument [1]
+-> Expected Nuxed\Console\ErrorHandler\array<string, mixed> [2]
+-> But got darray<string, mixed> [3]
+->   via this generic Tv1 [4]
+
+vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:89:9
+       84 | 
+       85 |     $frames = Vec\filter<dict<string, string>>(
+[3]    86 |       Vec\map<darray<string, mixed>, dict<string, string>>(
+       87 |         /* HH_IGNORE_ERROR[4110] */
+       88 |         $exception->getTrace(),
+[1,2]  89 |         (array<string, mixed> $frame): dict<string, string> ==> {
+[1]    90 |           unset($frame['args']);
+[1]    91 |           /* HH_IGNORE_ERROR[4110] */
+[1]    92 |           return dict<string, string>($frame);
+[1]    93 |         },
+       94 |       ),
+       95 |       (dict<string, string> $frame): bool ==>
+
+vendor/hhvm/hsl/src/vec/transform.php:105:13
+      103 |   Traversable<Tv1> $traversable,
+      104 |   <<__AtMostRxAsFunc>>
+[4]   105 |   (function(Tv1): Tv2) $value_func,
+      106 | ): vec<Tv2> {
+      107 |   $result = vec[];
+
+Typing[4005] This is not an object of type KeyedContainer, this is an object of type Nuxed\Console\ErrorHandler\array<string, mixed> [1]
+-> Definition is here [2]
+
+vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:90:17
+    87 |         /* HH_IGNORE_ERROR[4110] */
+    88 |         $exception->getTrace(),
+[2] 89 |         (array<string, mixed> $frame): dict<string, string> ==> {
+[1] 90 |           unset($frame['args']);
+    91 |           /* HH_IGNORE_ERROR[4110] */
+    92 |           return dict<string, string>($frame);
+
+Typing[4341] The method getCode has the wrong type [1]
+-> This function is pure. [2]
+-> This function is reactive. [1]
+
+vendor/nuxed/console/src/Nuxed/Console/Exception/CommandNotFoundException.hack:13:19
+    11 | 
+    12 |   <<__Rx, __MaybeMutable>>
+[1] 13 |   public function getCode(): int {
+    14 |     return Command\ExitCode::CommandNotFound;
+    15 |   }
+
+/tmp/hh_server/hhi_eeee9ab/exceptions.hhi:99:19
+    97 |   public final function setPrevious(Exception $previous): void;
+    98 |   <<__Pure, __MaybeMutable>>
+[2] 99 |   public function getCode(): int;
+   100 |   <<__Pure, __MaybeMutable>>
+   101 |   final public function getFile(): string;
+
+Typing[4128] The function HH\Lib\File\open_read_only_nd is deprecated: Use open_read_only() instead [1]
+-> Definition is here [2]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:11:14
+     9 | 
+    10 |     try {
+[1] 11 |       return File\open_read_only_nd($this->path->toString());
+    12 |     } catch (\Exception $e) {
+    13 |       throw new Exception\RuntimeException(
+
+vendor/hhvm/hsl-experimental/src/file/open.php:46:10
+    44 | 
+    45 | <<__Deprecated("Use open_read_only() instead")>>
+[2] 46 | function open_read_only_nd(string $path): CloseableReadHandle {
+    47 |   return open_read_only($path);
+    48 | }
+
+Typing[4128] The function HH\Lib\File\open_write_only_nd is deprecated: Use open_write_only() instead [1]
+-> Definition is here [2]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:55:14
+    53 | 
+    54 |     try {
+[1] 55 |       return File\open_write_only_nd($this->path->toString(), $mode);
+    56 |     } catch (\Exception $e) {
+    57 |       throw new Exception\RuntimeException(
+
+vendor/hhvm/hsl-experimental/src/file/open.php:51:10
+    49 | 
+    50 | <<__Deprecated("Use open_write_only() instead")>>
+[2] 51 | function open_write_only_nd(
+    52 |   string $path,
+    53 |   WriteMode $mode = WriteMode::OPEN_OR_CREATE,
+
+Typing[4128] The function HH\Lib\File\open_read_write_nd is deprecated: Use open_read_write() instead [1]
+-> Definition is here [2]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:104:14
+    102 | 
+    103 |     try {
+[1] 104 |       return File\open_read_write_nd($this->path()->toString(), $mode);
+    105 |     } catch (\Exception $e) {
+    106 |       throw new Exception\RuntimeException(
+
+vendor/hhvm/hsl-experimental/src/file/open.php:60:10
+     58 | 
+     59 | <<__ReturnDisposable, __Deprecated("Use open_read_write() instead")>>
+[2]  60 | function open_read_write_nd(
+     61 |   string $path,
+     62 |   WriteMode $mode = WriteMode::OPEN_OR_CREATE,
+
+Typing[4187] Disposable objects may only be created in a using statement or return from function marked <<__ReturnDisposable>> [1]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:104:14
+    102 | 
+    103 |     try {
+[1] 104 |       return File\open_read_write_nd($this->path()->toString(), $mode);
+    105 |     } catch (\Exception $e) {
+    106 |       throw new Exception\RuntimeException(
+
+Typing[4053] No method closeAsync in HH\Lib\File\CloseableWriteHandle [1]
+-> Did you mean writeAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableWriteHandle [3]
+-> Declaration of HH\Lib\File\CloseableWriteHandle is here [4]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:317:24
+     24 |   public function getWriteHandle(
+     25 |     File\WriteMode $mode = File\WriteMode::OPEN_OR_CREATE,
+[3]  26 |   ): File\CloseableWriteHandle {
+     27 |     if ($mode === File\WriteMode::MUST_CREATE && $this->exists()) {
+     28 |       throw new Exception\ExistingNodeException(Str\format(
+        :
+    315 |         }
+    316 |       } finally {
+[1] 317 |         await $handle->closeAsync();
+    318 |       }
+    319 |     } catch (\Exception $e) {
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:44:19
+     42 |    *   input string.
+     43 |    */
+[2]  44 |   public function writeAsync(
+     45 |     string $bytes,
+     46 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:22:11
+     20 | }
+     21 | 
+[4]  22 | interface CloseableWriteHandle
+     23 |   extends
+     24 |     IO\CloseableSeekableWriteHandle,
+
+Typing[4053] No method closeAsync in HH\Lib\File\CloseableReadHandle [1]
+-> Did you mean close instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableReadHandle [3]
+-> Declaration of HH\Lib\File\CloseableReadHandle is here [4]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:346:24
+      4 | 
+      5 | final class File extends Node {
+[3]   6 |   public function getReadHandle(): File\CloseableReadHandle {
+      7 |     $this->isAvailable();
+      8 |     $this->isReadable();
+        :
+    344 |         }
+    345 |       } finally {
+[1] 346 |         await $handle->closeAsync();
+    347 |       }
+    348 |     } catch (\Exception $e) {
+
+vendor/hhvm/hsl-experimental/src/io/CloseableHandle.php:21:19
+     19 | interface CloseableHandle extends Handle {
+     20 |   /** Close the handle */
+[2]  21 |   public function close(): void;
+     22 | 
+     23 |   /** Close the handle when the returned disposable is disposed.
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:18:11
+     16 | }
+     17 | 
+[4]  18 | interface CloseableReadHandle
+     19 |   extends IO\CloseableSeekableReadHandle, CloseableHandle, ReadHandle {
+     20 | }
+
+Typing[4053] No method seekAsync in HH\Lib\IO\SeekableReadHandle [1]
+-> Did you mean readAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\SeekableReadHandle [3]
+-> Declaration of HH\Lib\IO\SeekableReadHandle is here [4]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/copy.hack:16:20
+     7 |  */
+     8 | async function copy(
+[3]  9 |   <<__AcceptDisposable>> IO\SeekableReadHandle $source,
+    10 |   <<__AcceptDisposable>> IO\WriteHandle $target,
+    11 |   ?int $max_bytes = null,
+       :
+    14 | ): Awaitable<bool> {
+    15 |   if ($iteration === 0) {
+[1] 16 |     await $source->seekAsync(0);
+    17 |   }
+    18 | 
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:56:19
+    54 |    *   - the empty string if the end of file is reached.
+    55 |    */
+[2] 56 |   public function readAsync(
+    57 |     ?int $max_bytes = null,
+    58 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:70:13
+    68 |   interface CloseableSeekableHandle extends SeekableHandle, CloseableHandle {}
+    69 |   interface CloseableReadHandle extends ReadHandle, CloseableHandle {}
+[4] 70 |   interface SeekableReadHandle extends ReadHandle, SeekableHandle {}
+    71 |   interface CloseableSeekableReadHandle
+    72 |     extends SeekableReadHandle, CloseableReadHandle, CloseableSeekableHandle {}
+
+Typing[4053] No method seekAsync in HH\Lib\IO\SeekableReadWriteHandle [1]
+-> Did you mean readAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\SeekableReadWriteHandle [3]
+->   via this generic T [4]
+-> Declaration of HH\Lib\IO\SeekableReadWriteHandle is here [5]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/stream.hack:20:18
+     18 | 
+     19 |   $remaining = $range['last'] - $range['first'] + 1;
+[1]  20 |   await $source->seekAsync($range['first']);
+     21 |   $remaining = await copy_range($source, $target, $maxBufferLength, $remaining);
+     22 |   if ($remaining > 0) {
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:56:19
+     54 |    *   - the empty string if the end of file is reached.
+     55 |    */
+[2]  56 |   public function readAsync(
+     57 |     ?int $max_bytes = null,
+     58 |     ?int $timeout_ns = null,
+
+vendor/nuxed/contract/src/Nuxed/Contract/Http/Message/IResponse.hack:21:38
+     19 |  * message and return an instance that contains the changed state.
+     20 |  */
+[3]  21 | interface IResponse extends IMessage<IO\SeekableReadWriteHandle> {
+     22 |   /**
+     23 |    * Gets the response status code.
+
+vendor/nuxed/contract/src/Nuxed/Contract/Http/Message/IMessage.hack:142:30
+    140 |    * Gets the body of the message.
+    141 |    */
+[4] 142 |   public function getBody(): T;
+    143 | 
+    144 |   /**
+
+vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:83:13
+     81 |   interface CloseableReadWriteHandle
+     82 |     extends ReadWriteHandle, CloseableWriteHandle, CloseableReadHandle {}
+[5]  83 |   interface SeekableReadWriteHandle
+     84 |     extends ReadWriteHandle, SeekableWriteHandle, SeekableReadHandle {}
+     85 |   interface CloseableSeekableReadWriteHandle
+
+Typing[4128] The function HH\Lib\File\open_read_write_nd is deprecated: Use open_read_write() instead [1]
+-> Definition is here [2]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/Body/functions.hack:6:10
+     4 | 
+     5 | function temporary(): IO\SeekableReadWriteHandle {
+[1]  6 |   return File\open_read_write_nd(
+     7 |     \sys_get_temp_dir().'/'.\bin2hex(\random_bytes(8)),
+     8 |     File\WriteMode::MUST_CREATE,
+
+vendor/hhvm/hsl-experimental/src/file/open.php:60:10
+    58 | 
+    59 | <<__ReturnDisposable, __Deprecated("Use open_read_write() instead")>>
+[2] 60 | function open_read_write_nd(
+    61 |   string $path,
+    62 |   WriteMode $mode = WriteMode::OPEN_OR_CREATE,
+
+Typing[4187] Disposable objects may only be created in a using statement or return from function marked <<__ReturnDisposable>> [1]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/Body/functions.hack:6:10
+    4 | 
+    5 | function temporary(): IO\SeekableReadWriteHandle {
+[1] 6 |   return File\open_read_write_nd(
+[1] 7 |     \sys_get_temp_dir().'/'.\bin2hex(\random_bytes(8)),
+[1] 8 |     File\WriteMode::MUST_CREATE,
+[1] 9 |   );
+   10 | }
+   11 | 
+
+Typing[4128] The function HH\Lib\File\open_read_write_nd is deprecated: Use open_read_write() instead [1]
+-> Definition is here [2]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/Body/functions.hack:16:10
+    14 |   File\WriteMode $mode = File\WriteMode::OPEN_OR_CREATE,
+    15 | ): IO\SeekableReadWriteHandle {
+[1] 16 |   return File\open_read_write_nd($path, $mode);
+    17 | }
+
+vendor/hhvm/hsl-experimental/src/file/open.php:60:10
+    58 | 
+    59 | <<__ReturnDisposable, __Deprecated("Use open_read_write() instead")>>
+[2] 60 | function open_read_write_nd(
+    61 |   string $path,
+    62 |   WriteMode $mode = WriteMode::OPEN_OR_CREATE,
+
+Typing[4187] Disposable objects may only be created in a using statement or return from function marked <<__ReturnDisposable>> [1]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/Body/functions.hack:16:10
+    14 |   File\WriteMode $mode = File\WriteMode::OPEN_OR_CREATE,
+    15 | ): IO\SeekableReadWriteHandle {
+[1] 16 |   return File\open_read_write_nd($path, $mode);
+    17 | }
+
+Typing[4128] The function HH\Lib\File\open_read_only_nd is deprecated: Use open_read_only() instead [1]
+-> Definition is here [2]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack:48:21
+    46 |     }
+    47 | 
+[1] 48 |     $this->handle = File\open_read_only_nd($this->file);
+    49 |     return $this->handle;
+    50 |   }
+
+vendor/hhvm/hsl-experimental/src/file/open.php:46:10
+    44 | 
+    45 | <<__Deprecated("Use open_read_only() instead")>>
+[2] 46 | function open_read_only_nd(string $path): CloseableReadHandle {
+    47 |   return open_read_only($path);
+    48 | }
+
+Typing[4053] No method seekAsync in HH\Lib\File\CloseableReadHandle [1]
+-> Did you mean readAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableReadHandle [3]
+-> Declaration of HH\Lib\File\CloseableReadHandle is here [4]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack:76:20
+    29 |    * an exception.
+    30 |    */
+[3] 31 |   public function getHandle(): File\CloseableReadHandle {
+    32 |     if ($this->moved) {
+    33 |       throw new Exception\UploadedFileAlreadyMovedException(
+       :
+    74 | 
+    75 |     $handle = $this->getHandle();
+[1] 76 |     await $handle->seekAsync(0);
+    77 | 
+    78 |     await using (
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:56:19
+    54 |    *   - the empty string if the end of file is reached.
+    55 |    */
+[2] 56 |   public function readAsync(
+    57 |     ?int $max_bytes = null,
+    58 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:18:11
+    16 | }
+    17 | 
+[4] 18 | interface CloseableReadHandle
+    19 |   extends IO\CloseableSeekableReadHandle, CloseableHandle, ReadHandle {
+    20 | }
+
+Typing[4110] Using cannot be used on non-disposable expression [1]
+-> Expected IAsyncDisposable because it was assigned in a using clause [1]
+-> But got HH\Lib\File\CloseableWriteHandle [2]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack:79:17
+    77 | 
+    78 |     await using (
+[1] 79 |       $target = File\open_write_only(
+[1] 80 |         $targetPath,
+[1] 81 |         File\WriteMode::OPEN_OR_CREATE,
+[1] 82 |       )
+    83 |     ) {
+    84 |       using ($_lock = $target->tryLockx(File\LockType::EXCLUSIVE)) {
+
+vendor/hhvm/hsl-experimental/src/file/open.php:23:4
+    21 |   WriteMode $mode = WriteMode::OPEN_OR_CREATE,
+    22 |   int $create_file_permissions = 0644,
+[2] 23 | ): CloseableWriteHandle {
+    24 |   return OS\open(
+    25 |     $path,
+
+Typing[4053] No method closeAsync in HH\Lib\File\CloseableReadHandle [1]
+-> Did you mean close instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableReadHandle [3]
+-> Declaration of HH\Lib\File\CloseableReadHandle is here [4]
+
+vendor/nuxed/http-message/src/Nuxed/Http/Message/UploadedFile.hack:89:20
+    29 |    * an exception.
+    30 |    */
+[3] 31 |   public function getHandle(): File\CloseableReadHandle {
+    32 |     if ($this->moved) {
+    33 |       throw new Exception\UploadedFileAlreadyMovedException(
+       :
+    87 |     }
+    88 | 
+[1] 89 |     await $handle->closeAsync();
+    90 | 
+    91 |     $this->moved = true;
+
+vendor/hhvm/hsl-experimental/src/io/CloseableHandle.php:21:19
+    19 | interface CloseableHandle extends Handle {
+    20 |   /** Close the handle */
+[2] 21 |   public function close(): void;
+    22 | 
+    23 |   /** Close the handle when the returned disposable is disposed.
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:18:11
+    16 | }
+    17 | 
+[4] 18 | interface CloseableReadHandle
+    19 |   extends IO\CloseableSeekableReadHandle, CloseableHandle, ReadHandle {
+    20 | }
+
+Typing[4128] The builtin call_user_func is deprecated. [1]
+
+vendor/usox/hackmock/src/Expectation.hh:97:6
+    95 | 			if (\is_callable($param_expectation)) {
+    96 | 				invariant(
+[1] 97 | 					\call_user_func($param_expectation as dynamic, $param),
+    98 | 					'Parameter validation failed'
+    99 | 				);
+
+Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
+
+vendor/usox/hackttp/example/index.hack:7:3
+    5 | async function main(): Awaitable<noreturn> {
+    6 |   require_once '../vendor/hh_autoload.hack';
+[1] 7 |   \Facebook\AutoloadMap\initialize();
+    8 |   $response = \Usox\HackTTP\create_response(200);
+    9 | 
+
+Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
+
+vendor/usox/hackttp/example/index.hack:7:3
+    5 | async function main(): Awaitable<noreturn> {
+    6 |   require_once '../vendor/hh_autoload.hack';
+[1] 7 |   \Facebook\AutoloadMap\initialize();
+    8 |   $response = \Usox\HackTTP\create_response(200);
+    9 | 
+
+93 errors found.
