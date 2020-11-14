@@ -29,6 +29,11 @@ const_default_func_args = true
 disallow_silence = true
 disable_lval_as_an_expression = true
 error_php_lambdas = true
+disallow_invalid_arraykey=true
+disallow_array_literal=true
+new_inference_lambda=true
+disable_xhp_children_declarations=true
+disallow_fun_and_cls_meth_pseudo_funcs = true
 
 ;------------------------------;
 ; Setting that I am working on ;
@@ -36,11 +41,13 @@ error_php_lambdas = true
 
 allowed_decl_fixme_codes=2053,4045,4047
 allowed_fixme_codes_strict=2011,2049,2050,2053,2083,3084,4026,4027,4045,4047,4104,4106,4107,4108,4053,4110,4128,4135,4188,4200,4223,4240,4248,4259,4281,4323,4387
+disable_modes=true
 
 ;------------------;
 ; Failing settings ;
 ;------------------;
 
+; disable_hh_ignore_error=true
 ; deregister_php_stdlib = true
 ; disallow_array_typehint = true
 ; disable_legacy_attribute_syntax = true
