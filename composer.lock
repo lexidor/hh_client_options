@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00c78ef2fc5f28ed77f0688498cd2ea9",
+    "content-hash": "535de2e0c0d8abd34ab96354d1ac55a6",
     "packages": [
         {
             "name": "facebook/definition-finder",
@@ -89,16 +89,16 @@
         },
         {
             "name": "facebook/fbexpect",
-            "version": "v2.7.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/fbexpect.git",
-                "reference": "dcf1beb1b9e264396495aa120a3752fddfbeca95"
+                "reference": "c2851185a267f647cd7eaaffe4e00e39f8b4281b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/dcf1beb1b9e264396495aa120a3752fddfbeca95",
-                "reference": "dcf1beb1b9e264396495aa120a3752fddfbeca95",
+                "url": "https://api.github.com/repos/hhvm/fbexpect/zipball/c2851185a267f647cd7eaaffe4e00e39f8b4281b",
+                "reference": "c2851185a267f647cd7eaaffe4e00e39f8b4281b",
                 "shasum": ""
             },
             "require": {
@@ -117,7 +117,7 @@
                 "MIT"
             ],
             "description": "Unit test helpers for Facebook projects",
-            "time": "2020-09-11T00:43:51+00:00"
+            "time": "2020-11-13T18:29:34+00:00"
         },
         {
             "name": "facebook/fbmarkdown",
@@ -1066,6 +1066,84 @@
             "time": "2019-12-02T05:16:23+00:00"
         },
         {
+            "name": "quizlet/fb_intercept_polyfill",
+            "version": "v2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/quizlet/fb_intercept_polyfill.git",
+                "reference": "b246d64c3a2a1bfa438230da4ab41d690dcfa4c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/quizlet/fb_intercept_polyfill/zipball/b246d64c3a2a1bfa438230da4ab41d690dcfa4c5",
+                "reference": "b246d64c3a2a1bfa438230da4ab41d690dcfa4c5",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": ">=4.26",
+                "hhvm/hhvm-autoload": "^1|^2|^3",
+                "hhvm/hsl": ">=4.7 <5"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^1|^2",
+                "hhvm/hacktest": "^1|^2"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A polyfill for using fb_intercept across hhvm 3.24 -> 4.present",
+            "time": "2020-08-18T00:02:44+00:00"
+        },
+        {
+            "name": "quizlet/hammock",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/quizlet/hammock.git",
+                "reference": "71c9492099dbb0183b13bed12f5fbebfbeacf0fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/quizlet/hammock/zipball/71c9492099dbb0183b13bed12f5fbebfbeacf0fc",
+                "reference": "71c9492099dbb0183b13bed12f5fbebfbeacf0fc",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": ">=3.24",
+                "hhvm/hhvm-autoload": "^1|^2|^3",
+                "hhvm/hsl": ">=1.4 <5",
+                "quizlet/fb_intercept_polyfill": "^1|^2"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Riya Dashoriya",
+                    "email": "riya.dashoriya@quizlet.com"
+                },
+                {
+                    "name": "Tyron Jung",
+                    "email": "tyron.jung@quizlet.com"
+                }
+            ],
+            "description": "Hammock is a stand-alone mocking library for Hacklang.",
+            "homepage": "https://github.com/quizlet/hammock",
+            "keywords": [
+                "hack",
+                "hacklang",
+                "hammock",
+                "library",
+                "mock",
+                "mocking",
+                "php",
+                "test",
+                "testing"
+            ],
+            "time": "2020-09-10T09:25:00+00:00"
+        },
+        {
             "name": "usox/hack-http-factory-interfaces",
             "version": "v0.2.2",
             "source": {
@@ -1108,62 +1186,6 @@
                 "http"
             ],
             "time": "2020-04-08T16:17:10+00:00"
-        },
-        {
-            "name": "usox/hackmock",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/usox/hackmock.git",
-                "reference": "e34b812ab1e4b877945151d9c15739c1ce919b38"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/usox/hackmock/zipball/e34b812ab1e4b877945151d9c15739c1ce919b38",
-                "reference": "e34b812ab1e4b877945151d9c15739c1ce919b38",
-                "shasum": ""
-            },
-            "require": {
-                "facebook/fbexpect": "^2.3",
-                "facebook/hack-codegen": "^4",
-                "hhvm": "^4.1",
-                "hhvm/hacktest": "^1.4|^2.0",
-                "hhvm/hsl": "^4.1",
-                "hhvm/type-assert": "^3.2|^4.0"
-            },
-            "require-dev": {
-                "hhvm/hhast": "^4.1"
-            },
-            "suggest": {
-                "slack/hack-sql-fake": "Database Testing library for Hacklang"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Usox\\HackMock\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Jakob",
-                    "email": "dev@usox.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Mocking framework for hacklang",
-            "homepage": "https://github.com/usox/hackmock",
-            "keywords": [
-                "hack",
-                "hacklang",
-                "hhvm",
-                "mock",
-                "testing"
-            ],
-            "time": "2020-09-03T06:46:08+00:00"
         },
         {
             "name": "usox/hackttp",

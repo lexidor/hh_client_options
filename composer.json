@@ -13,7 +13,7 @@
     "hhvm": "^4.80",
     "hhvm/hacktest": "*",
     "hhvm/hhast": "*",
-    "hhvm/hhvm-autoload": "*",
+    "hhvm/hhvm-autoload": ">3",
     "hhvm/hsl": "*",
     "hhvm/hsl-experimental": "*",
     "hhvm/type-assert": "*",
@@ -38,9 +38,9 @@
     "nuxed/inflector": "*",
     "nuxed/uuid": "*",
 
-
     "usox/hackttp": "*",
-    "usox/hackmock": "*"
+
+    "quizlet/hammock": "*"
   },
   "minimum-stability": "dev"
 }
