@@ -8,17 +8,14 @@ namespace Lexidor\HHClientOptions {
     require_once __DIR__.'/../vendor/autoload.hack';
     \Facebook\AutoloadMap\initialize();
 
-    $is_comment = fun('\Lexidor\HHClientOptions\_Private\is_comment');
-    $get_lines = fun('\Lexidor\HHClientOptions\_Private\file_get_lines');
-    $is_blank = fun('\HH\Lib\Str\is_empty');
-    $to_pair = fun('\Lexidor\HHClientOptions\_Private\to_pair');
-    $is_applicable_option = fun(
-      '\Lexidor\HHClientOptions\_Private\is_applicable_option',
-    );
-    $format = fun('\Lexidor\HHClientOptions\_Private\format');
-    $assert_no_contradition = fun(
-      '\Lexidor\HHClientOptions\_Private\assert_no_contradiction',
-    );
+    $is_comment = _Private\is_comment<>;
+    $get_lines = _Private\file_get_lines<>;
+    $is_blank = Str\is_empty<>;
+    $to_pair = _Private\to_pair<>;
+    $is_applicable_option = _Private\is_applicable_option<>;
+        
+    $format = _Private\format<>;
+    $assert_no_contradiction = _Private\assert_no_contradiction<>;
 
     $options = _Private\get_config_files()
       |> Vec\map($$, $get_lines)
@@ -28,7 +25,7 @@ namespace Lexidor\HHClientOptions {
       |> Vec\map($$, $to_pair)
       |> Vec\filter($$, $is_applicable_option)
       |> Vec\unique_by($$, $option ==> $option[0].'='.$option[1])
-      |> $assert_no_contradition($$)
+      |> $assert_no_contradiction($$)
       |> Vec\map($$, $format)
       |> Str\join($$, \PHP_EOL);
 
@@ -54,7 +51,7 @@ namespace Lexidor\HHClientOptions {
 
     function to_pair(string $option): (string, string) {
       $assert_valid_option = expect($pair ==> C\count($pair) === 2);
-      $trim = fun('\HH\Lib\Str\trim');
+      $trim = Str\trim<>;
 
       return Str\split($option, '=')
         |> $assert_valid_option($$)
