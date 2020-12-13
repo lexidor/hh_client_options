@@ -1,31 +1,3 @@
-Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead [1]
-
-vendor/hh_autoload.hh:2:1
-    1 | <?hh // partial
-[1] 2 | require_once(__DIR__.'/autoload.hack');
-    3 | Facebook\AutoloadMap\initialize();
-
-Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead [1]
-
-vendor/hh_autoload.hh:3:1
-    1 | <?hh // partial
-    2 | require_once(__DIR__.'/autoload.hack');
-[1] 3 | Facebook\AutoloadMap\initialize();
-
-Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead [1]
-
-vendor/hh_autoload.php:2:1
-    1 | <?hh // partial
-[1] 2 | require_once(__DIR__.'/autoload.hack');
-    3 | Facebook\AutoloadMap\initialize();
-
-Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead [1]
-
-vendor/hh_autoload.php:3:1
-    1 | <?hh // partial
-    2 | require_once(__DIR__.'/autoload.hack');
-[1] 3 | Facebook\AutoloadMap\initialize();
-
 Typing[4138] The assigned type of this type constant is inconsistent with its parent [1]
 -> This shape type allows unknown fields, and so it may contain fields other than those explicitly declared in its declaration. [2]
 -> It is incompatible with a shape that does not allow unknown fields. [3]
@@ -936,4 +908,4 @@ vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:22:11
     23 |   extends
     24 |     IO\CloseableSeekableWriteHandle,
 
-41 errors found.
+37 errors found.
