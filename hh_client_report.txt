@@ -44,9 +44,71 @@ vendor/hhvm/hhast/src/Linters/BaseLinter.hack:19:38
       20 | 
       21 |   abstract public function getLintErrorsAsync(): Awaitable<vec<LintError>>;
 
+Typing[4053] No method readAsync in HH\Lib\IO\ReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\ReadHandle [3]
+-> Declaration of HH\Lib\IO\ReadHandle is here [4]
+
+vendor/hhvm/hhast/src/__Private/BufferedReader.hack:38:37
+    14 | /** Temporary: this should be replaced by somethign in HSL IO */
+    15 | final class BufferedReader {
+[3] 16 |   public function __construct(private IO\ReadHandle $handle) {
+    17 |   }
+    18 | 
+       :
+    36 |     do {
+    37 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
+[1] 38 |       $chunk = await $this->handle->readAsync();
+    39 |       if ($chunk === '') {
+    40 |         $this->buffer = $buf;
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+    20 |  * `readFixedSizeAsync()` on top of `readAsync`.
+    21 |  */
+[4] 22 | interface ReadHandle extends Handle {
+    23 |   /** An immediate, unordered read.
+    24 |    *
+       :
+    68 |    * unnecessarily hitting the request memory limit.
+    69 |    */
+[2] 70 |   public function readAllAsync(
+    71 |     ?int $max_bytes = null,
+    72 |     ?int $timeout_ns = null,
+
+Typing[4053] No method readAsync in HH\Lib\IO\ReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\ReadHandle [3]
+-> Declaration of HH\Lib\IO\ReadHandle is here [4]
+
+vendor/hhvm/hhast/src/__Private/BufferedReader.hack:60:37
+    14 | /** Temporary: this should be replaced by somethign in HSL IO */
+    15 | final class BufferedReader {
+[3] 16 |   public function __construct(private IO\ReadHandle $handle) {
+    17 |   }
+    18 | 
+       :
+    58 |     while (Str\length($buf) < $size) {
+    59 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
+[1] 60 |       $chunk = await $this->handle->readAsync($size - Str\length($buf));
+    61 |       if ($chunk === '') {
+    62 |         $this->buffer = $buf;
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+    20 |  * `readFixedSizeAsync()` on top of `readAsync`.
+    21 |  */
+[4] 22 | interface ReadHandle extends Handle {
+    23 |   /** An immediate, unordered read.
+    24 |    *
+       :
+    68 |    * unnecessarily hitting the request memory limit.
+    69 |    */
+[2] 70 |   public function readAllAsync(
+    71 |     ?int $max_bytes = null,
+    72 |     ?int $timeout_ns = null,
+
 Parsing[1002] XHP children declarations are no longer supported. [1]
 
-vendor/hhvm/hhast/src/__Private/codegen/data/XHPChildrenSyntaxExample.hack:12:12
+vendor/hhvm/hhast/src/__Private/codegen/data/XHPChildren.SyntaxExample.hack:12:12
     10 | 
     11 | class :xhpchildren1 {
 [1] 12 |   children (pcdata);
@@ -144,23 +206,116 @@ vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:90:17
     91 |           /* HH_IGNORE_ERROR[4110] */
     92 |           return dict<string, string>($frame);
 
-Typing[4341] The method getCode has the wrong type [1]
+Typing[4341] The method getCode is not compatible with the overridden method [1]
 -> This function is pure. [2]
 -> This function is reactive. [1]
 
 vendor/nuxed/console/src/Nuxed/Console/Exception/CommandNotFoundException.hack:13:19
-    11 | 
-    12 |   <<__Rx, __MaybeMutable>>
-[1] 13 |   public function getCode(): int {
-    14 |     return Command\ExitCode::CommandNotFound;
-    15 |   }
+     11 | 
+     12 |   <<__Rx, __MaybeMutable>>
+[1]  13 |   public function getCode(): int {
+     14 |     return Command\ExitCode::CommandNotFound;
+     15 |   }
 
-/tmp/hh_server/hhi_2f627d0/exceptions.hhi:99:19
-    97 |   public final function setPrevious(Exception $previous): void;
-    98 |   <<__Pure, __MaybeMutable>>
-[2] 99 |   public function getCode(): int;
-   100 |   <<__Pure, __MaybeMutable>>
-   101 |   final public function getFile(): string;
+/tmp/hh_server/hhi_3f918e8a/exceptions.hhi:101:19
+     99 |   public final function setPrevious(Exception $previous): void;
+    100 |   <<__Pure, __MaybeMutable>>
+[2] 101 |   public function getCode(): int;
+    102 |   <<__Pure, __MaybeMutable>>
+    103 |   final public function getFile(): string;
+
+Typing[4053] No method writeAsync in HH\Lib\IO\WriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\WriteHandle [3]
+-> Declaration of HH\Lib\IO\WriteHandle is here [4]
+
+vendor/nuxed/console/src/Nuxed/Console/Output/AbstractOutput.hack:83:20
+    72 |    */
+    73 |   protected async function writeTo(
+[3] 74 |     IO\WriteHandle $handle,
+    75 |     string $message,
+    76 |     Verbosity $verbosity,
+       :
+    81 |     }
+    82 | 
+[1] 83 |     await $handle->writeAsync($this->format($message, $type));
+    84 | 
+    85 |     return;
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+    19 |  * `rawWriteBlocking()` will immediately try to write to the handle.
+    20 |  */
+[4] 21 | interface WriteHandle extends Handle {
+    22 |   /** An immediate unordered write.
+    23 |    *
+       :
+    57 |    * do not want this to happen.
+    58 |    */
+[2] 59 |   public function writeAllAsync(
+    60 |     string $bytes,
+    61 |     ?int $timeout_ns = null,
+
+Typing[4053] No method readAsync in HH\Lib\IO\ReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\ReadHandle [3]
+-> Declaration of HH\Lib\IO\ReadHandle is here [4]
+
+vendor/nuxed/console/src/Nuxed/Console/_Private/BufferedReader.hack:31:37
+    15 |   private string $buffer = '';
+    16 | 
+[3] 17 |   public function __construct(private IO\ReadHandle $handle) {
+    18 |   }
+    19 | 
+       :
+    29 |     do {
+    30 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
+[1] 31 |       $chunk = await $this->handle->readAsync();
+    32 |       if ($chunk === '') {
+    33 |         $this->buffer = $buf;
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+    20 |  * `readFixedSizeAsync()` on top of `readAsync`.
+    21 |  */
+[4] 22 | interface ReadHandle extends Handle {
+    23 |   /** An immediate, unordered read.
+    24 |    *
+       :
+    68 |    * unnecessarily hitting the request memory limit.
+    69 |    */
+[2] 70 |   public function readAllAsync(
+    71 |     ?int $max_bytes = null,
+    72 |     ?int $timeout_ns = null,
+
+Typing[4053] No method readAsync in HH\Lib\IO\ReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\ReadHandle [3]
+-> Declaration of HH\Lib\IO\ReadHandle is here [4]
+
+vendor/nuxed/console/src/Nuxed/Console/_Private/BufferedReader.hack:53:37
+    15 |   private string $buffer = '';
+    16 | 
+[3] 17 |   public function __construct(private IO\ReadHandle $handle) {
+    18 |   }
+    19 | 
+       :
+    51 |     while (Str\length($buf) < $size) {
+    52 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
+[1] 53 |       $chunk = await $this->handle->readAsync($size - Str\length($buf));
+    54 |       if ($chunk === '') {
+    55 |         $this->buffer = $buf;
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+    20 |  * `readFixedSizeAsync()` on top of `readAsync`.
+    21 |  */
+[4] 22 | interface ReadHandle extends Handle {
+    23 |   /** An immediate, unordered read.
+    24 |    *
+       :
+    68 |    * unnecessarily hitting the request memory limit.
+    69 |    */
+[2] 70 |   public function readAllAsync(
+    71 |     ?int $max_bytes = null,
+    72 |     ?int $timeout_ns = null,
 
 Typing[4128] The function HH\Lib\File\open_read_only_nd is deprecated: Use open_read_only() instead [1]
 -> Definition is here [2]
@@ -222,8 +377,72 @@ vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:104:14
     105 |     } catch (\Exception $e) {
     106 |       throw new Exception\RuntimeException(
 
+Typing[4053] No method writeAsync in HH\Lib\File\CloseableWriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableWriteHandle [3]
+-> Declaration of HH\Lib\File\CloseableWriteHandle is here [4]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:310:26
+     24 |   public function getWriteHandle(
+     25 |     File\WriteMode $mode = File\WriteMode::OPEN_OR_CREATE,
+[3]  26 |   ): File\CloseableWriteHandle {
+     27 |     if ($mode === File\WriteMode::MUST_CREATE && $this->exists()) {
+     28 |       throw new Exception\ExistingNodeException(Str\format(
+        :
+    308 |       try {
+    309 |         using ($_lock = $handle->tryLockx(File\LockType::EXCLUSIVE)) {
+[1] 310 |           await $handle->writeAsync($data);
+    311 |         }
+    312 |       } catch (File\AlreadyLockedException $e) {
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+     57 |    * do not want this to happen.
+     58 |    */
+[2]  59 |   public function writeAllAsync(
+     60 |     string $bytes,
+     61 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:22:11
+     20 | }
+     21 | 
+[4]  22 | interface CloseableWriteHandle
+     23 |   extends
+     24 |     IO\CloseableSeekableWriteHandle,
+
+Typing[4053] No method writeAsync in HH\Lib\File\CloseableWriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableWriteHandle [3]
+-> Declaration of HH\Lib\File\CloseableWriteHandle is here [4]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:314:26
+     24 |   public function getWriteHandle(
+     25 |     File\WriteMode $mode = File\WriteMode::OPEN_OR_CREATE,
+[3]  26 |   ): File\CloseableWriteHandle {
+     27 |     if ($mode === File\WriteMode::MUST_CREATE && $this->exists()) {
+     28 |       throw new Exception\ExistingNodeException(Str\format(
+        :
+    312 |       } catch (File\AlreadyLockedException $e) {
+    313 |         using ($_lock = $handle->lock(File\LockType::EXCLUSIVE)) {
+[1] 314 |           await $handle->writeAsync($data);
+    315 |         }
+    316 |       } finally {
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+     57 |    * do not want this to happen.
+     58 |    */
+[2]  59 |   public function writeAllAsync(
+     60 |     string $bytes,
+     61 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:22:11
+     20 | }
+     21 | 
+[4]  22 | interface CloseableWriteHandle
+     23 |   extends
+     24 |     IO\CloseableSeekableWriteHandle,
+
 Typing[4053] No method closeAsync in HH\Lib\File\CloseableWriteHandle [1]
--> Did you mean writeAsync instead? [2]
+-> Did you mean close instead? [2]
 -> This is why I think it is an object of type HH\Lib\File\CloseableWriteHandle [3]
 -> Declaration of HH\Lib\File\CloseableWriteHandle is here [4]
 
@@ -240,12 +459,12 @@ vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:317:24
     318 |       }
     319 |     } catch (\Exception $e) {
 
-vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:44:19
-     42 |    *   input string.
-     43 |    */
-[2]  44 |   public function writeAsync(
-     45 |     string $bytes,
-     46 |     ?int $timeout_ns = null,
+vendor/hhvm/hsl-experimental/src/io/CloseableHandle.php:21:19
+     19 | interface CloseableHandle extends Handle {
+     20 |   /** Close the handle */
+[2]  21 |   public function close(): void;
+     22 | 
+     23 |   /** Close the handle when the returned disposable is disposed.
 
 vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:22:11
      20 | }
@@ -253,6 +472,70 @@ vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:22:11
 [4]  22 | interface CloseableWriteHandle
      23 |   extends
      24 |     IO\CloseableSeekableWriteHandle,
+
+Typing[4053] No method readAsync in HH\Lib\File\CloseableReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableReadHandle [3]
+-> Declaration of HH\Lib\File\CloseableReadHandle is here [4]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:339:33
+      4 | 
+      5 | final class File extends Node {
+[3]   6 |   public function getReadHandle(): File\CloseableReadHandle {
+      7 |     $this->isAvailable();
+      8 |     $this->isReadable();
+        :
+    337 |       try {
+    338 |         using ($_lock = $handle->tryLockx(File\LockType::SHARED)) {
+[1] 339 |           return await $handle->readAsync($length);
+    340 |         }
+    341 |       } catch (File\AlreadyLockedException $e) {
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+     68 |    * unnecessarily hitting the request memory limit.
+     69 |    */
+[2]  70 |   public function readAllAsync(
+     71 |     ?int $max_bytes = null,
+     72 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:18:11
+     16 | }
+     17 | 
+[4]  18 | interface CloseableReadHandle
+     19 |   extends IO\CloseableSeekableReadHandle, CloseableHandle, ReadHandle {
+     20 | }
+
+Typing[4053] No method readAsync in HH\Lib\File\CloseableReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableReadHandle [3]
+-> Declaration of HH\Lib\File\CloseableReadHandle is here [4]
+
+vendor/nuxed/filesystem/src/Nuxed/Filesystem/File.hack:343:33
+      4 | 
+      5 | final class File extends Node {
+[3]   6 |   public function getReadHandle(): File\CloseableReadHandle {
+      7 |     $this->isAvailable();
+      8 |     $this->isReadable();
+        :
+    341 |       } catch (File\AlreadyLockedException $e) {
+    342 |         using ($_lock = $handle->lock(File\LockType::SHARED)) {
+[1] 343 |           return await $handle->readAsync($length);
+    344 |         }
+    345 |       } finally {
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+     68 |    * unnecessarily hitting the request memory limit.
+     69 |    */
+[2]  70 |   public function readAllAsync(
+     71 |     ?int $max_bytes = null,
+     72 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:18:11
+     16 | }
+     17 | 
+[4]  18 | interface CloseableReadHandle
+     19 |   extends IO\CloseableSeekableReadHandle, CloseableHandle, ReadHandle {
+     20 | }
 
 Typing[4053] No method closeAsync in HH\Lib\File\CloseableReadHandle [1]
 -> Did you mean close instead? [2]
@@ -287,7 +570,7 @@ vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:18:11
      20 | }
 
 Typing[4053] No method seekAsync in HH\Lib\IO\SeekableReadHandle [1]
--> Did you mean readAsync instead? [2]
+-> Did you mean seek instead? [2]
 -> This is why I think it is an object of type HH\Lib\IO\SeekableReadHandle [3]
 -> Declaration of HH\Lib\IO\SeekableReadHandle is here [4]
 
@@ -304,12 +587,12 @@ vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/copy.hack:16:20
     17 |   }
     18 | 
 
-vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:56:19
-    54 |    *   - the empty string if the end of file is reached.
-    55 |    */
-[2] 56 |   public function readAsync(
-    57 |     ?int $max_bytes = null,
-    58 |     ?int $timeout_ns = null,
+vendor/hhvm/hsl-experimental/src/io/SeekableHandle.php:21:19
+    19 |    * handle is always offset 0.
+    20 |    */
+[2] 21 |   public function seek(int $offset): void;
+    22 | 
+    23 |   /**
 
 vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:70:13
     68 |   interface CloseableSeekableHandle extends SeekableHandle, CloseableHandle {}
@@ -318,8 +601,134 @@ vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:70:13
     71 |   interface CloseableSeekableReadHandle
     72 |     extends SeekableReadHandle, CloseableReadHandle, CloseableSeekableHandle {}
 
+Typing[4053] No method readAsync in HH\Lib\IO\SeekableReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\SeekableReadHandle [3]
+-> Declaration of HH\Lib\IO\SeekableReadHandle is here [4]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/copy.hack:20:29
+     7 |  */
+     8 | async function copy(
+[3]  9 |   <<__AcceptDisposable>> IO\SeekableReadHandle $source,
+    10 |   <<__AcceptDisposable>> IO\WriteHandle $target,
+    11 |   ?int $max_bytes = null,
+       :
+    18 | 
+    19 |   $iteration++;
+[1] 20 |   $content = await $source->readAsync($max_bytes, $timeout_ns);
+    21 |   if ('' !== $content) {
+    22 |     await $target->writeAsync($content, $timeout_ns);
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+    68 |    * unnecessarily hitting the request memory limit.
+    69 |    */
+[2] 70 |   public function readAllAsync(
+    71 |     ?int $max_bytes = null,
+    72 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:70:13
+    68 |   interface CloseableSeekableHandle extends SeekableHandle, CloseableHandle {}
+    69 |   interface CloseableReadHandle extends ReadHandle, CloseableHandle {}
+[4] 70 |   interface SeekableReadHandle extends ReadHandle, SeekableHandle {}
+    71 |   interface CloseableSeekableReadHandle
+    72 |     extends SeekableReadHandle, CloseableReadHandle, CloseableSeekableHandle {}
+
+Typing[4053] No method writeAsync in HH\Lib\IO\WriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\WriteHandle [3]
+-> Declaration of HH\Lib\IO\WriteHandle is here [4]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/copy.hack:22:20
+     8 | async function copy(
+     9 |   <<__AcceptDisposable>> IO\SeekableReadHandle $source,
+[3] 10 |   <<__AcceptDisposable>> IO\WriteHandle $target,
+    11 |   ?int $max_bytes = null,
+    12 |   ?int $timeout_ns = null,
+       :
+    20 |   $content = await $source->readAsync($max_bytes, $timeout_ns);
+    21 |   if ('' !== $content) {
+[1] 22 |     await $target->writeAsync($content, $timeout_ns);
+    23 |     await copy($source, $target, $max_bytes, $timeout_ns, $iteration);
+    24 |   }
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+    19 |  * `rawWriteBlocking()` will immediately try to write to the handle.
+    20 |  */
+[4] 21 | interface WriteHandle extends Handle {
+    22 |   /** An immediate unordered write.
+    23 |    *
+       :
+    57 |    * do not want this to happen.
+    58 |    */
+[2] 59 |   public function writeAllAsync(
+    60 |     string $bytes,
+    61 |     ?int $timeout_ns = null,
+
+Typing[4053] No method readAsync in HH\Lib\IO\SeekableReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\SeekableReadHandle [3]
+-> Declaration of HH\Lib\IO\SeekableReadHandle is here [4]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/copy.hack:37:32
+    28 | 
+    29 | async function copy_range(
+[3] 30 |   <<__AcceptDisposable>> IO\SeekableReadHandle $source,
+    31 |   <<__AcceptDisposable>> IO\WriteHandle $target,
+    32 |   int $length,
+       :
+    35 | ): Awaitable<int> {
+    36 |   if ($remaining >= $length) {
+[1] 37 |     $contents = await $source->readAsync($length, $timeout_ns);
+    38 |     if ('' !== $contents) {
+    39 |       $remaining -= Str\length($contents);
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+    68 |    * unnecessarily hitting the request memory limit.
+    69 |    */
+[2] 70 |   public function readAllAsync(
+    71 |     ?int $max_bytes = null,
+    72 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:70:13
+    68 |   interface CloseableSeekableHandle extends SeekableHandle, CloseableHandle {}
+    69 |   interface CloseableReadHandle extends ReadHandle, CloseableHandle {}
+[4] 70 |   interface SeekableReadHandle extends ReadHandle, SeekableHandle {}
+    71 |   interface CloseableSeekableReadHandle
+    72 |     extends SeekableReadHandle, CloseableReadHandle, CloseableSeekableHandle {}
+
+Typing[4053] No method writeAsync in HH\Lib\IO\WriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\WriteHandle [3]
+-> Declaration of HH\Lib\IO\WriteHandle is here [4]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/copy.hack:40:22
+    29 | async function copy_range(
+    30 |   <<__AcceptDisposable>> IO\SeekableReadHandle $source,
+[3] 31 |   <<__AcceptDisposable>> IO\WriteHandle $target,
+    32 |   int $length,
+    33 |   int $remaining,
+       :
+    38 |     if ('' !== $contents) {
+    39 |       $remaining -= Str\length($contents);
+[1] 40 |       await $target->writeAsync($contents);
+    41 |       await copy_range($source, $target, $length, $remaining, $timeout_ns);
+    42 |     }
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+    19 |  * `rawWriteBlocking()` will immediately try to write to the handle.
+    20 |  */
+[4] 21 | interface WriteHandle extends Handle {
+    22 |   /** An immediate unordered write.
+    23 |    *
+       :
+    57 |    * do not want this to happen.
+    58 |    */
+[2] 59 |   public function writeAllAsync(
+    60 |     string $bytes,
+    61 |     ?int $timeout_ns = null,
+
 Typing[4053] No method seekAsync in HH\Lib\IO\SeekableReadWriteHandle [1]
--> Did you mean readAsync instead? [2]
+-> Did you mean seek instead? [2]
 -> This is why I think it is an object of type HH\Lib\IO\SeekableReadWriteHandle [3]
 ->   via this generic T [4]
 -> Declaration of HH\Lib\IO\SeekableReadWriteHandle is here [5]
@@ -331,12 +740,12 @@ vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/stream.hack:20:18
      21 |   $remaining = await copy_range($source, $target, $maxBufferLength, $remaining);
      22 |   if ($remaining > 0) {
 
-vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:56:19
-     54 |    *   - the empty string if the end of file is reached.
-     55 |    */
-[2]  56 |   public function readAsync(
-     57 |     ?int $max_bytes = null,
-     58 |     ?int $timeout_ns = null,
+vendor/hhvm/hsl-experimental/src/io/SeekableHandle.php:21:19
+     19 |    * handle is always offset 0.
+     20 |    */
+[2]  21 |   public function seek(int $offset): void;
+     22 | 
+     23 |   /**
 
 vendor/nuxed/contract/src/Nuxed/Contract/Http/Message/IResponse.hack:21:38
      19 |  * message and return an instance that contains the changed state.
@@ -359,4 +768,172 @@ vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:83:13
      84 |     extends ReadWriteHandle, SeekableWriteHandle, SeekableReadHandle {}
      85 |   interface CloseableSeekableReadWriteHandle
 
-23 errors found.
+Typing[4053] No method readAsync in HH\Lib\IO\SeekableReadWriteHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\SeekableReadWriteHandle [3]
+->   via this generic T [4]
+-> Declaration of HH\Lib\IO\SeekableReadWriteHandle is here [5]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/stream.hack:23:32
+     21 |   $remaining = await copy_range($source, $target, $maxBufferLength, $remaining);
+     22 |   if ($remaining > 0) {
+[1]  23 |     $contents = await $source->readAsync($remaining);
+     24 |     if ('' !== $contents) {
+     25 |       await $target->writeAsync($contents);
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+     68 |    * unnecessarily hitting the request memory limit.
+     69 |    */
+[2]  70 |   public function readAllAsync(
+     71 |     ?int $max_bytes = null,
+     72 |     ?int $timeout_ns = null,
+
+vendor/nuxed/contract/src/Nuxed/Contract/Http/Message/IResponse.hack:21:38
+     19 |  * message and return an instance that contains the changed state.
+     20 |  */
+[3]  21 | interface IResponse extends IMessage<IO\SeekableReadWriteHandle> {
+     22 |   /**
+     23 |    * Gets the response status code.
+
+vendor/nuxed/contract/src/Nuxed/Contract/Http/Message/IMessage.hack:142:30
+    140 |    * Gets the body of the message.
+    141 |    */
+[4] 142 |   public function getBody(): T;
+    143 | 
+    144 |   /**
+
+vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:83:13
+     81 |   interface CloseableReadWriteHandle
+     82 |     extends ReadWriteHandle, CloseableWriteHandle, CloseableReadHandle {}
+[5]  83 |   interface SeekableReadWriteHandle
+     84 |     extends ReadWriteHandle, SeekableWriteHandle, SeekableReadHandle {}
+     85 |   interface CloseableSeekableReadWriteHandle
+
+Typing[4053] No method writeAsync in HH\Lib\IO\WriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\WriteHandle [3]
+-> Declaration of HH\Lib\IO\WriteHandle is here [4]
+
+vendor/nuxed/http-emitter/src/Nuxed/Http/Emitter/_Private/stream.hack:25:22
+     6 | async function stream(
+     7 |   Message\IResponse $response,
+[3]  8 |   IO\WriteHandle $target,
+     9 |   int $maxBufferLength,
+    10 | ): Awaitable<bool> {
+       :
+    23 |     $contents = await $source->readAsync($remaining);
+    24 |     if ('' !== $contents) {
+[1] 25 |       await $target->writeAsync($contents);
+    26 |     }
+    27 |   }
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+    19 |  * `rawWriteBlocking()` will immediately try to write to the handle.
+    20 |  */
+[4] 21 | interface WriteHandle extends Handle {
+    22 |   /** An immediate unordered write.
+    23 |    *
+       :
+    57 |    * do not want this to happen.
+    58 |    */
+[2] 59 |   public function writeAllAsync(
+    60 |     string $bytes,
+    61 |     ?int $timeout_ns = null,
+
+Typing[4053] No method writeAsync in HH\Lib\IO\WriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\WriteHandle [3]
+-> Declaration of HH\Lib\IO\WriteHandle is here [4]
+
+vendor/usox/hackttp/example/index.hack:12:31
+     10 |   $response = $response->withAddedHeaderLine('X-ZOMG', 'aggi');
+     11 | 
+[1]  12 |   await $response->getBody()->writeAsync('foo');
+     13 | 
+     14 |   $emitter = new \Usox\HackTTP\Response\TemporaryFileSapiEmitter();
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+     19 |  * `rawWriteBlocking()` will immediately try to write to the handle.
+     20 |  */
+[4]  21 | interface WriteHandle extends Handle {
+     22 |   /** An immediate unordered write.
+     23 |    *
+        :
+     57 |    * do not want this to happen.
+     58 |    */
+[2]  59 |   public function writeAllAsync(
+     60 |     string $bytes,
+     61 |     ?int $timeout_ns = null,
+
+vendor/facebook/hack-http-request-response-interfaces/src/ResponseInterface.hack:100:30
+     98 |    * Gets the body of the message.
+     99 |    */
+[3] 100 |   public function getBody(): IO\WriteHandle;
+    101 | 
+    102 |   /**
+
+Typing[4053] No method readAsync in HH\Lib\IO\ReadHandle [1]
+-> Did you mean readAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\IO\ReadHandle [3]
+-> Declaration of HH\Lib\IO\ReadHandle is here [4]
+
+vendor/usox/hackttp/src/UploadedFile.hack:60:37
+    20 | 
+    21 |   public function __construct(
+[3] 22 |     private IO\ReadHandle $stream,
+    23 |     private ?int $size,
+    24 |     private ?Message\UploadedFileError $upload_status = null,
+       :
+    58 |     do {
+    59 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
+[1] 60 |       $chunk = await $this->stream->readAsync();
+    61 |       if ($chunk === '') {
+    62 |         break;
+
+vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
+    20 |  * `readFixedSizeAsync()` on top of `readAsync`.
+    21 |  */
+[4] 22 | interface ReadHandle extends Handle {
+    23 |   /** An immediate, unordered read.
+    24 |    *
+       :
+    68 |    * unnecessarily hitting the request memory limit.
+    69 |    */
+[2] 70 |   public function readAllAsync(
+    71 |     ?int $max_bytes = null,
+    72 |     ?int $timeout_ns = null,
+
+Typing[4053] No method writeAsync in HH\Lib\File\CloseableWriteHandle [1]
+-> Did you mean writeAllAsync instead? [2]
+-> This is why I think it is an object of type HH\Lib\File\CloseableWriteHandle [3]
+-> Declaration of HH\Lib\File\CloseableWriteHandle is here [4]
+
+vendor/usox/hackttp/src/UploadedFile.hack:65:22
+    63 |       }
+    64 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
+[1] 65 |       await $target->writeAsync($chunk);
+    66 |     } while (true);
+    67 | 
+
+vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
+    57 |    * do not want this to happen.
+    58 |    */
+[2] 59 |   public function writeAllAsync(
+    60 |     string $bytes,
+    61 |     ?int $timeout_ns = null,
+
+vendor/hhvm/hsl-experimental/src/file/open.php:23:4
+    21 |   WriteMode $mode = WriteMode::OPEN_OR_CREATE,
+    22 |   int $create_file_permissions = 0644,
+[3] 23 | ): CloseableWriteHandle {
+    24 |   return OS\open(
+    25 |     $path,
+
+vendor/hhvm/hsl-experimental/src/file/CloseableHandle.php:22:11
+    20 | }
+    21 | 
+[4] 22 | interface CloseableWriteHandle
+    23 |   extends
+    24 |     IO\CloseableSeekableWriteHandle,
+
+41 errors found.
