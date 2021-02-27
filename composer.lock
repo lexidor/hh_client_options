@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c20aab69b54bf85fd791851efe0e3e0",
+    "content-hash": "09e452a8bf2c5b8988d559c6f40ad03c",
     "packages": [
         {
             "name": "facebook/definition-finder",
@@ -863,52 +863,6 @@
             "time": "2020-05-09T10:50:54+00:00"
         },
         {
-            "name": "nuxed/environment",
-            "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuxed/environment.git",
-                "reference": "7bd5fb274c2c4acda155b30a77d759a88d2ae57b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/environment/zipball/7bd5fb274c2c4acda155b30a77d759a88d2ae57b",
-                "reference": "7bd5fb274c2c4acda155b30a77d759a88d2ae57b",
-                "shasum": ""
-            },
-            "require": {
-                "hhvm": "^4.25",
-                "hhvm/hsl": "^4.25",
-                "nuxed/filesystem": "^1.2"
-            },
-            "require-dev": {
-                "facebook/fbexpect": "^2.7",
-                "hhvm/hacktest": "^2.0",
-                "hhvm/hhast": "^4.25"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "azjezz",
-                    "email": "azjezz@protonmail.com"
-                },
-                {
-                    "name": "Nuxed Community",
-                    "homepage": "https://github.com/nuxed/environment/graphs/contributors"
-                }
-            ],
-            "description": "Nuxed Environment",
-            "support": {
-                "issues": "https://github.com/nuxed/environment/issues",
-                "source": "https://github.com/nuxed/environment/tree/master"
-            },
-            "time": "2020-04-23T17:08:28+00:00"
-        },
-        {
             "name": "nuxed/event-dispatcher",
             "version": "v1.1.0",
             "source": {
@@ -953,101 +907,6 @@
                 "source": "https://github.com/nuxed/event-dispatcher/tree/v1.1.0"
             },
             "time": "2020-05-09T12:18:58+00:00"
-        },
-        {
-            "name": "nuxed/filesystem",
-            "version": "v1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuxed/filesystem.git",
-                "reference": "fc746d0c0664f9af3fb5ccf2b7f43426323f1d4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/filesystem/zipball/fc746d0c0664f9af3fb5ccf2b7f43426323f1d4e",
-                "reference": "fc746d0c0664f9af3fb5ccf2b7f43426323f1d4e",
-                "shasum": ""
-            },
-            "require": {
-                "hhvm": "^4.56",
-                "hhvm/hsl": "^4.40",
-                "hhvm/hsl-experimental": "^4.40"
-            },
-            "require-dev": {
-                "facebook/fbexpect": "^2.7",
-                "hhvm/hacktest": "^2.0",
-                "hhvm/hhast": "^4.25",
-                "nuxed/crypto": "^1.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "azjezz",
-                    "email": "azjezz@protonmail.com"
-                },
-                {
-                    "name": "Nuxed Community",
-                    "homepage": "https://github.com/nuxed/filesystem/graphs/contributors"
-                }
-            ],
-            "description": "Nuxed Filesystem",
-            "support": {
-                "issues": "https://github.com/nuxed/filesystem/issues",
-                "source": "https://github.com/nuxed/filesystem/tree/v1.4.0"
-            },
-            "time": "2020-05-09T10:40:32+00:00"
-        },
-        {
-            "name": "nuxed/http-emitter",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuxed/http-emitter.git",
-                "reference": "f4acd9baf59c7a45bd799b4d180272a436a32cca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/http-emitter/zipball/f4acd9baf59c7a45bd799b4d180272a436a32cca",
-                "reference": "f4acd9baf59c7a45bd799b4d180272a436a32cca",
-                "shasum": ""
-            },
-            "require": {
-                "hhvm": "^4.56",
-                "hhvm/hsl": "^4.40",
-                "hhvm/hsl-experimental": "^4.50",
-                "nuxed/contract": "^1.0"
-            },
-            "require-dev": {
-                "facebook/fbexpect": "^2.7",
-                "hhvm/hacktest": "^2.0",
-                "hhvm/hhast": "^4.25",
-                "nuxed/http-message": "^1.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "azjezz",
-                    "email": "azjezz@protonmail.com"
-                },
-                {
-                    "name": "Nuxed Community",
-                    "homepage": "https://github.com/nuxed/http-emitter/graphs/contributors"
-                }
-            ],
-            "description": "Nuxed Http Emitter",
-            "support": {
-                "issues": "https://github.com/nuxed/http-emitter/issues",
-                "source": "https://github.com/nuxed/http-emitter/tree/v1.0.0"
-            },
-            "time": "2020-05-09T16:21:20+00:00"
         },
         {
             "name": "nuxed/inflector",

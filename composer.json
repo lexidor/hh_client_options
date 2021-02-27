@@ -7,7 +7,13 @@
     "nuxed/json",
     "nuxed/translation",
     "nuxed/http-message",
-    "nuxed/asset"
+    "nuxed/asset",
+    "This package uses a goto",
+    "nuxed/console",
+    "These packages use an older version of hsl/io",
+    "nuxed/http-emitter",
+    "nuxed/filesystem",
+    "nuxed/environment"
   ],
   "require": {
     "hhvm": "^4.98",
@@ -30,10 +36,7 @@
         
     "nuxed/contract": "^1",
     "nuxed/crypto": "*",
-    "nuxed/environment": "*",
     "nuxed/event-dispatcher": "*",
-    "nuxed/filesystem": "*",
-    "nuxed/http-emitter": "*",
     "nuxed/inflector": "*",
     "nuxed/uuid": "*",
 
