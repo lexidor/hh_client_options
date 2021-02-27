@@ -1,111 +1,3 @@
-Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
-
-main.hack:6:3
-    4 | async function main_async(): Awaitable<void> {
-    5 |   require_once __DIR__.'/vendor/autoload.hack';
-[1] 6 |   \Facebook\AutoloadMap\initialize();
-    7 | 
-    8 |   echo "Read README.md, found at the root of this repository.";
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
-
-main.hack:6:3
-    4 | async function main_async(): Awaitable<void> {
-    5 |   require_once __DIR__.'/vendor/autoload.hack';
-[1] 6 |   \Facebook\AutoloadMap\initialize();
-    7 | 
-    8 |   echo "Read README.md, found at the root of this repository.";
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
-
-src/collect_configs.hack:9:5
-    7 |   function main_collect_configs(): void {
-    8 |     require_once __DIR__.'/../vendor/autoload.hack';
-[1] 9 |     \Facebook\AutoloadMap\initialize();
-   10 | 
-   11 |     $is_comment = _Private\is_comment<>;
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
-
-src/collect_configs.hack:9:5
-    7 |   function main_collect_configs(): void {
-    8 |     require_once __DIR__.'/../vendor/autoload.hack';
-[1] 9 |     \Facebook\AutoloadMap\initialize();
-   10 | 
-   11 |     $is_comment = _Private\is_comment<>;
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\is_dev (a global function) [1]
-
-vendor/facebook/hack-router/src/router/BaseRouter.php:82:9
-    80 |     }
-    81 | 
-[1] 82 |     if (is_dev()) {
-    83 |       $routes = null;
-    84 |     } else {
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\is_dev (a global function) [1]
-
-vendor/facebook/hack-router/src/router/BaseRouter.php:99:12
-    97 |       );
-    98 | 
-[1] 99 |       if (!is_dev()) {
-   100 |         \apc_store(__FILE__.'/cache', $routes);
-   101 |       }
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\is_dev [1]
-
-vendor/facebook/hack-router/src/router/BaseRouter.php:82:9
-    80 |     }
-    81 | 
-[1] 82 |     if (is_dev()) {
-    83 |       $routes = null;
-    84 |     } else {
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\is_dev [1]
-
-vendor/facebook/hack-router/src/router/BaseRouter.php:99:12
-    97 |       );
-    98 | 
-[1] 99 |       if (!is_dev()) {
-   100 |         \apc_store(__FILE__.'/cache', $routes);
-   101 |       }
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\map (a global function) [1]
-
-vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack:51:19
-    49 |       return Dict\map(
-    50 |         $paths,
-[1] 51 |         $path ==> \Facebook\AutoloadMap\Generated\map()['class']
-    52 |           |> Dict\filter($$, $class_path ==> $class_path === $path)
-    53 |           |> Keyset\keys($$)
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\map [1]
-
-vendor/hhvm/hacktest/src/Retriever/ClassRetriever.hack:51:19
-    49 |       return Dict\map(
-    50 |         $paths,
-[1] 51 |         $path ==> \Facebook\AutoloadMap\Generated\map()['class']
-    52 |           |> Dict\filter($$, $class_path ==> $class_path === $path)
-    53 |           |> Keyset\keys($$)
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\map (a global function) [1]
-
-vendor/hhvm/hacktest/src/Retriever/FileRetriever.hack:22:14
-    20 |   public function getTestFiles(): keyset<string> {
-    21 |     if (\ini_get('hhvm.repo.authoritative')) {
-[1] 22 |       return \Facebook\AutoloadMap\Generated\map()['class']
-    23 |         |> Keyset\filter(
-    24 |           $$,
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\map [1]
-
-vendor/hhvm/hacktest/src/Retriever/FileRetriever.hack:22:14
-    20 |   public function getTestFiles(): keyset<string> {
-    21 |     if (\ini_get('hhvm.repo.authoritative')) {
-[1] 22 |       return \Facebook\AutoloadMap\Generated\map()['class']
-    23 |         |> Keyset\filter(
-    24 |           $$,
-
 Typing[4138] The assigned type of this type constant is inconsistent with its parent [1]
 -> This shape type allows unknown fields, and so it may contain fields other than those explicitly declared in its declaration. [2]
 -> It is incompatible with a shape that does not allow unknown fields. [3]
@@ -124,42 +16,6 @@ vendor/hhvm/hhast/src/Linters/BaseLinter.hack:19:38
       20 | 
       21 |   abstract public function getLintErrorsAsync(): Awaitable<vec<LintError>>;
 
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\root (a global function) [1]
-
-vendor/hhvm/hhast/src/Linters/LicenseHeaderLinter.hack:146:40
-    144 |     $path = \dirname(\realpath($path));
-    145 |     if (
-[1] 146 |       Str\starts_with($path, \realpath(\Facebook\AutoloadMap\Generated\root()))
-    147 |     ) {
-    148 |       return self::getLicenseHeaderForPath($path);
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\root [1]
-
-vendor/hhvm/hhast/src/Linters/LicenseHeaderLinter.hack:146:40
-    144 |     $path = \dirname(\realpath($path));
-    145 |     if (
-[1] 146 |       Str\starts_with($path, \realpath(\Facebook\AutoloadMap\Generated\root()))
-    147 |     ) {
-    148 |       return self::getLicenseHeaderForPath($path);
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\root (a global function) [1]
-
-vendor/hhvm/hhast/src/__Private/CodegenCLI.hack:81:7
-    79 |   private function getSchema(): self::TSchema {
-    80 |     $json = \file_get_contents(
-[1] 81 |       \Facebook\AutoloadMap\Generated\root().'/codegen/schema.json',
-    82 |     );
-    83 |     $array = \json_decode(
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\root [1]
-
-vendor/hhvm/hhast/src/__Private/CodegenCLI.hack:81:7
-    79 |   private function getSchema(): self::TSchema {
-    80 |     $json = \file_get_contents(
-[1] 81 |       \Facebook\AutoloadMap\Generated\root().'/codegen/schema.json',
-    82 |     );
-    83 |     $array = \json_decode(
-
 Parsing[1002] XHP children declarations are no longer supported. [1]
 
 vendor/hhvm/hhast/src/__Private/codegen/data/XHPChildren.SyntaxExample.hack:12:12
@@ -168,121 +24,6 @@ vendor/hhvm/hhast/src/__Private/codegen/data/XHPChildren.SyntaxExample.hack:12:1
 [1] 12 |   children (pcdata);
     13 | }
     14 | 
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\map (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:31:18
-    29 | 
-    30 |   public function __construct() {
-[1] 31 |     $this->map = Generated\map();
-    32 |   }
-    33 | 
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\build_id (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:90:31
-    88 |       return;
-    89 |     }
-[1] 90 |     if ($data['build_id'] !== Generated\build_id()) {
-    91 |       $this->dirty = true;
-    92 |       return;
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\root (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:99:7
-    97 |     \HH\autoload_set_paths(
-    98 |       /* HH_IGNORE_ERROR[4110] incorrect hhi */ $map,
-[1] 99 |       Generated\root(),
-   100 |     );
-   101 | 
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\build_id (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:110:21
-    108 |     }
-    109 |     $data = shape(
-[1] 110 |       'build_id' => Generated\build_id(),
-    111 |       'map' => $this->map,
-    112 |     );
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\root (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:118:12
-    116 |   /** Where to store the file cache */
-    117 |   protected function getCacheFilePath(): string {
-[1] 118 |     return Generated\root().'/vendor/hh_autoload.hh-cache';
-    119 |   }
-    120 | 
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\map [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:31:18
-    29 | 
-    30 |   public function __construct() {
-[1] 31 |     $this->map = Generated\map();
-    32 |   }
-    33 | 
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\build_id [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:90:31
-    88 |       return;
-    89 |     }
-[1] 90 |     if ($data['build_id'] !== Generated\build_id()) {
-    91 |       $this->dirty = true;
-    92 |       return;
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\root [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:99:7
-    97 |     \HH\autoload_set_paths(
-    98 |       /* HH_IGNORE_ERROR[4110] incorrect hhi */ $map,
-[1] 99 |       Generated\root(),
-   100 |     );
-   101 | 
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\build_id [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:110:21
-    108 |     }
-    109 |     $data = shape(
-[1] 110 |       'build_id' => Generated\build_id(),
-    111 |       'map' => $this->map,
-    112 |     );
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\root [1]
-
-vendor/hhvm/hhvm-autoload/src/HHClientFallbackHandler.hack:118:12
-    116 |   /** Where to store the file cache */
-    117 |   protected function getCacheFilePath(): string {
-[1] 118 |     return Generated\root().'/vendor/hh_autoload.hh-cache';
-    119 |   }
-    120 | 
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\Generated\is_dev (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/is_dev.hack:13:13
-    11 | <<__EntryPoint>>
-    12 | function main(): void {
-[1] 13 |   \var_dump(\Facebook\AutoloadMap\Generated\is_dev());
-    14 | }
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\Generated\is_dev [1]
-
-vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/is_dev.hack:13:13
-    11 | <<__EntryPoint>>
-    12 | function main(): void {
-[1] 13 |   \var_dump(\Facebook\AutoloadMap\Generated\is_dev());
-    14 | }
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-dev.php:18:3
-    16 | 
-    17 |   require($argv[1]);
-[1] 18 |   \Facebook\AutoloadMap\initialize();
-    19 | 
-    20 |   $x = new ExampleClass();
 
 Naming[2049] Unbound name: Facebook\AutoloadMap\TestFixtures\MyExampleTest (an object type) [1]
 
@@ -293,24 +34,6 @@ vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-dev.php:37:19
     38 |     "Should be able to load class from dev root in prod mode",
     39 |   );
 
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
-
-vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-dev.php:18:3
-    16 | 
-    17 |   require($argv[1]);
-[1] 18 |   \Facebook\AutoloadMap\initialize();
-    19 | 
-    20 |   $x = new ExampleClass();
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
-
-vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:20:3
-    18 |   \var_dump($argv[1]);
-    19 |   \var_dump(\file_get_contents($argv[1] as string));
-[1] 20 |   \Facebook\AutoloadMap\initialize();
-    21 | 
-    22 |   $x = new ExampleClass();
-
 Naming[2049] Unbound name: Facebook\AutoloadMap\TestFixtures\MyExampleTest (an object type) [1]
 
 vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:39:20
@@ -320,68 +43,41 @@ vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:39:20
     40 |     "Should *not* be able to load class from dev root in prod mode",
     41 |   );
 
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
-
-vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:20:3
-    18 |   \var_dump($argv[1]);
-    19 |   \var_dump(\file_get_contents($argv[1] as string));
-[1] 20 |   \Facebook\AutoloadMap\initialize();
-    21 | 
-    22 |   $x = new ExampleClass();
-
-Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
-
-vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:17:5
-    15 |   function generate_intersection_interfaces(): void {
-    16 |     require_once(__DIR__.'/../../vendor/autoload.hack'); // @oss-enable
-[1] 17 |     \Facebook\AutoloadMap\initialize(); // @oss-enable
-    18 | 
-    19 |     // Map these to powers of two, so we can later use a bitmask
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
-
-vendor/hhvm/hsl-experimental/src/io/intersection_interfaces.php:17:5
-    15 |   function generate_intersection_interfaces(): void {
-    16 |     require_once(__DIR__.'/../../vendor/autoload.hack'); // @oss-enable
-[1] 17 |     \Facebook\AutoloadMap\initialize(); // @oss-enable
-    18 | 
-    19 |     // Map these to powers of two, so we can later use a bitmask
-
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/c/select.php:219:5
-    217 |     /* HH_FIXME[4200] intersection of Iterable and Rx\Traversable is reactive */
-    218 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
-[1] 219 |     /* HH_FIXME[4390] need ctx constants */
-    220 |     return $traversable->lastValue();
-    221 |   }
+vendor/hhvm/hsl/src/c/select.php:201:5
+    199 |     /* HH_FIXME[4200] intersection of Iterable and Rx\Traversable is reactive */
+    200 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
+[1] 201 |     /* HH_FIXME[4390] need ctx constants */
+    202 |     return $traversable->lastValue();
+    203 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/c/select.php:220:12
-    210 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    211 |   Traversable<T> $traversable,
-[2] 212 | )[]: ?T {
-    213 |   if ($traversable is Container<_>) {
-    214 |     return _Private\Native\last($traversable);
+vendor/hhvm/hsl/src/c/select.php:202:12
+    192 | function last<T>(
+    193 |   Traversable<T> $traversable,
+[2] 194 | )[]: ?T {
+    195 |   if ($traversable is Container<_>) {
+    196 |     return _Private\Native\last($traversable);
         :
-    218 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
-    219 |     /* HH_FIXME[4390] need ctx constants */
-[1] 220 |     return $traversable->lastValue();
-    221 |   }
-    222 |   $value = null;
+    200 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
+    201 |     /* HH_FIXME[4390] need ctx constants */
+[1] 202 |     return $traversable->lastValue();
+    203 |   }
+    204 |   $value = null;
 
-/tmp/hh_server/hhi_29fd0626/interfaces.hhi:508:19
+/tmp/hh_server/hhi_3b2be946/interfaces.hhi:508:19
     506 |    *           current `Iterable` is empty.
     507 |    */
 [3] 508 |   public function lastValue(): ?Tv;
     509 | }
     510 | 
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -390,39 +86,39 @@ vendor/hhvm/hsl/src/c/select.php:220:12
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/c/select.php:286:5
-    284 |     /* HH_FIXME[4200] intersection of Iterable and Rx\Traversable is reactive */
-    285 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
-[1] 286 |     /* HH_FIXME[4390] need ctx constants */
-    287 |     return $traversable->lastKey();
-    288 |   }
+vendor/hhvm/hsl/src/c/select.php:264:5
+    262 |     /* HH_FIXME[4200] intersection of Iterable and Rx\Traversable is reactive */
+    263 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
+[1] 264 |     /* HH_FIXME[4390] need ctx constants */
+    265 |     return $traversable->lastKey();
+    266 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/c/select.php:287:12
-    277 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\KeyedTraversable::class)>>
-    278 |   KeyedTraversable<Tk, Tv> $traversable,
-[2] 279 | )[]: ?Tk {
-    280 |   if ($traversable is KeyedContainer<_, _>) {
-    281 |     return _Private\Native\last_key($traversable);
+vendor/hhvm/hsl/src/c/select.php:265:12
+    255 | function last_key<Tk, Tv>(
+    256 |   KeyedTraversable<Tk, Tv> $traversable,
+[2] 257 | )[]: ?Tk {
+    258 |   if ($traversable is KeyedContainer<_, _>) {
+    259 |     return _Private\Native\last_key($traversable);
         :
-    285 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
-    286 |     /* HH_FIXME[4390] need ctx constants */
-[1] 287 |     return $traversable->lastKey();
-    288 |   }
-    289 |   $key = null;
+    263 |     /* HH_FIXME[4387] reported here as of 2020.09.21, hack v4.51.0 */
+    264 |     /* HH_FIXME[4390] need ctx constants */
+[1] 265 |     return $traversable->lastKey();
+    266 |   }
+    267 |   $key = null;
 
-/tmp/hh_server/hhi_29fd0626/interfaces.hhi:787:19
+/tmp/hh_server/hhi_3b2be946/interfaces.hhi:787:19
     785 |    *           current `KeyedIterable` is empty.
     786 |    */
 [3] 787 |   public function lastKey(): ?Tk;
     788 | }
     789 | 
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -431,38 +127,38 @@ vendor/hhvm/hsl/src/c/select.php:287:12
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:32:3
-    30 | 
-    31 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 32 |   /* HH_FIXME[4390] Magic Function */
-    33 |   await AwaitAllWaitHandle::fromDict($dict);
-    34 |   foreach ($dict as $key => $value) {
+vendor/hhvm/hsl/src/dict/async.php:30:3
+    28 | 
+    29 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 30 |   /* HH_FIXME[4390] Magic Function */
+    31 |   await AwaitAllWaitHandle::fromDict($dict);
+    32 |   foreach ($dict as $key => $value) {
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:33:9
-     26 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\KeyedTraversable::class)>>
-     27 |   KeyedTraversable<Tk, Awaitable<Tv>> $awaitables,
-[2]  28 | )[]: Awaitable<dict<Tk, Tv>> {
-     29 |   $dict = cast_clear_legacy_array_mark($awaitables);
-     30 | 
-     31 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-     32 |   /* HH_FIXME[4390] Magic Function */
-[1]  33 |   await AwaitAllWaitHandle::fromDict($dict);
-     34 |   foreach ($dict as $key => $value) {
-     35 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+vendor/hhvm/hsl/src/dict/async.php:31:9
+     24 | async function from_async<Tk as arraykey, Tv>(
+     25 |   KeyedTraversable<Tk, Awaitable<Tv>> $awaitables,
+[2]  26 | )[]: Awaitable<dict<Tk, Tv>> {
+     27 |   $dict = cast_clear_legacy_array_mark($awaitables);
+     28 | 
+     29 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+     30 |   /* HH_FIXME[4390] Magic Function */
+[1]  31 |   await AwaitAllWaitHandle::fromDict($dict);
+     32 |   foreach ($dict as $key => $value) {
+     33 |     /* HH_FIXME[4387] Hide the magic from reactivity */
 
-/tmp/hh_server/hhi_29fd0626/classes.hhi:159:26
+/tmp/hh_server/hhi_3b2be946/classes.hhi:159:26
     157 |     darray<arraykey, Awaitable<mixed>> $deps
     158 |   ): Awaitable<void>;
 [3] 159 |   public static function fromDict(
     160 |     dict<arraykey, Awaitable<mixed>> $deps
     161 |   ): Awaitable<void>;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -471,39 +167,39 @@ vendor/hhvm/hsl/src/dict/async.php:33:9
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:36:5
-    34 |   foreach ($dict as $key => $value) {
-    35 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 36 |     /* HH_FIXME[4390] Magic Function */
-    37 |     $dict[$key] = \HH\Asio\result($value);
-    38 |   }
+vendor/hhvm/hsl/src/dict/async.php:34:5
+    32 |   foreach ($dict as $key => $value) {
+    33 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 34 |     /* HH_FIXME[4390] Magic Function */
+    35 |     $dict[$key] = \HH\Asio\result($value);
+    36 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:37:19
-    26 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\KeyedTraversable::class)>>
-    27 |   KeyedTraversable<Tk, Awaitable<Tv>> $awaitables,
-[2] 28 | )[]: Awaitable<dict<Tk, Tv>> {
-    29 |   $dict = cast_clear_legacy_array_mark($awaitables);
-    30 | 
+vendor/hhvm/hsl/src/dict/async.php:35:19
+    24 | async function from_async<Tk as arraykey, Tv>(
+    25 |   KeyedTraversable<Tk, Awaitable<Tv>> $awaitables,
+[2] 26 | )[]: Awaitable<dict<Tk, Tv>> {
+    27 |   $dict = cast_clear_legacy_array_mark($awaitables);
+    28 | 
        :
-    35 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-    36 |     /* HH_FIXME[4390] Magic Function */
-[1] 37 |     $dict[$key] = \HH\Asio\result($value);
-    38 |   }
-    39 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
+    33 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+    34 |     /* HH_FIXME[4390] Magic Function */
+[1] 35 |     $dict[$key] = \HH\Asio\result($value);
+    36 |   }
+    37 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_asio.hhi:17:12
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_asio.hhi:17:12
     15 | namespace HH\Asio {
     16 |   function join<T>(Awaitable<T> $awaitable): T;
 [3] 17 |   function result<T>(Awaitable<T> $awaitable): T;
     18 |   function name(Awaitable<mixed> $awaitable): string;
     19 |   function has_finished(Awaitable<mixed> $awaitable): bool;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
     26 | *   i.e., automatically present with the subtyped capability
     27 | */
 [4] 28 | namespace HH\Contexts {
@@ -512,39 +208,39 @@ vendor/hhvm/hsl/src/dict/async.php:37:19
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:67:3
-    65 | 
-    66 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 67 |   /* HH_FIXME[4390] Magic Function */
-    68 |   await AwaitAllWaitHandle::fromDict($awaitables);
-    69 |   foreach ($awaitables as $key => $value) {
+vendor/hhvm/hsl/src/dict/async.php:62:3
+    60 | 
+    61 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 62 |   /* HH_FIXME[4390] Magic Function */
+    63 |   await AwaitAllWaitHandle::fromDict($awaitables);
+    64 |   foreach ($awaitables as $key => $value) {
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $async_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:68:9
-     56 |   <<__AtMostRxAsFunc>>
-     57 |   (function(Tk)[_]: Awaitable<Tv>) $async_func,
-[2]  58 | )[ctx $async_func]: Awaitable<dict<Tk, Tv>> {
-     59 |   $awaitables = dict[];
-     60 |   foreach ($keys as $key) {
+vendor/hhvm/hsl/src/dict/async.php:63:9
+     51 |   Traversable<Tk> $keys,
+     52 |   (function(Tk)[_]: Awaitable<Tv>) $async_func,
+[2]  53 | )[ctx $async_func]: Awaitable<dict<Tk, Tv>> {
+     54 |   $awaitables = dict[];
+     55 |   foreach ($keys as $key) {
         :
-     66 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-     67 |   /* HH_FIXME[4390] Magic Function */
-[1]  68 |   await AwaitAllWaitHandle::fromDict($awaitables);
-     69 |   foreach ($awaitables as $key => $value) {
-     70 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+     61 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+     62 |   /* HH_FIXME[4390] Magic Function */
+[1]  63 |   await AwaitAllWaitHandle::fromDict($awaitables);
+     64 |   foreach ($awaitables as $key => $value) {
+     65 |     /* HH_FIXME[4387] Hide the magic from reactivity */
 
-/tmp/hh_server/hhi_29fd0626/classes.hhi:159:26
+/tmp/hh_server/hhi_3b2be946/classes.hhi:159:26
     157 |     darray<arraykey, Awaitable<mixed>> $deps
     158 |   ): Awaitable<void>;
 [3] 159 |   public static function fromDict(
     160 |     dict<arraykey, Awaitable<mixed>> $deps
     161 |   ): Awaitable<void>;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -553,39 +249,39 @@ vendor/hhvm/hsl/src/dict/async.php:68:9
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:71:5
-    69 |   foreach ($awaitables as $key => $value) {
-    70 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 71 |     /* HH_FIXME[4390] Magic Function */
-    72 |     $awaitables[$key] = \HH\Asio\result($value);
-    73 |   }
+vendor/hhvm/hsl/src/dict/async.php:66:5
+    64 |   foreach ($awaitables as $key => $value) {
+    65 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 66 |     /* HH_FIXME[4390] Magic Function */
+    67 |     $awaitables[$key] = \HH\Asio\result($value);
+    68 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $async_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:72:25
-    56 |   <<__AtMostRxAsFunc>>
-    57 |   (function(Tk)[_]: Awaitable<Tv>) $async_func,
-[2] 58 | )[ctx $async_func]: Awaitable<dict<Tk, Tv>> {
-    59 |   $awaitables = dict[];
-    60 |   foreach ($keys as $key) {
+vendor/hhvm/hsl/src/dict/async.php:67:25
+    51 |   Traversable<Tk> $keys,
+    52 |   (function(Tk)[_]: Awaitable<Tv>) $async_func,
+[2] 53 | )[ctx $async_func]: Awaitable<dict<Tk, Tv>> {
+    54 |   $awaitables = dict[];
+    55 |   foreach ($keys as $key) {
        :
-    70 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-    71 |     /* HH_FIXME[4390] Magic Function */
-[1] 72 |     $awaitables[$key] = \HH\Asio\result($value);
-    73 |   }
-    74 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
+    65 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+    66 |     /* HH_FIXME[4390] Magic Function */
+[1] 67 |     $awaitables[$key] = \HH\Asio\result($value);
+    68 |   }
+    69 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_asio.hhi:17:12
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_asio.hhi:17:12
     15 | namespace HH\Asio {
     16 |   function join<T>(Awaitable<T> $awaitable): T;
 [3] 17 |   function result<T>(Awaitable<T> $awaitable): T;
     18 |   function name(Awaitable<mixed> $awaitable): string;
     19 |   function has_finished(Awaitable<mixed> $awaitable): bool;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
     26 | *   i.e., automatically present with the subtyped capability
     27 | */
 [4] 28 | namespace HH\Contexts {
@@ -594,29 +290,29 @@ vendor/hhvm/hsl/src/dict/async.php:72:25
 
 Typing[4401] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4401 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:153:5
-    151 |   $dict = cast_clear_legacy_array_mark($traversable);
-    152 |   foreach ($dict as $key => $value) {
-[1] 153 |     /* HH_FIXME[4401] need to make this safe to coeffects */
-    154 |     $dict[$key] = $value_func($value);
-    155 |   }
+vendor/hhvm/hsl/src/dict/async.php:141:5
+    139 |   $dict = cast_clear_legacy_array_mark($traversable);
+    140 |   foreach ($dict as $key => $value) {
+[1] 141 |     /* HH_FIXME[4401] need to make this safe to coeffects */
+    142 |     $dict[$key] = $value_func($value);
+    143 |   }
 
 Typing[4401] Not immediately awaiting Awaitable-typed values requires the capability AccessStaticVariable, which is not provided by the context. [1]
 -> The local (enclosing) context provides the capability ctx $value_func [2]
 -> Hack provides a list of supported contexts here [3]
 
-vendor/hhvm/hsl/src/dict/async.php:154:19
-    148 |   <<__AtMostRxAsFunc>>
-    149 |   (function(Tv1)[_]: Awaitable<Tv2>) $value_func,
-[2] 150 | )[ctx $value_func]: Awaitable<dict<Tk, Tv2>> {
-    151 |   $dict = cast_clear_legacy_array_mark($traversable);
-    152 |   foreach ($dict as $key => $value) {
-    153 |     /* HH_FIXME[4401] need to make this safe to coeffects */
-[1] 154 |     $dict[$key] = $value_func($value);
-    155 |   }
-    156 | 
+vendor/hhvm/hsl/src/dict/async.php:142:19
+    136 |   KeyedTraversable<Tk, Tv1> $traversable,
+    137 |   (function(Tv1)[_]: Awaitable<Tv2>) $value_func,
+[2] 138 | )[ctx $value_func]: Awaitable<dict<Tk, Tv2>> {
+    139 |   $dict = cast_clear_legacy_array_mark($traversable);
+    140 |   foreach ($dict as $key => $value) {
+    141 |     /* HH_FIXME[4401] need to make this safe to coeffects */
+[1] 142 |     $dict[$key] = $value_func($value);
+    143 |   }
+    144 | 
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [3]  28 | namespace HH\Contexts {
@@ -625,39 +321,39 @@ vendor/hhvm/hsl/src/dict/async.php:154:19
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:159:3
-    157 |   /* HH_FIXME[4110] Okay to pass in Awaitable */
-    158 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 159 |   /* HH_FIXME[4390] Magic Function */
-    160 |   await AwaitAllWaitHandle::fromDict($dict);
-    161 |   foreach ($dict as $key => $value) {
+vendor/hhvm/hsl/src/dict/async.php:147:3
+    145 |   /* HH_FIXME[4110] Okay to pass in Awaitable */
+    146 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 147 |   /* HH_FIXME[4390] Magic Function */
+    148 |   await AwaitAllWaitHandle::fromDict($dict);
+    149 |   foreach ($dict as $key => $value) {
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $value_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:160:9
-    148 |   <<__AtMostRxAsFunc>>
-    149 |   (function(Tv1)[_]: Awaitable<Tv2>) $value_func,
-[2] 150 | )[ctx $value_func]: Awaitable<dict<Tk, Tv2>> {
-    151 |   $dict = cast_clear_legacy_array_mark($traversable);
-    152 |   foreach ($dict as $key => $value) {
+vendor/hhvm/hsl/src/dict/async.php:148:9
+    136 |   KeyedTraversable<Tk, Tv1> $traversable,
+    137 |   (function(Tv1)[_]: Awaitable<Tv2>) $value_func,
+[2] 138 | )[ctx $value_func]: Awaitable<dict<Tk, Tv2>> {
+    139 |   $dict = cast_clear_legacy_array_mark($traversable);
+    140 |   foreach ($dict as $key => $value) {
         :
-    158 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-    159 |   /* HH_FIXME[4390] Magic Function */
-[1] 160 |   await AwaitAllWaitHandle::fromDict($dict);
-    161 |   foreach ($dict as $key => $value) {
-    162 |     /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
+    146 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+    147 |   /* HH_FIXME[4390] Magic Function */
+[1] 148 |   await AwaitAllWaitHandle::fromDict($dict);
+    149 |   foreach ($dict as $key => $value) {
+    150 |     /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
 
-/tmp/hh_server/hhi_29fd0626/classes.hhi:159:26
+/tmp/hh_server/hhi_3b2be946/classes.hhi:159:26
     157 |     darray<arraykey, Awaitable<mixed>> $deps
     158 |   ): Awaitable<void>;
 [3] 159 |   public static function fromDict(
     160 |     dict<arraykey, Awaitable<mixed>> $deps
     161 |   ): Awaitable<void>;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -666,39 +362,39 @@ vendor/hhvm/hsl/src/dict/async.php:160:9
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:164:5
-    162 |     /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
-    163 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 164 |     /* HH_FIXME[4390] Magic Function */
-    165 |     $dict[$key] = \HH\Asio\result($value);
-    166 |   }
+vendor/hhvm/hsl/src/dict/async.php:152:5
+    150 |     /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
+    151 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 152 |     /* HH_FIXME[4390] Magic Function */
+    153 |     $dict[$key] = \HH\Asio\result($value);
+    154 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $value_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:165:19
-    148 |   <<__AtMostRxAsFunc>>
-    149 |   (function(Tv1)[_]: Awaitable<Tv2>) $value_func,
-[2] 150 | )[ctx $value_func]: Awaitable<dict<Tk, Tv2>> {
-    151 |   $dict = cast_clear_legacy_array_mark($traversable);
-    152 |   foreach ($dict as $key => $value) {
+vendor/hhvm/hsl/src/dict/async.php:153:19
+    136 |   KeyedTraversable<Tk, Tv1> $traversable,
+    137 |   (function(Tv1)[_]: Awaitable<Tv2>) $value_func,
+[2] 138 | )[ctx $value_func]: Awaitable<dict<Tk, Tv2>> {
+    139 |   $dict = cast_clear_legacy_array_mark($traversable);
+    140 |   foreach ($dict as $key => $value) {
         :
-    163 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-    164 |     /* HH_FIXME[4390] Magic Function */
-[1] 165 |     $dict[$key] = \HH\Asio\result($value);
-    166 |   }
-    167 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
+    151 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+    152 |     /* HH_FIXME[4390] Magic Function */
+[1] 153 |     $dict[$key] = \HH\Asio\result($value);
+    154 |   }
+    155 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_asio.hhi:17:12
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_asio.hhi:17:12
      15 | namespace HH\Asio {
      16 |   function join<T>(Awaitable<T> $awaitable): T;
 [3]  17 |   function result<T>(Awaitable<T> $awaitable): T;
      18 |   function name(Awaitable<mixed> $awaitable): string;
      19 |   function has_finished(Awaitable<mixed> $awaitable): bool;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -707,39 +403,39 @@ vendor/hhvm/hsl/src/dict/async.php:165:19
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:192:3
-    190 | 
-    191 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 192 |   /* HH_FIXME[4390] Magic Function */
-    193 |   await AwaitAllWaitHandle::fromDict($awaitables);
-    194 |   foreach ($awaitables as $index => $value) {
+vendor/hhvm/hsl/src/dict/async.php:177:3
+    175 | 
+    176 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 177 |   /* HH_FIXME[4390] Magic Function */
+    178 |   await AwaitAllWaitHandle::fromDict($awaitables);
+    179 |   foreach ($awaitables as $index => $value) {
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $async_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:193:9
-    184 |   <<__AtMostRxAsFunc>>
-    185 |   (function(Tk, Tv1)[_]: Awaitable<Tv2>) $async_func,
-[2] 186 | )[ctx $async_func]: Awaitable<dict<Tk, Tv2>> {
-    187 |   $awaitables = map_with_key($traversable, $async_func);
-    188 |   /* HH_FIXME[4135] Unset local variable to reduce peak memory. */
+vendor/hhvm/hsl/src/dict/async.php:178:9
+    169 |   KeyedTraversable<Tk, Tv1> $traversable,
+    170 |   (function(Tk, Tv1)[_]: Awaitable<Tv2>) $async_func,
+[2] 171 | )[ctx $async_func]: Awaitable<dict<Tk, Tv2>> {
+    172 |   $awaitables = map_with_key($traversable, $async_func);
+    173 |   /* HH_FIXME[4135] Unset local variable to reduce peak memory. */
         :
-    191 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-    192 |   /* HH_FIXME[4390] Magic Function */
-[1] 193 |   await AwaitAllWaitHandle::fromDict($awaitables);
-    194 |   foreach ($awaitables as $index => $value) {
-    195 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+    176 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+    177 |   /* HH_FIXME[4390] Magic Function */
+[1] 178 |   await AwaitAllWaitHandle::fromDict($awaitables);
+    179 |   foreach ($awaitables as $index => $value) {
+    180 |     /* HH_FIXME[4387] Hide the magic from reactivity */
 
-/tmp/hh_server/hhi_29fd0626/classes.hhi:159:26
+/tmp/hh_server/hhi_3b2be946/classes.hhi:159:26
     157 |     darray<arraykey, Awaitable<mixed>> $deps
     158 |   ): Awaitable<void>;
 [3] 159 |   public static function fromDict(
     160 |     dict<arraykey, Awaitable<mixed>> $deps
     161 |   ): Awaitable<void>;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -748,39 +444,39 @@ vendor/hhvm/hsl/src/dict/async.php:193:9
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/dict/async.php:196:5
-    194 |   foreach ($awaitables as $index => $value) {
-    195 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 196 |     /* HH_FIXME[4390] Magic Function */
-    197 |     $awaitables[$index] = \HH\Asio\result($value);
-    198 |   }
+vendor/hhvm/hsl/src/dict/async.php:181:5
+    179 |   foreach ($awaitables as $index => $value) {
+    180 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 181 |     /* HH_FIXME[4390] Magic Function */
+    182 |     $awaitables[$index] = \HH\Asio\result($value);
+    183 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $async_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/dict/async.php:197:27
-    184 |   <<__AtMostRxAsFunc>>
-    185 |   (function(Tk, Tv1)[_]: Awaitable<Tv2>) $async_func,
-[2] 186 | )[ctx $async_func]: Awaitable<dict<Tk, Tv2>> {
-    187 |   $awaitables = map_with_key($traversable, $async_func);
-    188 |   /* HH_FIXME[4135] Unset local variable to reduce peak memory. */
+vendor/hhvm/hsl/src/dict/async.php:182:27
+    169 |   KeyedTraversable<Tk, Tv1> $traversable,
+    170 |   (function(Tk, Tv1)[_]: Awaitable<Tv2>) $async_func,
+[2] 171 | )[ctx $async_func]: Awaitable<dict<Tk, Tv2>> {
+    172 |   $awaitables = map_with_key($traversable, $async_func);
+    173 |   /* HH_FIXME[4135] Unset local variable to reduce peak memory. */
         :
-    195 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-    196 |     /* HH_FIXME[4390] Magic Function */
-[1] 197 |     $awaitables[$index] = \HH\Asio\result($value);
-    198 |   }
-    199 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
+    180 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+    181 |     /* HH_FIXME[4390] Magic Function */
+[1] 182 |     $awaitables[$index] = \HH\Asio\result($value);
+    183 |   }
+    184 |   /* HH_FIXME[4110] Reuse the existing dict to reduce peak memory. */
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_asio.hhi:17:12
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_asio.hhi:17:12
      15 | namespace HH\Asio {
      16 |   function join<T>(Awaitable<T> $awaitable): T;
 [3]  17 |   function result<T>(Awaitable<T> $awaitable): T;
      18 |   function name(Awaitable<mixed> $awaitable): string;
      19 |   function has_finished(Awaitable<mixed> $awaitable): bool;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -812,14 +508,14 @@ vendor/hhvm/hsl/src/str/transform.php:30:10
     31 | }
     32 | 
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_string.hhi:59:10
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_string.hhi:59:10
     57 | function strtoupper(string $str)[];
     58 | <<__PHPStdLib>>
 [3] 59 | function ucfirst(string $str);
     60 | <<__PHPStdLib>>
     61 | function lcfirst(string $str);
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
     26 | *   i.e., automatically present with the subtyped capability
     27 | */
 [4] 28 | namespace HH\Contexts {
@@ -851,14 +547,14 @@ vendor/hhvm/hsl/src/str/transform.php:49:10
     50 | }
     51 | 
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_string.hhi:63:10
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_string.hhi:63:10
     61 | function lcfirst(string $str);
     62 | <<__PHPStdLib>>
 [3] 63 | function ucwords(string $str, string $delimiters = " \t\r\n\f\v");
     64 | <<__PHPStdLib, __Pure>>
     65 | function trim(string $str, string $charlist = HPHP_TRIM_CHARLIST)[]/*: string*/;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
     26 | *   i.e., automatically present with the subtyped capability
     27 | */
 [4] 28 | namespace HH\Contexts {
@@ -867,37 +563,37 @@ vendor/hhvm/hsl/src/str/transform.php:49:10
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/str/transform.php:185:3
-    183 |   string $replacement,
-    184 | )[rx]: string {
-[1] 185 |   /* HH_FIXME[4390] Rx calling non-rx */
-    186 |   /* HH_FIXME[2049] calling stdlib directly */
-    187 |   /* HH_FIXME[4107] calling stdlib directly */
+vendor/hhvm/hsl/src/str/transform.php:179:3
+    177 |   string $replacement,
+    178 | )[rx]: string {
+[1] 179 |   /* HH_FIXME[4390] Rx calling non-rx */
+    180 |   /* HH_FIXME[2049] calling stdlib directly */
+    181 |   /* HH_FIXME[4107] calling stdlib directly */
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {Rx, WriteProperty} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/str/transform.php:188:10
-    182 |   string $needle,
-    183 |   string $replacement,
-[2] 184 | )[rx]: string {
-    185 |   /* HH_FIXME[4390] Rx calling non-rx */
-    186 |   /* HH_FIXME[2049] calling stdlib directly */
-    187 |   /* HH_FIXME[4107] calling stdlib directly */
-[1] 188 |   return \str_ireplace($needle, $replacement, $haystack);
-    189 | }
-    190 | 
+vendor/hhvm/hsl/src/str/transform.php:182:10
+    176 |   string $needle,
+    177 |   string $replacement,
+[2] 178 | )[rx]: string {
+    179 |   /* HH_FIXME[4390] Rx calling non-rx */
+    180 |   /* HH_FIXME[2049] calling stdlib directly */
+    181 |   /* HH_FIXME[4107] calling stdlib directly */
+[1] 182 |   return \str_ireplace($needle, $replacement, $haystack);
+    183 | }
+    184 | 
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_string.hhi:99:10
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_string.hhi:99:10
      97 | function str_replace_with_count($search, $replace, $subject, inout $count);
      98 | <<__PHPStdLib>> // not pure: uses global locale for capitalization
 [3]  99 | function str_ireplace($search, $replace, $subject);
     100 | <<__PHPStdLib>>
     101 | function str_ireplace_with_count($search, $replace, $subject, inout $count);
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -906,45 +602,45 @@ vendor/hhvm/hsl/src/str/transform.php:188:10
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/str/transform.php:250:3
-    248 |   /* HH_FIXME[2049] calling stdlib directly */
-    249 |   /* HH_FIXME[4107] calling stdlib directly */
-[1] 250 |   /* HH_FIXME[4390] Rx calling non-rx */
-    251 |   return \str_ireplace(
-    252 |     /* HH_FIXME[2049] calling stdlib directly */
+vendor/hhvm/hsl/src/str/transform.php:243:3
+    241 |   /* HH_FIXME[2049] calling stdlib directly */
+    242 |   /* HH_FIXME[4107] calling stdlib directly */
+[1] 243 |   /* HH_FIXME[4390] Rx calling non-rx */
+    244 |   return \str_ireplace(
+    245 |     /* HH_FIXME[2049] calling stdlib directly */
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {Rx, WriteProperty} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/str/transform.php:251:10
-    245 |   string $haystack,
-    246 |   KeyedContainer<string, string> $replacements,
-[2] 247 | )[rx]: string {
-    248 |   /* HH_FIXME[2049] calling stdlib directly */
-    249 |   /* HH_FIXME[4107] calling stdlib directly */
-    250 |   /* HH_FIXME[4390] Rx calling non-rx */
-[1] 251 |   return \str_ireplace(
-[1] 252 |     /* HH_FIXME[2049] calling stdlib directly */
-[1] 253 |     /* HH_FIXME[4107] calling stdlib directly */
-[1] 254 |     \array_keys($replacements),
-[1] 255 |     /* HH_FIXME[2049] calling stdlib directly */
-[1] 256 |     /* HH_FIXME[4107] calling stdlib directly */
-[1] 257 |     \array_values($replacements),
-[1] 258 |     $haystack,
-[1] 259 |   );
-    260 | }
-    261 | 
+vendor/hhvm/hsl/src/str/transform.php:244:10
+    238 |   string $haystack,
+    239 |   KeyedContainer<string, string> $replacements,
+[2] 240 | )[rx]: string {
+    241 |   /* HH_FIXME[2049] calling stdlib directly */
+    242 |   /* HH_FIXME[4107] calling stdlib directly */
+    243 |   /* HH_FIXME[4390] Rx calling non-rx */
+[1] 244 |   return \str_ireplace(
+[1] 245 |     /* HH_FIXME[2049] calling stdlib directly */
+[1] 246 |     /* HH_FIXME[4107] calling stdlib directly */
+[1] 247 |     \array_keys($replacements),
+[1] 248 |     /* HH_FIXME[2049] calling stdlib directly */
+[1] 249 |     /* HH_FIXME[4107] calling stdlib directly */
+[1] 250 |     \array_values($replacements),
+[1] 251 |     $haystack,
+[1] 252 |   );
+    253 | }
+    254 | 
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_string.hhi:99:10
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_string.hhi:99:10
      97 | function str_replace_with_count($search, $replace, $subject, inout $count);
      98 | <<__PHPStdLib>> // not pure: uses global locale for capitalization
 [3]  99 | function str_ireplace($search, $replace, $subject);
     100 | <<__PHPStdLib>>
     101 | function str_ireplace_with_count($search, $replace, $subject, inout $count);
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -953,38 +649,38 @@ vendor/hhvm/hsl/src/str/transform.php:251:10
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/vec/async.php:30:3
-    28 | 
-    29 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 30 |   /* HH_FIXME[4390] Magic Function */
-    31 |   await AwaitAllWaitHandle::fromVec($vec);
-    32 |   foreach ($vec as $index => $value) {
+vendor/hhvm/hsl/src/vec/async.php:28:3
+    26 | 
+    27 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 28 |   /* HH_FIXME[4390] Magic Function */
+    29 |   await AwaitAllWaitHandle::fromVec($vec);
+    30 |   foreach ($vec as $index => $value) {
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/vec/async.php:31:9
-     24 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-     25 |   Traversable<Awaitable<Tv>> $awaitables,
-[2]  26 | )[]: Awaitable<vec<Tv>> {
-     27 |   $vec = cast_clear_legacy_array_mark($awaitables);
-     28 | 
-     29 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-     30 |   /* HH_FIXME[4390] Magic Function */
-[1]  31 |   await AwaitAllWaitHandle::fromVec($vec);
-     32 |   foreach ($vec as $index => $value) {
-     33 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+vendor/hhvm/hsl/src/vec/async.php:29:9
+     22 | async function from_async<Tv>(
+     23 |   Traversable<Awaitable<Tv>> $awaitables,
+[2]  24 | )[]: Awaitable<vec<Tv>> {
+     25 |   $vec = cast_clear_legacy_array_mark($awaitables);
+     26 | 
+     27 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+     28 |   /* HH_FIXME[4390] Magic Function */
+[1]  29 |   await AwaitAllWaitHandle::fromVec($vec);
+     30 |   foreach ($vec as $index => $value) {
+     31 |     /* HH_FIXME[4387] Hide the magic from reactivity */
 
-/tmp/hh_server/hhi_29fd0626/classes.hhi:165:26
+/tmp/hh_server/hhi_3b2be946/classes.hhi:165:26
     163 |     \ConstMap<arraykey, Awaitable<mixed>> $deps
     164 |   ): Awaitable<void>;
 [3] 165 |   public static function fromVec(
     166 |     vec<Awaitable<mixed>> $deps
     167 |   ): Awaitable<void>;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -993,39 +689,39 @@ vendor/hhvm/hsl/src/vec/async.php:31:9
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/vec/async.php:34:5
-    32 |   foreach ($vec as $index => $value) {
-    33 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 34 |     /* HH_FIXME[4390] Magic Function */
-    35 |     $vec[$index] = \HH\Asio\result($value);
-    36 |   }
+vendor/hhvm/hsl/src/vec/async.php:32:5
+    30 |   foreach ($vec as $index => $value) {
+    31 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 32 |     /* HH_FIXME[4390] Magic Function */
+    33 |     $vec[$index] = \HH\Asio\result($value);
+    34 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability set {} [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/vec/async.php:35:20
-    24 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    25 |   Traversable<Awaitable<Tv>> $awaitables,
-[2] 26 | )[]: Awaitable<vec<Tv>> {
-    27 |   $vec = cast_clear_legacy_array_mark($awaitables);
-    28 | 
+vendor/hhvm/hsl/src/vec/async.php:33:20
+    22 | async function from_async<Tv>(
+    23 |   Traversable<Awaitable<Tv>> $awaitables,
+[2] 24 | )[]: Awaitable<vec<Tv>> {
+    25 |   $vec = cast_clear_legacy_array_mark($awaitables);
+    26 | 
        :
-    33 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-    34 |     /* HH_FIXME[4390] Magic Function */
-[1] 35 |     $vec[$index] = \HH\Asio\result($value);
-    36 |   }
-    37 |   /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
+    31 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+    32 |     /* HH_FIXME[4390] Magic Function */
+[1] 33 |     $vec[$index] = \HH\Asio\result($value);
+    34 |   }
+    35 |   /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
 
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_asio.hhi:17:12
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_asio.hhi:17:12
     15 | namespace HH\Asio {
     16 |   function join<T>(Awaitable<T> $awaitable): T;
 [3] 17 |   function result<T>(Awaitable<T> $awaitable): T;
     18 |   function name(Awaitable<mixed> $awaitable): string;
     19 |   function has_finished(Awaitable<mixed> $awaitable): bool;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
     26 | *   i.e., automatically present with the subtyped capability
     27 | */
 [4] 28 | namespace HH\Contexts {
@@ -1034,29 +730,29 @@ vendor/hhvm/hsl/src/vec/async.php:35:20
 
 Typing[4401] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4401 [1]
 
-vendor/hhvm/hsl/src/vec/async.php:94:5
-    92 |   $vec = cast_clear_legacy_array_mark($traversable);
-    93 |   foreach ($vec as $i => $value) {
-[1] 94 |     /* HH_FIXME[4401] need to make this safe to coeffects */
-    95 |     $vec[$i] = $async_func($value);
-    96 |   }
+vendor/hhvm/hsl/src/vec/async.php:87:5
+    85 |   $vec = cast_clear_legacy_array_mark($traversable);
+    86 |   foreach ($vec as $i => $value) {
+[1] 87 |     /* HH_FIXME[4401] need to make this safe to coeffects */
+    88 |     $vec[$i] = $async_func($value);
+    89 |   }
 
 Typing[4401] Not immediately awaiting Awaitable-typed values requires the capability AccessStaticVariable, which is not provided by the context. [1]
 -> The local (enclosing) context provides the capability ctx $async_func [2]
 -> Hack provides a list of supported contexts here [3]
 
-vendor/hhvm/hsl/src/vec/async.php:95:16
-    89 |   <<__AtMostRxAsFunc>>
-    90 |   (function(Tv1)[_]: Awaitable<Tv2>) $async_func,
-[2] 91 | )[ctx $async_func]: Awaitable<vec<Tv2>> {
-    92 |   $vec = cast_clear_legacy_array_mark($traversable);
-    93 |   foreach ($vec as $i => $value) {
-    94 |     /* HH_FIXME[4401] need to make this safe to coeffects */
-[1] 95 |     $vec[$i] = $async_func($value);
-    96 |   }
-    97 | 
+vendor/hhvm/hsl/src/vec/async.php:88:16
+    82 |   Traversable<Tv1> $traversable,
+    83 |   (function(Tv1)[_]: Awaitable<Tv2>) $async_func,
+[2] 84 | )[ctx $async_func]: Awaitable<vec<Tv2>> {
+    85 |   $vec = cast_clear_legacy_array_mark($traversable);
+    86 |   foreach ($vec as $i => $value) {
+    87 |     /* HH_FIXME[4401] need to make this safe to coeffects */
+[1] 88 |     $vec[$i] = $async_func($value);
+    89 |   }
+    90 | 
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
     26 | *   i.e., automatically present with the subtyped capability
     27 | */
 [3] 28 | namespace HH\Contexts {
@@ -1065,39 +761,39 @@ vendor/hhvm/hsl/src/vec/async.php:95:16
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/vec/async.php:100:3
-     98 |   /* HH_FIXME[4110] Okay to pass in Awaitable */
-     99 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 100 |   /* HH_FIXME[4390] Magic Function */
-    101 |   await AwaitAllWaitHandle::fromVec($vec);
-    102 |   foreach ($vec as $index => $value) {
+vendor/hhvm/hsl/src/vec/async.php:93:3
+    91 |   /* HH_FIXME[4110] Okay to pass in Awaitable */
+    92 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 93 |   /* HH_FIXME[4390] Magic Function */
+    94 |   await AwaitAllWaitHandle::fromVec($vec);
+    95 |   foreach ($vec as $index => $value) {
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $async_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/vec/async.php:101:9
-     89 |   <<__AtMostRxAsFunc>>
-     90 |   (function(Tv1)[_]: Awaitable<Tv2>) $async_func,
-[2]  91 | )[ctx $async_func]: Awaitable<vec<Tv2>> {
-     92 |   $vec = cast_clear_legacy_array_mark($traversable);
-     93 |   foreach ($vec as $i => $value) {
+vendor/hhvm/hsl/src/vec/async.php:94:9
+     82 |   Traversable<Tv1> $traversable,
+     83 |   (function(Tv1)[_]: Awaitable<Tv2>) $async_func,
+[2]  84 | )[ctx $async_func]: Awaitable<vec<Tv2>> {
+     85 |   $vec = cast_clear_legacy_array_mark($traversable);
+     86 |   foreach ($vec as $i => $value) {
         :
-     99 |   /* HH_FIXME[4387] Hide the magic from reactivity */
-    100 |   /* HH_FIXME[4390] Magic Function */
-[1] 101 |   await AwaitAllWaitHandle::fromVec($vec);
-    102 |   foreach ($vec as $index => $value) {
-    103 |     /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
+     92 |   /* HH_FIXME[4387] Hide the magic from reactivity */
+     93 |   /* HH_FIXME[4390] Magic Function */
+[1]  94 |   await AwaitAllWaitHandle::fromVec($vec);
+     95 |   foreach ($vec as $index => $value) {
+     96 |     /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
 
-/tmp/hh_server/hhi_29fd0626/classes.hhi:165:26
+/tmp/hh_server/hhi_3b2be946/classes.hhi:165:26
     163 |     \ConstMap<arraykey, Awaitable<mixed>> $deps
     164 |   ): Awaitable<void>;
 [3] 165 |   public static function fromVec(
     166 |     vec<Awaitable<mixed>> $deps
     167 |   ): Awaitable<void>;
 
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
      26 | *   i.e., automatically present with the subtyped capability
      27 | */
 [4]  28 | namespace HH\Contexts {
@@ -1106,423 +802,44 @@ vendor/hhvm/hsl/src/vec/async.php:101:9
 
 Typing[4390] You cannot use HH_FIXME or HH_IGNORE_ERROR comments to suppress error 4390 [1]
 
-vendor/hhvm/hsl/src/vec/async.php:105:5
-    103 |     /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
-    104 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-[1] 105 |     /* HH_FIXME[4390] Magic Function */
-    106 |     $vec[$index] = \HH\Asio\result($value);
-    107 |   }
+vendor/hhvm/hsl/src/vec/async.php:98:5
+    96 |     /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
+    97 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+[1] 98 |     /* HH_FIXME[4390] Magic Function */
+    99 |     $vec[$index] = \HH\Asio\result($value);
+   100 |   }
 
 Typing[4390] This call is not allowed because its coeffects are incompatible with the context [1]
 -> From this declaration, the context of this function body provides the capability ctx $async_func [2]
 -> But the function being called requires the default capability set {AccessStaticVariable, Output, WriteProperty} [3]
 -> Hack provides a list of supported contexts here [4]
 
-vendor/hhvm/hsl/src/vec/async.php:106:20
-     89 |   <<__AtMostRxAsFunc>>
-     90 |   (function(Tv1)[_]: Awaitable<Tv2>) $async_func,
-[2]  91 | )[ctx $async_func]: Awaitable<vec<Tv2>> {
-     92 |   $vec = cast_clear_legacy_array_mark($traversable);
-     93 |   foreach ($vec as $i => $value) {
-        :
-    104 |     /* HH_FIXME[4387] Hide the magic from reactivity */
-    105 |     /* HH_FIXME[4390] Magic Function */
-[1] 106 |     $vec[$index] = \HH\Asio\result($value);
-    107 |   }
-    108 |   /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
-
-/tmp/hh_server/hhi_29fd0626/stdlib/builtins_asio.hhi:17:12
-     15 | namespace HH\Asio {
-     16 |   function join<T>(Awaitable<T> $awaitable): T;
-[3]  17 |   function result<T>(Awaitable<T> $awaitable): T;
-     18 |   function name(Awaitable<mixed> $awaitable): string;
-     19 |   function has_finished(Awaitable<mixed> $awaitable): bool;
-
-/tmp/hh_server/hhi_29fd0626/coeffect/contexts.hhi:28:1
-     26 | *   i.e., automatically present with the subtyped capability
-     27 | */
-[4]  28 | namespace HH\Contexts {
-     29 | 
-     30 |   /**
-
-Parsing[1002] Toplevel statements are not allowed. Use __EntryPoint attribute instead [1]
-
-vendor/nuxed/console/example/app.hack:5:1
-    3 | use namespace Nuxed\Console;
-    4 | 
-[1] 5 | require __DIR__.'/../vendor/hh_autoload.hh';
-    6 | 
-    7 | <<__EntryPoint>>
-
-Parsing[1002] Encountered unexpected token terminate. [1]
-
-vendor/nuxed/console/src/Nuxed/Console/Application.hack:312:16
-    310 |         $exitCode = $event->getExitCode();
-    311 |         if ($exitCode === Command\ExitCode::Success) {
-[1] 312 |           goto terminate;
-    313 |         }
-    314 |       }
-
-Typing[4029] Expected 2 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/Command/Manager/Manager.hack:110:23
-    108 |     if (!C\is_empty<string>($alternatives)) {
-    109 |       // remove hidden commands
-[1] 110 |       $alternatives = Vec\filter<string>(
-    111 |         $alternatives,
-    112 |         (string $name): bool ==> !$this->get($name)->isHidden(),
-
-vendor/hhvm/hsl/src/vec/select.php:128:10
-    126 |  */
-    127 | <<__Pure, __AtMostRxAsArgs>>
-[2] 128 | function filter<Tv>(
-    129 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    130 |   Traversable<Tv> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/Command/Manager/Manager.hack:218:12
-    216 |     }
-    217 | 
-[1] 218 |     return Dict\filter<string, num>(
-    219 |       $alternatives,
-    220 |       (num $lev): bool ==> $lev < (2 * $threshold),
-
-vendor/hhvm/hsl/src/dict/select.php:88:10
-     86 |  */
-     87 | <<__Pure, __AtMostRxAsArgs>>
-[2]  88 | function filter<Tk as arraykey, Tv>(
-     89 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\KeyedTraversable::class)>>
-     90 |   KeyedTraversable<Tk, Tv> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/Command/Manager/Manager.hack:222:10
-    220 |       (num $lev): bool ==> $lev < (2 * $threshold),
-    221 |     )
-[1] 222 |       |> Dict\sort<string, num>($$)
-    223 |       |> Vec\keys<string, num>($$);
-    224 |   }
-
-vendor/hhvm/hsl/src/dict/order.php:66:10
-     64 |  */
-     65 | <<__Pure, __AtMostRxAsArgs>>
-[2]  66 | function sort<Tk as arraykey, Tv>(
-     67 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\KeyedTraversable::class)>>
-     68 |   KeyedTraversable<Tk, Tv> $traversable,
-
-Naming[2049] Unbound name: Nuxed\Console\ErrorHandler\array [1]
-
-vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:89:10
-    87 |         /* HH_IGNORE_ERROR[4110] */
-    88 |         $exception->getTrace(),
-[1] 89 |         (array<string, mixed> $frame): dict<string, string> ==> {
-    90 |           unset($frame['args']);
-    91 |           /* HH_IGNORE_ERROR[4110] */
-
-Typing[4029] Expected 2 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:85:15
-     83 |     };
-     84 | 
-[1]  85 |     $frames = Vec\filter<dict<string, string>>(
-     86 |       Vec\map<darray<string, mixed>, dict<string, string>>(
-     87 |         /* HH_IGNORE_ERROR[4110] */
-
-vendor/hhvm/hsl/src/vec/select.php:128:10
-    126 |  */
-    127 | <<__Pure, __AtMostRxAsArgs>>
-[2] 128 | function filter<Tv>(
-    129 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    130 |   Traversable<Tv> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:86:7
-     84 | 
-     85 |     $frames = Vec\filter<dict<string, string>>(
-[1]  86 |       Vec\map<darray<string, mixed>, dict<string, string>>(
-     87 |         /* HH_IGNORE_ERROR[4110] */
-     88 |         $exception->getTrace(),
-
-vendor/hhvm/hsl/src/vec/transform.php:101:10
-     99 |  */
-    100 | <<__Pure, __AtMostRxAsArgs, __ProvenanceSkipFrame>>
-[2] 101 | function map<Tv1, Tv2>(
-    102 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    103 |   Traversable<Tv1> $traversable,
-
-Typing[4110] Invalid argument [1]
--> Expected Nuxed\Console\ErrorHandler\array<string, mixed> [2]
--> But got darray<string, mixed> [3]
-->   via this generic Tv1 [4]
-
-vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:89:9
-       84 | 
-       85 |     $frames = Vec\filter<dict<string, string>>(
-[3]    86 |       Vec\map<darray<string, mixed>, dict<string, string>>(
-       87 |         /* HH_IGNORE_ERROR[4110] */
-       88 |         $exception->getTrace(),
-[1,2]  89 |         (array<string, mixed> $frame): dict<string, string> ==> {
-[1]    90 |           unset($frame['args']);
-[1]    91 |           /* HH_IGNORE_ERROR[4110] */
-[1]    92 |           return dict<string, string>($frame);
-[1]    93 |         },
-       94 |       ),
-       95 |       (dict<string, string> $frame): bool ==>
-
-vendor/hhvm/hsl/src/vec/transform.php:105:13
-      103 |   Traversable<Tv1> $traversable,
-      104 |   <<__AtMostRxAsFunc>>
-[4]   105 |   (function(Tv1)[_]: Tv2) $value_func,
-      106 | )[ctx $value_func]: vec<Tv2> {
-      107 |   $result = vec[];
-
-Typing[4005] This is not an object of type KeyedContainer, this is an object of type Nuxed\Console\ErrorHandler\array<string, mixed> [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/ErrorHandle/ErrorHandler.hack:90:17
-    87 |         /* HH_IGNORE_ERROR[4110] */
-    88 |         $exception->getTrace(),
-[2] 89 |         (array<string, mixed> $frame): dict<string, string> ==> {
-[1] 90 |           unset($frame['args']);
-    91 |           /* HH_IGNORE_ERROR[4110] */
-    92 |           return dict<string, string>($frame);
-
-Typing[4341] The method getCode is not compatible with the overridden method [1]
--> This function is pure. [2]
--> This function is reactive. [1]
-
-vendor/nuxed/console/src/Nuxed/Console/Exception/CommandNotFoundException.hack:13:19
-     11 | 
-     12 |   <<__Rx, __MaybeMutable>>
-[1]  13 |   public function getCode(): int {
-     14 |     return Command\ExitCode::CommandNotFound;
-     15 |   }
-
-/tmp/hh_server/hhi_29fd0626/exceptions.hhi:103:19
-    101 |   public final function setPrevious(Exception $previous)[]: void;
-    102 |   <<__Pure, __MaybeMutable>>
-[2] 103 |   public function getCode()[]: int;
-    104 |   <<__Pure, __MaybeMutable>>
-    105 |   final public function getFile()[]: string;
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/Feedback/AbstractFeedback.hack:251:7
-    249 |   protected function setMaxLength(): this {
-    250 |     $this->maxLength = Math\max(
-[1] 251 |       Vec\map<string, int>(
-    252 |         $this->characterSequence,
-    253 |         (string $k): int ==> Str\length($k),
-
-vendor/hhvm/hsl/src/vec/transform.php:101:10
-     99 |  */
-    100 | <<__Pure, __AtMostRxAsArgs, __ProvenanceSkipFrame>>
-[2] 101 | function map<Tv1, Tv2>(
-    102 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    103 |   Traversable<Tv1> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack:129:7
-    127 |     $indentation = 0;
-    128 |     $maxLength = Math\max(
-[1] 129 |       Vec\map<string, int>(
-    130 |         Vec\keys<string, Command\Command>($this->commands),
-    131 |         ($key) ==> {
-
-vendor/hhvm/hsl/src/vec/transform.php:101:10
-     99 |  */
-    100 | <<__Pure, __AtMostRxAsArgs, __ProvenanceSkipFrame>>
-[2] 101 | function map<Tv1, Tv2>(
-    102 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    103 |   Traversable<Tv1> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack:133:11
-    131 |         ($key) ==> {
-    132 |           $indentation = new \HH\Lib\Ref<int>(0);
-[1] 133 |           Vec\map<string, void>(
-    134 |             Str\chunk($key),
-    135 |             (string $char): void ==> {
-
-vendor/hhvm/hsl/src/vec/transform.php:101:10
-     99 |  */
-    100 | <<__Pure, __AtMostRxAsArgs, __ProvenanceSkipFrame>>
-[2] 101 | function map<Tv1, Tv2>(
-    102 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    103 |   Traversable<Tv1> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack:170:13
-    168 | 
-    169 |             $indentation = new \HH\Lib\Ref<int>(0);
-[1] 170 |             Vec\map<string, void>(
-    171 |               Str\chunk($name),
-    172 |               (string $char): void ==> {
-
-vendor/hhvm/hsl/src/vec/transform.php:101:10
-     99 |  */
-    100 | <<__Pure, __AtMostRxAsArgs, __ProvenanceSkipFrame>>
-[2] 101 | function map<Tv1, Tv2>(
-    102 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    103 |   Traversable<Tv1> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack:189:7
-    187 | 
-    188 |       $indentation = new \HH\Lib\Ref<int>(0);
-[1] 189 |       Vec\map<string, void>(
-    190 |         Str\chunk($name),
-    191 |         (string $char): void ==> {
-
-vendor/hhvm/hsl/src/vec/transform.php:101:10
-     99 |  */
-    100 | <<__Pure, __AtMostRxAsArgs, __ProvenanceSkipFrame>>
-[2] 101 | function map<Tv1, Tv2>(
-    102 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    103 |   Traversable<Tv1> $traversable,
-
-Typing[4029] Expected 3 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/HelpScreen.hack:282:7
-    280 | 
-    281 |     $maxLength = Math\max(
-[1] 282 |       Vec\map<string, int>(
-    283 |         Vec\keys<string, string>($entries),
-    284 |         (string $key): int ==> Str\length($key),
-
-vendor/hhvm/hsl/src/vec/transform.php:101:10
-     99 |  */
-    100 | <<__Pure, __AtMostRxAsArgs, __ProvenanceSkipFrame>>
-[2] 101 | function map<Tv1, Tv2>(
-    102 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    103 |   Traversable<Tv1> $traversable,
-
-Typing[4029] Expected 2 type parameters [1]
--> Definition is here [2]
-
-vendor/nuxed/console/src/Nuxed/Console/Input/Input.hack:81:13
-     79 |     bool $strict = false,
-     80 |   ) {
-[1]  81 |     $args = Vec\filter<string>($args, (string $arg): bool ==> '' !== $arg);
-     82 |     $this->stdin = $stdin;
-     83 |     $this->reader = new Console\_Private\BufferedReader($stdin);
-
-vendor/hhvm/hsl/src/vec/select.php:128:10
-    126 |  */
-    127 | <<__Pure, __AtMostRxAsArgs>>
-[2] 128 | function filter<Tv>(
-    129 |   <<__MaybeMutable, __OnlyRxIfImpl(\HH\Rx\Traversable::class)>>
-    130 |   Traversable<Tv> $traversable,
-
-Typing[4053] No instance method writeAsync in HH\Lib\IO\WriteHandle [1]
--> Did you mean writeAllAsync instead? [2]
--> This is why I think it is an object of type HH\Lib\IO\WriteHandle [3]
--> Declaration of HH\Lib\IO\WriteHandle is here [4]
-
-vendor/nuxed/console/src/Nuxed/Console/Output/AbstractOutput.hack:83:20
-    72 |    */
-    73 |   protected async function writeTo(
-[3] 74 |     IO\WriteHandle $handle,
-    75 |     string $message,
-    76 |     Verbosity $verbosity,
+vendor/hhvm/hsl/src/vec/async.php:99:20
+    82 |   Traversable<Tv1> $traversable,
+    83 |   (function(Tv1)[_]: Awaitable<Tv2>) $async_func,
+[2] 84 | )[ctx $async_func]: Awaitable<vec<Tv2>> {
+    85 |   $vec = cast_clear_legacy_array_mark($traversable);
+    86 |   foreach ($vec as $i => $value) {
        :
-    81 |     }
-    82 | 
-[1] 83 |     await $handle->writeAsync($this->format($message, $type));
-    84 | 
-    85 |     return;
+    97 |     /* HH_FIXME[4387] Hide the magic from reactivity */
+    98 |     /* HH_FIXME[4390] Magic Function */
+[1] 99 |     $vec[$index] = \HH\Asio\result($value);
+   100 |   }
+   101 |   /* HH_FIXME[4110] Reuse the existing vec to reduce peak memory. */
 
-vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
-    19 |  * `rawWriteBlocking()` will immediately try to write to the handle.
-    20 |  */
-[4] 21 | interface WriteHandle extends Handle {
-    22 |   /** An immediate unordered write.
-    23 |    *
-       :
-    57 |    * do not want this to happen.
-    58 |    */
-[2] 59 |   public function writeAllAsync(
-    60 |     string $bytes,
-    61 |     ?int $timeout_ns = null,
+/tmp/hh_server/hhi_3b2be946/stdlib/builtins_asio.hhi:17:12
+    15 | namespace HH\Asio {
+    16 |   function join<T>(Awaitable<T> $awaitable): T;
+[3] 17 |   function result<T>(Awaitable<T> $awaitable): T;
+    18 |   function name(Awaitable<mixed> $awaitable): string;
+    19 |   function has_finished(Awaitable<mixed> $awaitable): bool;
 
-Typing[4053] No instance method readAsync in HH\Lib\IO\ReadHandle [1]
--> Did you mean readAllAsync instead? [2]
--> This is why I think it is an object of type HH\Lib\IO\ReadHandle [3]
--> Declaration of HH\Lib\IO\ReadHandle is here [4]
-
-vendor/nuxed/console/src/Nuxed/Console/_Private/BufferedReader.hack:31:37
-    15 |   private string $buffer = '';
-    16 | 
-[3] 17 |   public function __construct(private IO\ReadHandle $handle) {
-    18 |   }
-    19 | 
-       :
-    29 |     do {
-    30 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
-[1] 31 |       $chunk = await $this->handle->readAsync();
-    32 |       if ($chunk === '') {
-    33 |         $this->buffer = $buf;
-
-vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
-    20 |  * `readFixedSizeAsync()` on top of `readAsync`.
-    21 |  */
-[4] 22 | interface ReadHandle extends Handle {
-    23 |   /** An immediate, unordered read.
-    24 |    *
-       :
-    68 |    * unnecessarily hitting the request memory limit.
-    69 |    */
-[2] 70 |   public function readAllAsync(
-    71 |     ?int $max_bytes = null,
-    72 |     ?int $timeout_ns = null,
-
-Typing[4053] No instance method readAsync in HH\Lib\IO\ReadHandle [1]
--> Did you mean readAllAsync instead? [2]
--> This is why I think it is an object of type HH\Lib\IO\ReadHandle [3]
--> Declaration of HH\Lib\IO\ReadHandle is here [4]
-
-vendor/nuxed/console/src/Nuxed/Console/_Private/BufferedReader.hack:53:37
-    15 |   private string $buffer = '';
-    16 | 
-[3] 17 |   public function __construct(private IO\ReadHandle $handle) {
-    18 |   }
-    19 | 
-       :
-    51 |     while (Str\length($buf) < $size) {
-    52 |       /* HHAST_IGNORE_ERROR[DontAwaitInALoop] */
-[1] 53 |       $chunk = await $this->handle->readAsync($size - Str\length($buf));
-    54 |       if ($chunk === '') {
-    55 |         $this->buffer = $buf;
-
-vendor/hhvm/hsl-experimental/src/io/ReadHandle.php:70:19
-    20 |  * `readFixedSizeAsync()` on top of `readAsync`.
-    21 |  */
-[4] 22 | interface ReadHandle extends Handle {
-    23 |   /** An immediate, unordered read.
-    24 |    *
-       :
-    68 |    * unnecessarily hitting the request memory limit.
-    69 |    */
-[2] 70 |   public function readAllAsync(
-    71 |     ?int $max_bytes = null,
-    72 |     ?int $timeout_ns = null,
+/tmp/hh_server/hhi_3b2be946/coeffect/contexts.hhi:28:1
+    26 | *   i.e., automatically present with the subtyped capability
+    27 | */
+[4] 28 | namespace HH\Contexts {
+    29 | 
+    30 |   /**
 
 Typing[4128] The function HH\Lib\File\open_read_only_nd is deprecated: Use open_read_only() instead [1]
 -> Definition is here [2]
@@ -2047,22 +1364,4 @@ vendor/hhvm/hsl-experimental/src/io/WriteHandle.php:59:19
     60 |     string $bytes,
     61 |     ?int $timeout_ns = null,
 
-Naming[2049] Unbound name: Facebook\AutoloadMap\initialize (a global function) [1]
-
-vendor/usox/hackttp/example/index.hack:7:3
-    5 | async function main(): Awaitable<noreturn> {
-    6 |   require_once '../vendor/hh_autoload.hack';
-[1] 7 |   \Facebook\AutoloadMap\initialize();
-    8 |   $response = \Usox\HackTTP\create_response(200);
-    9 | 
-
-Typing[4107] Unbound name (typing): Facebook\AutoloadMap\initialize [1]
-
-vendor/usox/hackttp/example/index.hack:7:3
-    5 | async function main(): Awaitable<noreturn> {
-    6 |   require_once '../vendor/hh_autoload.hack';
-[1] 7 |   \Facebook\AutoloadMap\initialize();
-    8 |   $response = \Usox\HackTTP\create_response(200);
-    9 | 
-
-119 errors found.
+62 errors found.

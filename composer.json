@@ -10,7 +10,7 @@
     "nuxed/asset"
   ],
   "require": {
-    "hhvm": "^4.80",
+    "hhvm": "^4.98",
     "hhvm/hacktest": "*",
     "hhvm/hhast": "*",
     "hhvm/hhvm-autoload": ">3",
@@ -28,7 +28,6 @@
     "facebook/hh-clilib": "*",
     "facebook/xhp-lib": "*",
         
-    "nuxed/console": "*",
     "nuxed/contract": "^1",
     "nuxed/crypto": "*",
     "nuxed/environment": "*",

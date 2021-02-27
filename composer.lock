@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "535de2e0c0d8abd34ab96354d1ac55a6",
+    "content-hash": "4c20aab69b54bf85fd791851efe0e3e0",
     "packages": [
         {
             "name": "facebook/definition-finder",
@@ -533,12 +533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhast.git",
-                "reference": "52c21a8a7302a72156dbe41551ba3fb745f47e5d"
+                "reference": "cbdcb6fd0412de41e764773725a9ef166dda15d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhast/zipball/52c21a8a7302a72156dbe41551ba3fb745f47e5d",
-                "reference": "52c21a8a7302a72156dbe41551ba3fb745f47e5d",
+                "url": "https://api.github.com/repos/hhvm/hhast/zipball/cbdcb6fd0412de41e764773725a9ef166dda15d3",
+                "reference": "cbdcb6fd0412de41e764773725a9ef166dda15d3",
                 "shasum": ""
             },
             "require": {
@@ -578,7 +578,7 @@
                 "issues": "https://github.com/hhvm/hhast/issues",
                 "source": "https://github.com/hhvm/hhast/tree/master"
             },
-            "time": "2021-02-12T23:30:54+00:00"
+            "time": "2021-02-26T22:13:52+00:00"
         },
         {
             "name": "hhvm/hhvm-autoload",
@@ -642,12 +642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hsl.git",
-                "reference": "56fcf84f3435cf8037a3276b8dbe39d68126930b"
+                "reference": "8d47005c8f322a74b3ebe3098c6eea97f0029c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hsl/zipball/56fcf84f3435cf8037a3276b8dbe39d68126930b",
-                "reference": "56fcf84f3435cf8037a3276b8dbe39d68126930b",
+                "url": "https://api.github.com/repos/hhvm/hsl/zipball/8d47005c8f322a74b3ebe3098c6eea97f0029c8c",
+                "reference": "8d47005c8f322a74b3ebe3098c6eea97f0029c8c",
                 "shasum": ""
             },
             "require": {
@@ -676,7 +676,7 @@
                 "issues": "https://github.com/hhvm/hsl/issues",
                 "source": "https://github.com/hhvm/hsl/tree/master"
             },
-            "time": "2021-02-23T02:41:20+00:00"
+            "time": "2021-02-27T02:11:44+00:00"
         },
         {
             "name": "hhvm/hsl-experimental",
@@ -767,55 +767,6 @@
                 "source": "https://github.com/hhvm/type-assert/tree/master"
             },
             "time": "2021-01-22T23:53:53+00:00"
-        },
-        {
-            "name": "nuxed/console",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuxed/console.git",
-                "reference": "994bd0ba77af1e9e3e7e32e9ebdfcd80517f00ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuxed/console/zipball/994bd0ba77af1e9e3e7e32e9ebdfcd80517f00ef",
-                "reference": "994bd0ba77af1e9e3e7e32e9ebdfcd80517f00ef",
-                "shasum": ""
-            },
-            "require": {
-                "hhvm": "^4.56",
-                "hhvm/hsl": "^4.40",
-                "hhvm/hsl-experimental": "^4.37",
-                "nuxed/contract": "^1.0",
-                "nuxed/environment": "^1.2"
-            },
-            "require-dev": {
-                "facebook/fbexpect": "^2.7",
-                "hhvm/hacktest": "^2.0",
-                "hhvm/hhast": "^4.25"
-            },
-            "default-branch": true,
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "azjezz",
-                    "email": "azjezz@protonmail.com"
-                },
-                {
-                    "name": "Nuxed Community",
-                    "homepage": "https://github.com/nuxed/console/graphs/contributors"
-                }
-            ],
-            "description": "Nuxed Console",
-            "support": {
-                "issues": "https://github.com/nuxed/console/issues",
-                "source": "https://github.com/nuxed/console/tree/develop"
-            },
-            "time": "2020-05-27T07:54:15+00:00"
         },
         {
             "name": "nuxed/contract",
@@ -1229,12 +1180,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/quizlet/hammock.git",
-                "reference": "71c9492099dbb0183b13bed12f5fbebfbeacf0fc"
+                "reference": "ac580f4103ef67bbdcf33df3dc4f1329d7e99825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/quizlet/hammock/zipball/71c9492099dbb0183b13bed12f5fbebfbeacf0fc",
-                "reference": "71c9492099dbb0183b13bed12f5fbebfbeacf0fc",
+                "url": "https://api.github.com/repos/quizlet/hammock/zipball/ac580f4103ef67bbdcf33df3dc4f1329d7e99825",
+                "reference": "ac580f4103ef67bbdcf33df3dc4f1329d7e99825",
                 "shasum": ""
             },
             "require": {
@@ -1276,7 +1227,7 @@
                 "issues": "https://github.com/quizlet/hammock/issues",
                 "source": "https://github.com/quizlet/hammock/tree/master"
             },
-            "time": "2020-09-10T09:25:00+00:00"
+            "time": "2021-02-26T22:30:04+00:00"
         },
         {
             "name": "usox/hack-http-factory-interfaces",
@@ -1398,7 +1349,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "hhvm": "^4.80"
+        "hhvm": "^4.98"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
