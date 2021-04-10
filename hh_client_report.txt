@@ -25,4 +25,13 @@ vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:39:20
     40 |     "Should *not* be able to load class from dev root in prod mode",
     41 |   );
 
-3 errors found.
+Naming[2049] Unbound name: HH\Lib\File\Path [1]
+
+vendor/usox/hackttp/src/Response/TemporaryFileSapiEmitter.hack:40:12
+    38 | 		$path = $body->getPath();
+    39 | 
+[1] 40 | 		$path as File\Path;
+    41 | 
+    42 | 		$this->writeStatusLine($response);
+
+4 errors found.
