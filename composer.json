@@ -19,7 +19,7 @@
     "hhvm": "^4.98",
     "hhvm/hacktest": "*",
     "hhvm/hhast": "*",
-    "hhvm/hhvm-autoload": ">3",
+    "hhvm/hhvm-autoload": "*",
     "hhvm/hsl": "*",
     "hhvm/hsl-experimental": "*",
     "hhvm/type-assert": "*",

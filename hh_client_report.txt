@@ -1,3 +1,560 @@
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got dynamic [2]
+
+vendor/facebook/fbexpect/src/Assert.hack:540:22
+    527 | 
+    528 |   public function assertSubset(
+[2] 529 |     dynamic $expected,
+    530 |     dynamic $actual,
+    531 |     string $msg = '',
+        :
+    538 |       } else if (\is_object($actual)) {
+    539 |         $actual_value = /* HH_FIXME[2011] Dynamic property access */ $actual->$key;
+[1] 540 |         $part = '->'.$key;
+    541 |       } else {
+    542 |         $actual_value = null;
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/fbexpect/src/Assert.hack:547:64
+    541 |       } else {
+    542 |         $actual_value = null;
+[2] 543 |         $part = null;
+    544 |       }
+    545 | 
+    546 |       if (is_any_array($value) || \is_object($value)) {
+[1] 547 |         $this->assertSubset($value, $actual_value, $msg, $path.$part);
+    548 |       } else {
+    549 |         $this->assertEquals($value, $actual_value, $msg."\nKey: ".$path.$part);
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/fbexpect/src/Assert.hack:549:73
+    541 |       } else {
+    542 |         $actual_value = null;
+[2] 543 |         $part = null;
+    544 |       }
+    545 | 
+    546 |       if (is_any_array($value) || \is_object($value)) {
+    547 |         $this->assertSubset($value, $actual_value, $msg, $path.$part);
+    548 |       } else {
+[1] 549 |         $this->assertEquals($value, $actual_value, $msg."\nKey: ".$path.$part);
+    550 |       }
+    551 |     }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/fbmarkdown/src/render/HTMLRenderer.php:247:22
+    245 |         $alignment = ' align="'.$alignment.'"';
+    246 |       }
+[1] 247 |       $html .= '<th'.$alignment.'>'.$this->renderNodes($cell)."</th>\n";
+    248 |     }
+    249 |     $html .= "</tr>\n</thead>";
+
+vendor/facebook/fbmarkdown/src/blocks/TableExtension.php:39:46
+     37 |   }
+     38 | 
+[2]  39 |   public function getColumnAlignments(): vec<?TableExtensionColumnAlignment> {
+     40 |     return $this->alignments;
+     41 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/fbmarkdown/src/render/HTMLRenderer.php:278:18
+    276 |       $alignment = ' align="'.$alignment.'"';
+    277 |     }
+[1] 278 |     return "<td".$alignment.'>'.$this->renderNodes($cell)."</td>";
+    279 |   }
+    280 | 
+
+vendor/facebook/fbmarkdown/src/blocks/TableExtension.php:39:46
+     37 |   }
+     38 | 
+[2]  39 |   public function getColumnAlignments(): vec<?TableExtensionColumnAlignment> {
+     40 |     return $this->alignments;
+     41 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/fbmarkdown/src/render/HTMLRenderer.php:334:39
+    332 |     // Needs to always be present for spec tests to pass
+    333 |     $alt = ' alt="'.self::escapeAttribute($text).'"';
+[1] 334 |     return '<img src="'.$src.'"'.$alt.$title.' />';
+    335 |   }
+    336 | 
+
+vendor/facebook/fbmarkdown/src/inlines/Image.php:38:31
+     36 |   }
+     37 | 
+[2]  38 |   public function getTitle(): ?string {
+     39 |     return $this->title;
+     40 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/fbmarkdown/src/render/HTMLRenderer.php:350:53
+    348 |       ? ' rel="nofollow ugc"'
+    349 |       : '';
+[1] 350 |     return '<a href="'.$href.'"'.$noFollowUgcTag."".$title.'>'.$text.'</a>';
+    351 |   }
+    352 | 
+
+vendor/facebook/fbmarkdown/src/inlines/Link.php:45:31
+     43 |   }
+     44 | 
+[2]  45 |   public function getTitle(): ?string {
+     46 |     return $this->title;
+     47 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+-> All the local information about $this->outContext has been invalidated by this lambda function.
+This is a limitation of the type-checker; use a local if that's the problem. [3]
+
+vendor/facebook/fbmarkdown/src/render/MarkdownRenderer.php:35:11
+      16 | /** Re-create Markdown from the AST */
+      17 | class MarkdownRenderer extends Renderer<string> {
+[2]   18 |   private ?string $outContext = null;
+      19 | 
+      20 |   const keyset<classname<RenderFilter>> EXTENSIONS = keyset[
+         :
+      28 |       |> Vec\map(
+      29 |         $$,
+[3]   30 |         $node ==> {
+[3]   31 |           $content = $this->render($node);
+[3]   32 |           if ($node is Blocks\Block) {
+[3]   33 |             $content = $content."\n\n";
+[3]   34 |           }
+[1,3] 35 |           $this->outContext .= $content;
+[3]   36 |           return $content;
+[3]   37 |         },
+      38 |       )
+      39 |       |> Vec\filter($$, $line ==> $line !== '')
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/fbmarkdown/src/render/MarkdownRenderer.php:70:23
+    68 |     }
+    69 | 
+[1] 70 |     return $separator.$info."\n".$node->getCode()."\n".$separator;
+    71 |   }
+    72 | 
+
+vendor/facebook/fbmarkdown/src/blocks/CodeBlock.php:20:42
+    18 |   }
+    19 | 
+[2] 20 |   final public function getInfoString(): ?string {
+    21 |     return $this->infoString;
+    22 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenClassConstant.hack:74:31
+    40 |   private ?string $type;
+    41 | 
+[2] 42 |   public function getType(): ?string {
+    43 |     return $this->type;
+    44 |   }
+       :
+    72 |       ->addIf($abstract, 'abstract ')
+    73 |       ->add('const ')
+[1] 74 |       ->addIf($type !== null, $type.' ')
+    75 |       ->add($this->getName())
+    76 |       ->addIf($value !== null, ' = '.$value)
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenClassConstant.hack:76:38
+    74 |       ->addIf($type !== null, $type.' ')
+    75 |       ->add($this->getName())
+[1] 76 |       ->addIf($value !== null, ' = '.$value)
+    77 |       ->addLine(';');
+    78 |   }
+
+vendor/facebook/hack-codegen/src/CodegenConstantish.hack:34:31
+    32 | 
+    33 |   /** Returns the value as code */
+[2] 34 |   public function getValue(): ?string {
+    35 |     return $this->value;
+    36 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenConstant.hack:60:28
+    31 | 	private ?string $type;
+    32 | 
+[2] 33 | 	public function getType(): ?string {
+    34 | 		return $this->type;
+    35 | 	}
+       :
+    58 | 			->ensureNewLine()
+    59 | 			->add('const ')
+[1] 60 | 			->addIf($type !== null, $type.' ')
+    61 | 			->add($this->getName())
+    62 | 			->add(' = '.$value)
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenFile.hack:339:20
+    331 |     $content = $this->getContent();
+    332 | 
+[2] 333 |     $doc_block = $this->docBlock;
+    334 |     $gen_from = $this->generatedFrom;
+    335 |     if ($gen_from !== null) {
+    336 |       if ($doc_block !== null && !Str\ends_with($doc_block, "\n")) {
+    337 |         $doc_block .= "\n";
+    338 |       }
+[1] 339 |       $doc_block = $doc_block.$gen_from->render()."\n";
+    340 |     }
+    341 | 
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenFunctionish.hack:154:48
+     23 |   protected ?string $body = null;
+     24 |   protected ?string $docBlock = null;
+[2]  25 |   protected ?string $returnType = null;
+     26 |   private ?string $fixme = null;
+     27 |   protected bool $isAsync = false;
+        :
+    152 |       ->add($keywords)
+    153 |       ->addf('%s(%s)', $this->name, Str\join($this->parameters, ', '))
+[1] 154 |       ->addIf($this->returnType !== null, ': '.$this->returnType);
+    155 | 
+    156 |     $code = $builder->getCode();
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenFunctionish.hack:186:50
+     23 |   protected ?string $body = null;
+     24 |   protected ?string $docBlock = null;
+[2]  25 |   protected ?string $returnType = null;
+     26 |   private ?string $fixme = null;
+     27 |   protected bool $isAsync = false;
+        :
+    184 |         ->unindent()
+    185 |         ->add(')')
+[1] 186 |         ->addIf($this->returnType !== null, ': '.$this->returnType);
+    187 | 
+    188 |       return $multi_line_builder->getCode();
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenProperty.hack:99:37
+    28 | 
+    29 |   private ?string $comment;
+[2] 30 |   private ?string $type;
+    31 |   private ?string $value;
+    32 |   private bool $isStatic = false;
+       :
+    97 |       ->add($this->getVisibility().' ')
+    98 |       ->addIf($this->isStatic, 'static ')
+[1] 99 |       ->addIf($this->type !== null, $this->type.' ')
+   100 |       ->add('$'.$this->name)
+   101 |       ->addIf($this->value !== null, ' = '.$value)
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenProperty.hack:101:44
+     29 |   private ?string $comment;
+     30 |   private ?string $type;
+[2]  31 |   private ?string $value;
+     32 |   private bool $isStatic = false;
+     33 | 
+        :
+     99 |       ->addIf($this->type !== null, $this->type.' ')
+    100 |       ->add('$'.$this->name)
+[1] 101 |       ->addIf($this->value !== null, ' = '.$value)
+    102 |       ->addLine(';');
+    103 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenTypeConstant.hack:75:41
+    41 | 
+    42 |   private ?string $constraint;
+[2] 43 |   public function getConstraint(): ?string {
+    44 |     return $this->constraint;
+    45 |   }
+       :
+    73 |       ->add('const type ')
+    74 |       ->add($this->getName())
+[1] 75 |       ->addIf($constraint !== null, ' '.$constraint)
+    76 |       ->addIf($value !== null, ' = '.$value)
+    77 |       ->addLine(';');
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenTypeConstant.hack:76:38
+    74 |       ->add($this->getName())
+    75 |       ->addIf($constraint !== null, ' '.$constraint)
+[1] 76 |       ->addIf($value !== null, ' = '.$value)
+    77 |       ->addLine(';');
+    78 |   }
+
+vendor/facebook/hack-codegen/src/CodegenConstantish.hack:34:31
+    32 | 
+    33 |   /** Returns the value as code */
+[2] 34 |   public function getValue(): ?string {
+    35 |     return $this->value;
+    36 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenXHPAttribute.hack:104:39
+     26 | 
+     27 |   private ?string $comment;
+[2]  28 |   private ?string $type;
+     29 |   private ?string $value;
+     30 |   private ?XHPAttributeDecorator $decorator;
+        :
+    102 |     return $builder
+    103 |       ->addDocBlock($this->comment)
+[1] 104 |       ->addIf($this->type is nonnull, $this->type.' ')
+    105 |       ->add($this->name)
+    106 |       ->addIf($this->value is nonnull, ' = '.$value)
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/CodegenXHPAttribute.hack:106:46
+     27 |   private ?string $comment;
+     28 |   private ?string $type;
+[2]  29 |   private ?string $value;
+     30 |   private ?XHPAttributeDecorator $decorator;
+     31 | 
+        :
+    104 |       ->addIf($this->type is nonnull, $this->type.' ')
+    105 |       ->add($this->name)
+[1] 106 |       ->addIf($this->value is nonnull, ' = '.$value)
+    107 |       ->addIf(
+    108 |         $this->decorator is nonnull,
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/PartiallyGeneratedSignedSource.hack:39:7
+    33 |   public static function getDocBlock(?string $comment = null): string {
+    34 |     invariant($comment !== '', 'specify null instead of empty comments');
+[2] 35 |     $comment = ($comment === null) ? null : $comment."\n\n";
+    36 |     return 'This file is partially generated. '.
+    37 |       'Only make modifications between BEGIN MANUAL SECTION '.
+    38 |       "and END MANUAL SECTION designators.\n\n".
+[1] 39 |       $comment.
+    40 |       self::getSigningToken();
+    41 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/hack-codegen/src/SignedSource.hack:73:7
+    69 |   public static function getDocBlock(?string $comment = null): string {
+    70 |     invariant($comment !== '', 'specify null instead of empty comments');
+[2] 71 |     $comment = ($comment === null) ? null : $comment."\n\n";
+    72 |     return "This file is generated. Do not modify it manually!\n\n".
+[1] 73 |       $comment.
+    74 |       self::getSigningToken();
+    75 |   }
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got dynamic (variadic argument) [2]
+
+vendor/facebook/xhp-lib/src/core/Node.hack:82:25
+    51 |     KeyedTraversable<string, mixed> $attributes,
+    52 |     Traversable<?\XHPChild> $children,
+[2] 53 |     dynamic ...$debug_info
+    54 |   ) {
+    55 |     invariant(
+       :
+    80 |     if (\Facebook\XHP\ChildValidation\is_enabled()) {
+    81 |       if (C\count($debug_info) >= 2) {
+[1] 82 |         $this->source = $debug_info[0].':'.$debug_info[1];
+    83 |       } else {
+    84 |         $this->source =
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got dynamic (variadic argument) [2]
+
+vendor/facebook/xhp-lib/src/core/Node.hack:82:44
+    51 |     KeyedTraversable<string, mixed> $attributes,
+    52 |     Traversable<?\XHPChild> $children,
+[2] 53 |     dynamic ...$debug_info
+    54 |   ) {
+    55 |     invariant(
+       :
+    80 |     if (\Facebook\XHP\ChildValidation\is_enabled()) {
+    81 |       if (C\count($debug_info) >= 2) {
+[1] 82 |         $this->source = $debug_info[0].':'.$debug_info[1];
+    83 |       } else {
+    84 |         $this->source =
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/xhp-lib/src/exceptions/AttributeNotSupportedException.hack:24:7
+    22 |       '"'.
+    23 |       "\n\n".
+[1] 24 |       $that->source.
+    25 |       "\n\n".
+    26 |       'Please check for typos in your attribute. If you are creating a new '.
+
+vendor/facebook/xhp-lib/src/core/Node.hack:31:10
+    29 |   private vec<\XHPChild> $children = vec[];
+    30 |   private dict<string, mixed> $context = dict[];
+[2] 31 |   public ?string $source;
+    32 | 
+    33 |   protected function init(): void {
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/xhp-lib/src/exceptions/AttributeRequiredException.hack:23:7
+    21 |       self::getElementName($that).
+    22 |       "`.\n\n".
+[1] 23 |       $that->source,
+    24 |     );
+    25 |   }
+
+vendor/facebook/xhp-lib/src/core/Node.hack:31:10
+    29 |   private vec<\XHPChild> $children = vec[];
+    30 |   private dict<string, mixed> $context = dict[];
+[2] 31 |   public ?string $source;
+    32 | 
+    33 |   protected function init(): void {
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/xhp-lib/src/exceptions/ClassException.hack:20:7
+    18 |       self::getElementName($that).
+    19 |       "`\n\n".
+[1] 20 |       $that->source.
+    21 |       "\n\n".
+    22 |       $msg,
+
+vendor/facebook/xhp-lib/src/core/Node.hack:31:10
+    29 |   private vec<\XHPChild> $children = vec[];
+    30 |   private dict<string, mixed> $context = dict[];
+[2] 31 |   public ?string $source;
+    32 | 
+    33 |   protected function init(): void {
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/xhp-lib/src/exceptions/CoreRenderException.hack:22:7
+    20 |       \gettype($rend).
+    21 |       "`.\n\n".
+[1] 22 |       $that->source,
+    23 |     );
+    24 |   }
+
+vendor/facebook/xhp-lib/src/core/Node.hack:31:10
+    29 |   private vec<\XHPChild> $children = vec[];
+    30 |   private dict<string, mixed> $context = dict[];
+[2] 31 |   public ?string $source;
+    32 | 
+    33 |   protected function init(): void {
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/facebook/xhp-lib/src/exceptions/InvalidChildrenException.hack:21:7
+    19 |       '` was rendered with '.
+    20 |       "invalid children.\n\n".
+[1] 21 |       $that->source.
+    22 |       "\n\n".
+    23 |       'Verified '.
+
+vendor/facebook/xhp-lib/src/core/Node.hack:31:10
+    29 |   private vec<\XHPChild> $children = vec[];
+    30 |   private dict<string, mixed> $context = dict[];
+[2] 31 |   public ?string $source;
+    32 | 
+    33 |   protected function init(): void {
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got null [2]
+
+vendor/hhvm/hhast/src/Linters/GroupUseStatementsLinter.hack:356:63
+    342 |           vec<(
+    343 |             string,
+[2] 344 |             ?string,
+    345 |             vec<Trivia>,
+    346 |             vec<Trivia>,
+        :
+    354 |     foreach ($result as $kind => $result_kind) {
+    355 |       foreach ($result_kind as $namespace => list($nodes, $names)) {
+[1] 356 |         $names = Vec\sort_by($names, ($name) ==> $name[0].'-'.$name[1] ?? '');
+    357 |         $names_count = C\count($names);
+    358 | 
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/hhvm/hhast/src/Migrations/HSLMigration.hack:436:43
+    434 |       // in HSL, max and min want a single Traversable arg, while maxva and minva are variadic
+    435 |       return tuple(
+[1] 436 |         $this->replaceFunctionName($node, $fn_name.'va'),
+    437 |         $found_namespaces,
+    438 |       );
+        :
+    613 | 
+    614 |   // extract the function name from an expression
+[2] 615 |   protected function getFunctionName(FunctionCallExpression $node): ?string {
+    616 |     $receiver = $node->getReceiver();
+    617 | 
+
 Parsing[1002] XHP children declarations are no longer supported. [1]
 
 vendor/hhvm/hhast/src/__Private/codegen/data/XHPChildren.SyntaxExample.hack:12:12
@@ -6,6 +563,57 @@ vendor/hhvm/hhast/src/__Private/codegen/data/XHPChildren.SyntaxExample.hack:12:1
 [1] 12 |   children (pcdata);
     13 | }
     14 | 
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/hhvm/hhvm-autoload/src/Writer.hack:118:27
+     23 |   private ?vec<string> $files;
+     24 |   private ?AutoloadMap $map;
+[2]  25 |   private ?string $root;
+     26 |   private bool $relativeAutoloadRoot = true;
+     27 |   private ?string $failureHandler;
+        :
+    116 |       );
+    117 |     } else {
+[1] 118 |       $root = \var_export($this->root.'/', true);
+    119 |       $requires = Vec\map(
+    120 |         $files,
+
+Typing[4414] String concatenation can only be performed on string and int arguments [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/hhvm/hhvm-autoload/src/Writer.hack:121:31
+     23 |   private ?vec<string> $files;
+     24 |   private ?AutoloadMap $map;
+[2]  25 |   private ?string $root;
+     26 |   private bool $relativeAutoloadRoot = true;
+     27 |   private ?string $failureHandler;
+        :
+    119 |       $requires = Vec\map(
+    120 |         $files,
+[1] 121 |         $file ==> \var_export($this->root.'/'.$this->relativePath($file), true),
+    122 |       );
+    123 |     }
+
+Typing[4415] Only string and int values can be used in string interpolation [1]
+-> Expected string or int [1]
+-> But got ?string [2]
+
+vendor/hhvm/hhvm-autoload/src/Writer.hack:237:3
+    157 |       );
+    158 |     } else {
+[2] 159 |       $add_failure_handler = null;
+    160 |     }
+    161 | 
+        :
+    235 |   \HH\autoload_set_paths(/* HH_FIXME[4110] incorrect hhi */ \$map, Generated\\root());
+    236 | 
+[1] 237 |   $add_failure_handler
+    238 | }
+    239 | 
 
 Naming[2049] Unbound name: Facebook\AutoloadMap\TestFixtures\MyExampleTest (an object type) [1]
 
@@ -25,13 +633,4 @@ vendor/hhvm/hhvm-autoload/testdata/fixtures/hh-only/test-prod.php:39:20
     40 |     "Should *not* be able to load class from dev root in prod mode",
     41 |   );
 
-Naming[2049] Unbound name: HH\Lib\File\Path [1]
-
-vendor/usox/hackttp/src/Response/TemporaryFileSapiEmitter.hack:40:12
-    38 | 		$path = $body->getPath();
-    39 | 
-[1] 40 | 		$path as File\Path;
-    41 | 
-    42 | 		$this->writeStatusLine($response);
-
-4 errors found.
+38 errors found.
